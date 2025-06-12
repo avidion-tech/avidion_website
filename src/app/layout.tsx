@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   description:
     "Avidion is a cutting-edge software development company in India. We craft AI-powered websites, mobile apps, and custom CRM, ERP & SaaS solutions with 3D, animation, and cloud integration.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
+  keywords:[]
 };
 
 export default function RootLayout({

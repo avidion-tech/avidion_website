@@ -110,7 +110,7 @@ export default function HeroSection() {
       <Image src={"/hero-section/Frame-257.png"} alt="cbhdscbdc" fill className="object-cover"/>
      </div> */}
         {/* -left-[73.5%] sm:-left-[54%] md:-left-[8%] */}
-        <div className="absolute -left-[73%] vs:-left-[68.2%] scale-[0.35] vs:scale-[0.37] xxs:-left-[64%] xs:-left-[60%] top-[21.6%] z-0 flex xxs:scale-[0.38] flex-row gap-[7px] font-inter sm:-left-[54%] sm:top-[24%] sm:scale-[0.4] md:-left-[8%] md:top-[37%] md:scale-[0.7] md:gap-[18px] lg:left-[4%] lg:top-[40%] lg:scale-[0.88] xl:left-[16.5%] xl:top-[44%] xl:scale-[1.1] 2xl:left-[24.5%] 2xl:top-[42%] 2xl:scale-[1]">
+        <div className="absolute -left-[73%] top-[21.6%] z-0 flex scale-[0.35] flex-row gap-[7px] font-inter vs:-left-[68.2%] vs:scale-[0.37] xxs:-left-[64%] xxs:scale-[0.38] xs:-left-[60%] sm:-left-[54%] sm:top-[24%] sm:scale-[0.4] md:-left-[8%] md:top-[37%] md:scale-[0.7] md:gap-[18px] lg:left-[4%] lg:top-[40%] lg:scale-[0.88] xl:left-[16.5%] xl:top-[44%] xl:scale-[1.1] 2xl:left-[24.5%] 2xl:top-[42%] 2xl:scale-[1]">
           {/* left-divs */}
           <div className="flex flex-col gap-[16px] md:justify-between">
             {/* future ready digital solutions card*/}
@@ -216,27 +216,27 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
-            <div className="absolute -left-[8%] bottom-0 right-0 top-[9%] aspect-square size-[470px]">
+            {/* <div className="absolute -left-[8%] bottom-0 right-0 top-[9%] aspect-square size-[470px]">
               <Image
                 src={"/hero-section/main-circle.svg"}
                 fill
                 alt="main-circle"
                 className="object-cover"
               />
-            </div>
-
-            {/* <div className="absolute bottom-0 left-[6%] right-0 top-[12%]">
-              <div className="absolute flex size-[360px] items-center justify-center overflow-hidden rounded-full bg-transparent">
-                <div className="relative size-[350px]">
-                  <Lottie
-                    animationData={animationData}
-                    loop={true}
-                    autoplay={true}
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </div>
-              </div>
             </div> */}
+
+            <div className="absolute bottom-0 left-[6%] right-0 top-[12%]">
+              {/* <div className="absolute flex size-[360px] items-center justify-center overflow-hidden rounded-full bg-transparent"> */}
+              <div className="relative size-[350px]">
+                <Lottie
+                  animationData={animationData}
+                  loop={true}
+                  autoplay={true}
+                  style={{ width: "100%", height: "100%" }}
+                />
+                {/* </div> */}
+              </div>
+            </div>
 
             {/* <div className="absolute inset-0 text-white">heyyyy</div> */}
           </div>
