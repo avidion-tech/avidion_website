@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ContactUs {
+  id          Int      @id @default(autoincrement())
+  name        String
+  email       String
+  phoneNumber String
+  query       String
+  createdAt   DateTime @default(now())
+}
+
+enum Experience {
+  Fresher
+  YearOfExperience
+}
+
+model Careers {
+  id             Int        @id @default(autoincrement())
+  name           String
+  email          String
+  phoneNumber    String
+  address        String
+  experience     Experience
+  year           Int        @default(0)
+  months         Int        @default(0)
+  position       String
+  currentSalary  String
+  expectedSalary String
+  comments       String?
+  resumeLink     String
+  createdAt      DateTime   @default(now())
+}
