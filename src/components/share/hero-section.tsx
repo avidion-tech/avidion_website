@@ -4,7 +4,11 @@ import Lottie from "lottie-react";
 import animationData from "@/animations/animation.json";
 import { useEffect, useRef, useState } from "react";
 import InfiniteScrollTape from "../infinite-scroll-area";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 export default function HeroSection() {
+  const searchParams = useSearchParams();
+  const params = new URLSearchParams(searchParams.toString());
+  const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
   const [isHovering, setIsHovering] = useState<boolean>(false);
@@ -83,11 +87,15 @@ export default function HeroSection() {
                 </div>
               </div>
               <div
+                onClick={() => {
+                  params.set("open", "true");
+                  router.push(`/?${params.toString()}`, { scroll: false });
+                }}
                 style={{
                   background:
                     "conic-gradient(from var(--border-angle), #FF57DB, #B33691, #6748DB, #9D78F2)",
                 }}
-                className="animate-rotate-border rounded-[12px] p-[3px] hover:shadow-[0_0_12px_0_rgba(255,255,255,0.60)]"
+                className="animate-rotate-border cursor-pointer rounded-[12px] p-[3px] hover:shadow-[0_0_12px_0_rgba(255,255,255,0.60)]"
               >
                 <div className="rounded-[8.6px] bg-black px-[18px] py-2 text-[12px] font-medium leading-[14px] text-white transition-all duration-500 ease-in md:text-[10px] md:leading-[22px] xl:rounded-[12px] xl:px-6 xl:py-2.5 xl:text-[15.033px] xl:leading-[31.067px]">
                   Book A Free Consultation
