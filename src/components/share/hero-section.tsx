@@ -225,7 +225,7 @@ export default function HeroSection() {
               />
             </div> */}
 
-            <div className="absolute bottom-0 left-[6%] right-0 top-[12%]">
+            <div className="absolute bottom-0 left-[6%] right-0 top-[14%]">
               {/* <div className="absolute flex size-[360px] items-center justify-center overflow-hidden rounded-full bg-transparent"> */}
               <div className="relative size-[350px]">
                 <Lottie
