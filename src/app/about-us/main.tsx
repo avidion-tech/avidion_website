@@ -3,7 +3,7 @@ export default function MainSection() {
   return (
     <>
       <div className="relative overflow-hidden">
-        <video
+        {/* <video
           src="/about-us/main-bg.mp4"
           className="absolute inset-0 h-full w-full scale-[5] sm:scale-[4.2] md:scale-[3] xl:scale-[1.5]"
           autoPlay
@@ -11,7 +11,7 @@ export default function MainSection() {
           muted
           playsInline
           preload="auto"
-        />
+        /> */}
         <div className="absolute inset-0 bg-[radial-gradient(53.48%_53.48%_at_50%_96.75%,_rgba(0,0,0,0.00)_0%,_#000_100%)]"></div>
         <div className="container relative flex max-w-full flex-col items-center gap-[15px] pb-[70px] pt-[134px] text-xl text-white md:gap-[80px] md:pb-[90px] md:pt-[160px] xl:gap-[76px] xl:pb-[150px] xl:pt-[196px]">
           <div className="flex flex-col items-center gap-0.5 md:gap-[10px] xl:gap-[30px]">
@@ -37,7 +37,7 @@ export default function MainSection() {
                 alt="team-chart"
                 className="object-cover"
                 fill
-                priority
+                quality={100}
               />
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function MainSection() {
                 alt="team-chart"
                 className="object-cover"
                 fill
-                priority
+                quality={100}
               />
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function MainSection() {
                 alt="team-chart"
                 className="object-cover"
                 fill
-                priority
+                quality={100}
               />
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function MainSection() {
                 alt="team-chart"
                 className="object-cover"
                 fill
-                priority
+                
               />
             </div>
           </div>
