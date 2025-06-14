@@ -108,7 +108,7 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
               <div className="flex flex-row gap-2.5">
                 <div className="size-[16.7px] text-white">
-                  <FaWhatsapp />
+                  <MdOutlineEmail />
                 </div>
                 <a
                   href="mailto:info@avidion.ai"
@@ -120,7 +120,7 @@ const Footer = () => {
 
               <div className="flex flex-row gap-2.5">
                 <div className="size-[16.7px] text-white">
-                  <MdOutlineEmail />
+                  <FaWhatsapp />
                 </div>
                 <a
                   href="tel:+919896584099"

@@ -74,7 +74,7 @@ export default function RecruitmentProcess() {
                   ))}
                 </>
               ) : (
-                <div className="flex items-center justify-center pb-[95px]">
+                <div className="flex items-center justify-center">
                   <div className="relative">
                     <div className="relative h-[342px] w-[379px] xl:h-[630px] xl:w-[800px]">
                       <Image
