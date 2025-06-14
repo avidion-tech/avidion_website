@@ -1,4 +1,3 @@
-"use client";
 import WhatWeOffer from "@/components/share/what-we-offer";
 import HeroSection from "@/components/share/hero-section";
 import OurToolkit from "@/components/share/our-toolkit";

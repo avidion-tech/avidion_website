@@ -33,9 +33,9 @@ export default function MainSection() {
           <div className="hidden xl:block">
             <div className="relative xl:h-[428px] xl:w-[1359px]">
               <Image
-                src={"/about-us/team-chart.svg"}
+                src={"/about-us/team-chart.png"}
                 alt="team-chart"
-                className="object-cover"
+                className="scale-[0.85] object-cover"
                 fill
                 quality={100}
               />
@@ -44,7 +44,7 @@ export default function MainSection() {
           <div className="md:block xl:hidden">
             <div className="relative md:h-[701px] md:w-[833px]">
               <Image
-                src={"/about-us/team-chart-md.svg"}
+                src={"/about-us/team-chart-md.png"}
                 alt="team-chart"
                 className="object-cover"
                 fill
@@ -55,7 +55,7 @@ export default function MainSection() {
           <div className="hidden sm:block md:hidden">
             <div className="relative h-[594px] w-[429px]">
               <Image
-                src={"/about-us/team-chart-sm.svg"}
+                src={"/about-us/team-chart-sm.png"}
                 alt="team-chart"
                 className="object-cover"
                 fill
@@ -66,11 +66,10 @@ export default function MainSection() {
           <div className="block sm:hidden">
             <div className="relative h-[422px] w-[360px]">
               <Image
-                src={"/about-us/team-chart-xs.svg"}
+                src={"/about-us/team-chart-xs.png"}
                 alt="team-chart"
                 className="object-cover"
                 fill
-                
               />
             </div>
           </div>
