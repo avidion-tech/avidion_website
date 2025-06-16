@@ -1,19 +1,20 @@
 import Image from "next/image";
-export default function HeroSection() {
+import React from "react";
+function HeroSection() {
   return (
     <>
       <div className="relative">
         {/* video behind the content */}
         <video
-          src="/services/hero-bg-video.mp4"
-          controls={false}
           muted
           loop
           autoPlay
           playsInline
           preload="auto"
           className="absolute inset-0 h-full w-full object-cover"
-        />
+        >
+          <source src="/services/hero-bg-video.webm" type="video/webm" />
+        </video>
         {/* radial gradient overlay over the video */}
         <div className="absolute inset-0 animate-gradient-radial"></div>
         {/* content */}
@@ -44,3 +45,5 @@ export default function HeroSection() {
     </>
   );
 }
+
+export default React.memo(HeroSection)

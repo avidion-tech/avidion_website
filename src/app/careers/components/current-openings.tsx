@@ -16,8 +16,9 @@ import CareerForm from "@/components/forms/career-form";
 import { useState } from "react";
 import { currentOpenings } from "@/data";
 import { useMediaQuery } from "@uidotdev/usehooks";
+import React from "react";
 
-export default function CurrentOpenings() {
+function CurrentOpenings() {
   const [open, setOpen] = useState<boolean>(false);
   const isSmallDevice = useMediaQuery("only screen and (max-width : 767px)");
 
@@ -145,3 +146,5 @@ export default function CurrentOpenings() {
     </>
   );
 }
+
+export default React.memo(CurrentOpenings);

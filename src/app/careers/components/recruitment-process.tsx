@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useMediaQuery } from "@uidotdev/usehooks";
+import React from "react";
 
 const data = [
   {
@@ -35,7 +36,7 @@ const data = [
     icon: "/careers/recruitment-icons/offer-and-onboarding.svg",
   },
 ];
-export default function RecruitmentProcess() {
+function RecruitmentProcess() {
   const isSmallDevice = useMediaQuery("only screen and (max-width : 767px)");
   return (
     <>
@@ -178,3 +179,5 @@ export default function RecruitmentProcess() {
     </>
   );
 }
+
+export default React.memo(RecruitmentProcess);

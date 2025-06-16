@@ -25,7 +25,7 @@ const AboutUs = () => {
   return (
     <>
       <Main />
-      
+
       {/* our vision */}
       <div className="bg-[#13081C]">
         <div className="md:px-[100px] lg:px-[180px] xl:px-0">
@@ -66,7 +66,7 @@ const AboutUs = () => {
         </div>
       </div>
       {/* vision-led strategy section */}
-      <div className="container relative flex max-w-full flex-col gap-[40px] overflow-hidden py-[80px] xl:gap-[70px] xl:py-[160px]"> 
+      <div className="container relative flex max-w-full flex-col gap-[40px] overflow-hidden py-[80px] xl:gap-[70px] xl:py-[160px]">
         <div className="z-10 text-center text-[56px] text-xl font-medium leading-[65px] -tracking-[0.84px] text-white md:text-[42px]">
           Vision-Led Strategy
         </div>
@@ -121,11 +121,11 @@ const AboutUs = () => {
             />
           </div>
         </div>
-        <div className="z-0 animation-delay-1 absolute -left-[10%] -top-1/3 size-[370px] lg:size-[477px] rotate-[3.425deg] animate-circle-move rounded-full bg-[#A5318A] opacity-[0.5] blur-[154px]"></div>
-        <div className="z-0 animation-delay-2 absolute -left-[10%] top-[10%] size-[270px] lg:size-[329.643px] rotate-[3.425deg] animate-circle-move rounded-full bg-[#622A9A] opacity-[0.5] blur-[64.88px]"></div>
+        <div className="animation-delay-1 absolute -left-[10%] -top-1/3 z-0 size-[370px] rotate-[3.425deg] animate-circle-move rounded-full bg-[#A5318A] opacity-[0.5] blur-[154px] lg:size-[477px]"></div>
+        <div className="animation-delay-2 absolute -left-[10%] top-[10%] z-0 size-[270px] rotate-[3.425deg] animate-circle-move rounded-full bg-[#622A9A] opacity-[0.5] blur-[64.88px] lg:size-[329.643px]"></div>
 
-        <div className="z-0 animation-delay-1 absolute -right-20 bottom-20 size-[370px] lg:size-[477px] rotate-[3.425deg] animate-circle-move rounded-full border bg-[#A5318A] opacity-[0.5] blur-[154px]"></div>
-        <div className="z-0 animation-delay-2 absolute -bottom-[22%] right-0 size-[270px] lg:size-[329.643px] rotate-[3.425deg] animate-circle-move rounded-full bg-[#622A9A] opacity-[0.5] blur-[64.88px]"></div>
+        <div className="animation-delay-1 absolute -right-20 bottom-20 z-0 size-[370px] rotate-[3.425deg] animate-circle-move rounded-full border bg-[#A5318A] opacity-[0.5] blur-[154px] lg:size-[477px]"></div>
+        <div className="animation-delay-2 absolute -bottom-[22%] right-0 z-0 size-[270px] rotate-[3.425deg] animate-circle-move rounded-full bg-[#622A9A] opacity-[0.5] blur-[64.88px] lg:size-[329.643px]"></div>
       </div>
 
       {/* security-first culture */}
@@ -137,14 +137,18 @@ const AboutUs = () => {
 
           <div className="relative w-full mix-blend-plus-lighter">
             <video
-              src="/about-us/security-first-bg-video.mp4"
               muted
               loop
               autoPlay
               playsInline
               preload="auto"
               className="absolute inset-0 h-full w-full object-cover"
-            />
+            >
+              <source
+                src="/about-us/security-first-bg-video.webm"
+                type="video/webm"
+              />
+            </video>
             <div className="absolute inset-0 bg-[radial-gradient(110.24%_110.16%_at_60.07%_91.93%,_rgba(0,0,0,0.00)_0%,_rgba(0,0,0,0.99)_100%)] xl:bg-[radial-gradient(37.42%_37.41%_at_60.23%_87.33%,_rgba(0,0,0,0)_0%,_rgba(0,0,0,0.99)_100%)]"></div>
             <div className="relative flex flex-col items-center gap-[37px] px-6 pb-[200px] pt-[50px] font-inter text-xl font-bold md:px-[110px] md:pb-[300px] md:pt-[104px] lg:px-[180px] xl:flex-row xl:items-start xl:px-[100px] xl:pb-[180px] xl:pt-[100px] 2xl:px-[198px] 2xl:pb-[200px] 2xl:pt-[140px]">
               {/* first card */}
@@ -194,7 +198,7 @@ const AboutUs = () => {
       {/* comprehensive digital solutions */}
       <div className="bg-[#13081C]">
         <div className="container relative flex max-w-full flex-col gap-[50px] overflow-hidden py-[80px] xl:py-[168px]">
-          <div className="px-[50px] text-center text-xl font-medium md:leading-[65px] -tracking-[0.84px] text-white md:text-[42px] xl:text-[56px]">
+          <div className="px-[50px] text-center text-xl font-medium -tracking-[0.84px] text-white md:text-[42px] md:leading-[65px] xl:text-[56px]">
             Comprehensive Digital Solutions
           </div>
 
@@ -258,14 +262,15 @@ const AboutUs = () => {
       {/* ai integrated sysytems */}
       <div className="relative">
         <video
-          src="/about-us/ai-system-bg-video.mp4"
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
           className="absolute inset-0 h-full w-full object-cover"
-        />
+        >
+          <source src="/about-us/ai-system-bg-video.webm" type="video/webm" />
+        </video>
         <div className="absolute -top-0.5 bottom-0 left-0 right-0 bg-[radial-gradient(50.16%_49.97%_at_50%_93.32%,_rgba(0,0,0,0.00)_0%,_#000_100%)]"></div>
         <div className="container relative flex max-w-full flex-col items-center gap-[80px] py-[63px] md:py-[80px] xl:gap-[87px] xl:py-[168px]">
           <div className="text-center text-2xl font-medium leading-[65px] -tracking-[0.84px] text-white md:text-[42px] xl:text-[56px]">

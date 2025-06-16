@@ -1,19 +1,21 @@
 import Image from "next/image";
-export default function MainSection() {
+import React from "react";
+function MainSection() {
   return (
     <>
       <div className="relative overflow-hidden">
-        {/* <video
-          src="/about-us/main-bg.mp4"
-          className="absolute inset-0 h-full w-full scale-[5] sm:scale-[4.2] md:scale-[3] xl:scale-[1.5]"
+        <video
+          className="absolute inset-0 h-full w-full opacity-40 scale-[4.2] md:scale-[2.8] lg:scale-[2.1] xl:scale-[1.3]"
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
-        /> */}
-        <div className="absolute inset-0 bg-[radial-gradient(53.48%_53.48%_at_50%_96.75%,_rgba(0,0,0,0.00)_0%,_#000_100%)]"></div>
-        <div className="container relative flex max-w-full flex-col items-center gap-[15px] pb-[70px] pt-[134px] text-xl text-white md:gap-[80px] md:pb-[90px] md:pt-[160px] xl:gap-[76px] xl:pb-[150px] xl:pt-[196px]">
+        >
+          <source src="/about-us/main-bg.webm" type="video/webm" />
+        </video>
+        {/* <div className="absolute inset-0 bg-[radial-gradient(53.48%_53.48%_at_50%_96.75%,_rgba(0,0,0,0.00)_0%,_#000_100%)]"></div> */}
+        <div className="container relative flex max-w-full flex-col items-center gap-[15px] pb-[50px] pt-[134px] text-xl text-white md:gap-[80px] md:pt-[160px] xl:gap-[76px] xl:pb-[100px] xl:pt-[196px]">
           <div className="flex flex-col items-center gap-0.5 md:gap-[10px] xl:gap-[30px]">
             <div className="text-xl font-medium -tracking-[0.84px] md:text-2xl md:text-[40px] md:leading-[40px] xl:text-[56px] xl:leading-[65px]">
               About Us
@@ -37,6 +39,7 @@ export default function MainSection() {
                 alt="team-chart"
                 className="scale-[0.85] object-cover"
                 fill
+                priority
                 quality={100}
               />
             </div>
@@ -78,3 +81,5 @@ export default function MainSection() {
     </>
   );
 }
+
+export default React.memo(MainSection);

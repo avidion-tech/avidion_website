@@ -18,11 +18,12 @@ export default function BlogLayout({
           autoPlay
           muted
           loop
-          preload="true"
+          preload="auto"
           playsInline
-          src="/blogs/blog-shimmer-bg.webm"
           className="absolute left-0 top-0 h-full w-full object-cover"
-        />
+        >
+          <source src="/blogs/blog-shimmer-bg.webm" type="video/webm" />
+        </video>
         <div className="absolute inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,_rgba(0,0,0,0.00)_0%,_rgba(0,0,0,0.60)_100%)]"></div>
 
         <div className="relative z-10"> {children}</div>

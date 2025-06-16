@@ -5,7 +5,8 @@ import animationData from "@/animations/animation.json";
 import { useEffect, useRef, useState } from "react";
 import InfiniteScrollTape from "../infinite-scroll-area";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-export default function HeroSection() {
+import React from "react";
+function HeroSection() {
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
   const router = useRouter();
@@ -34,14 +35,15 @@ export default function HeroSection() {
           className="relative h-[630px] overflow-hidden font-inter md:h-[980px] xl:h-[1234px]"
         >
           <video
-            src="/hero-section/bg-hero-video.mp4"
             className="absolute left-[40px] top-[28px] h-full w-full scale-[1.7] sm:top-[45px] sm:scale-[1.7] md:left-[81px] md:top-0 md:scale-[1.7] lg:scale-[1.7] xl:scale-[1.4] 2xl:scale-[1.21]"
             autoPlay
             muted
             loop
             preload="auto"
             playsInline
-          ></video>
+          >
+            <source src="/hero-section/bg-hero-video.webm" type="video/webm" />
+          </video>
           {/* overlay over the video */}
           <div className="absolute inset-0 bg-[linear-gradient(358deg,_rgba(0,0,0,0.00)_90.33%,#000_98.88%)] md:bg-[linear-gradient(2deg,_rgba(0,0,0,0.00)_81.43%,#000_90.93%)]"></div>
 
@@ -339,3 +341,5 @@ export default function HeroSection() {
     </>
   );
 }
+
+export default React.memo(HeroSection);

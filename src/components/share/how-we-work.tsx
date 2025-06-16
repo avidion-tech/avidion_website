@@ -2,11 +2,12 @@
 import dynamic from "next/dynamic";
 import { HeadingSection } from "./heading-section";
 import Timeline from "./timeline";
+import React from "react";
 const TimelineSteps = dynamic(() => import("../share/timeline"), {
   ssr: false,
 });
 
-export default function HowWeWork() {
+function HowWeWork() {
   return (
     <>
       {/* <div className="relative flex flex-col gap-[98px] px-[118.5px] py-[108px] text-white xl:px-[182.5px] 2xl:px-[422px]"></div> */}
@@ -54,3 +55,5 @@ export default function HowWeWork() {
     </>
   );
 }
+
+export default React.memo(HowWeWork);

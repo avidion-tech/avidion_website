@@ -113,15 +113,17 @@ const Careers = () => {
     <>
       {/* join team avidion */}
       <div className="relative">
-        <video
-          src="/careers/main-bg-video.mp4"
+        {/* <video
           autoPlay
           loop
           muted
           preload="auto"
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
-        />
+        >
+          <source src="/careers/main-bg-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video> */}
 
         <div className="absolute inset-0 bg-opacity-50 bg-[radial-gradient(50.58%_26.36%_at_57.81%_48.24%,_rgba(42,4,48,0.00)_0%,_#000_100%)] md:bg-[radial-gradient(81.55%_42.77%_at_57.5%_59.34%,_rgba(42,4,48,0.00)_0%,_#000_100%)] xl:bg-[radial-gradient(27.26%_97.44%_at_50.03%_100%,_rgba(42,4,48,0.00)_0%,_#000_100%)]"></div>
         <div className="relative">
