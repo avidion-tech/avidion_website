@@ -1,11 +1,8 @@
 "use client";
-import dynamic from "next/dynamic";
 import { HeadingSection } from "./heading-section";
-import Timeline from "./timeline";
 import React from "react";
-const TimelineSteps = dynamic(() => import("../share/timeline"), {
-  ssr: false,
-});
+import Timeline from "./timeline";
+
 
 function HowWeWork() {
   return (
@@ -47,7 +44,7 @@ function HowWeWork() {
               ></div>
 
               {/* Timeline items */}
-              <TimelineSteps />
+              <Timeline />
             </div>
           </div>
         </div>

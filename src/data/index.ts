@@ -351,3 +351,48 @@ export const currentOpenings = [
     ],
   },
 ];
+
+export const websiteDevProcess = [
+  {
+    title: "Requirement Analysis",
+    description:
+      "Understand client vision, 3D objectives, target audience, devices supported.",
+    icon: IoSearch,
+  },
+  {
+    title: "Planning",
+    description:
+      "Define 3D scenes, page flow, interaction logic, and performance requirements. Includes spatial storytelling goals and asset sourcing (models, textures).",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "Design (UX + 3D Design)",
+    description:
+      " Design UI/UX wireframes plus 3D scenes and assets (using Blender, Figma, etc.).",
+    icon: BiPaint,
+  },
+  {
+    title: "Development",
+    description:
+      "Code WebGL/Three.js scenes, integrate GSAP for animation, link backend APIs.",
+    icon: LuCodeXml,
+  },
+  {
+    title: "Testing",
+    description:
+      "Test across browsers/devices, check animation smoothness, optimize 3D load times.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Deployment",
+    description:
+      "Host on CDN-enabled infrastructure (e.g., Vercel), compress assets, and implement lazy loading.",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Maintenance",
+    description:
+      "Update 3D content, add new features, optimize performance over time.",
+    icon: FaChartLine,
+  },
+];

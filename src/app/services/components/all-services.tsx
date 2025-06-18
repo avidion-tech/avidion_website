@@ -5,45 +5,51 @@ import Link from "next/link";
 export const services = [
   {
     id: 1,
-    url: "/services/service-1.png",
+    imageUrl: "/services/service-1.png",
     title: "Web App Development Services",
     content:
       "At Avidion Softwares, we specialize in delivering end-to-end web app development services tailored to your unique business needs. As a trusted web development partner, our expert team goes beyond the surface to understand your specific challenges and craft custom, scalable, and performance-driven solutions.",
+    link: "/services/website-development",
   },
   {
     id: 2,
-    url: "/services/service-2.png",
+    imageUrl: "/services/service-2.png",
     title: "3D & Animated Websites",
     content:
       "Step into the future of digital experiences with cutting-edge 3D and animated website development by Avidion Softwares. We go beyond static designs to create immersive, visually stunning, and interactive websites that capture attention and elevate your brand presence.",
+    link: "/services/3d-and-animated-website",
   },
   {
     id: 3,
-    url: "/services/service-3.png",
+    imageUrl: "/services/service-3.png",
     title: "AI Integration ",
     content:
       "At Avidion Softwares, we integrate Artificial Intelligence (AI) into your digital ecosystem to help you make smarter decisions, automate processes, and deliver personalized experiences at scale. Whether it’s an intelligent chatbot, predictive analytics engine, or AI-driven automation, we help you harness the power of AI to gain a competitive edge and drive operational efficiency.",
+    link: "/services/ai-integration",
   },
   {
     id: 4,
-    url: "/services/service-4.png",
+    imageUrl: "/services/service-4.png",
     title: "Mobile App Development",
     content:
       "At Avidion Softwares, we craft high-performance mobile applications that help businesses thrive in a mobile-first world. From concept to deployment, we specialize in building intuitive, scalable, and feature- rich apps for Android, and cross-platform environments.",
+    link: "/services/mobile-app-development",
   },
   {
     id: 5,
-    url: "/services/service-5.png",
+    imageUrl: "/services/service-5.png",
     title: "CRM ",
     content:
       "At Avidion Softwares, we build intelligent, scalable, and user-friendly CRM systems that empower businesses to streamline customer relationships, automate sales workflows, and drive lasting loyalty. Whether you need a lightweight CRM for a startup or a robust enterprise-grade solution, our custom CRM development is designed to help you manage leads, track interactions, and grow smarter.",
+    link: "/services/crm",
   },
   {
     id: 6,
-    url: "/services/service-6.png",
+    imageUrl: "/services/service-6.png",
     title: "ERP & WMS",
     content:
       "We deliver tailored services that connect customer relationship management with warehouse automation—streamlining workflows, enhancing visibility, and supporting scalable business growth from lead to delivery.",
+    link: "/services/erp-and-wms",
   },
 ];
 export default function AllServices() {
@@ -74,7 +80,7 @@ export default function AllServices() {
                 } relative h-[250px] w-[248px] xl:h-[356px] xl:w-[400px]`}
               >
                 <Image
-                  src={service.url}
+                  src={service.imageUrl}
                   alt="service-images"
                   fill
                   className="animate-service-bounce object-contain"
@@ -93,12 +99,12 @@ export default function AllServices() {
                 <div className="text-center text-sm font-normal text-[rgba(255,255,255,0.70)] md:text-left md:text-base">
                   {service.content}
                 </div>
-                {/* <Link
-                  href="#"
+                <Link
+                  href={service.link}
                   className="py-2 text-sm font-normal text-white underline underline-offset-1"
                 >
                   Know More
-                </Link> */}
+                </Link>
               </div>
               {index % 2 == 0 ? (
                 <>

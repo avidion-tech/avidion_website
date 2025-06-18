@@ -93,13 +93,9 @@ function HeroSection() {
                   params.set("open", "true");
                   router.push(`/?${params.toString()}`, { scroll: false });
                 }}
-                style={{
-                  background:
-                    "conic-gradient(from var(--border-angle), #FF57DB, #B33691, #6748DB, #9D78F2)",
-                }}
-                className="animate-rotate-border cursor-pointer rounded-[12px] p-[3px] hover:shadow-[0_0_12px_0_rgba(255,255,255,0.60)]"
+                className="animate-gradient-wave cursor-pointer rounded-[12px] bg-[linear-gradient(131deg,_rgba(255,87,219,0.70)_25.56%,_rgba(240,200,231,0.70)_42.13%,_rgba(204,134,242,0.70)_53.02%,_rgba(157,123,242,0.70)_75.71%)] bg-[length:300%_300%] bg-repeat p-[3px] transition-all duration-300 ease-in hover:shadow-[0_0_12px_0_rgba(255,255,255,0.60)]"
               >
-                <div className="rounded-[8.6px] bg-black px-[18px] py-2 text-[12px] font-medium leading-[14px] text-white transition-all duration-500 ease-in md:text-[10px] md:leading-[22px] xl:rounded-[12px] xl:px-6 xl:py-2.5 xl:text-[15.033px] xl:leading-[31.067px]">
+                <div className="bg-black rounded-[8.6px] px-[18px] py-2 text-[12px] font-medium leading-[14px] text-white md:text-[10px] md:leading-[22px] xl:rounded-[10px] xl:px-6 xl:py-2.5 xl:text-[15.033px] xl:leading-[31.067px]">
                   Book A Free Consultation
                 </div>
               </div>
@@ -247,8 +243,6 @@ function HeroSection() {
                 {/* </div> */}
               </div>
             </div>
-
-            {/* <div className="absolute inset-0 text-white">heyyyy</div> */}
           </div>
           {/* right-divs */}
           <div className="flex flex-col justify-between gap-[6.9px]">

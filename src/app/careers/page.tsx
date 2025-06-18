@@ -3,14 +3,9 @@ import { useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import { HeadingSection } from "@/components/share/heading-section";
 import Image from "next/image";
+import RecruitmentProcess from "./components/recruitment-process";
 const Openings = dynamic(
   () => import("../careers/components/current-openings"),
-  {
-    ssr: false,
-  },
-);
-const RecruitmentSteps = dynamic(
-  () => import("../careers/components/recruitment-process"),
   {
     ssr: false,
   },
@@ -109,6 +104,7 @@ const Careers = () => {
     section?.addEventListener("mouseenter", handleMouseEnter);
     section?.addEventListener("mouseleave", handleMouseLeave);
   }, []);
+  
   return (
     <>
       {/* join team avidion */}
@@ -238,7 +234,7 @@ const Careers = () => {
       </div>
 
       <Openings />
-      <RecruitmentSteps />
+      <RecruitmentProcess/>
     </>
   );
 };

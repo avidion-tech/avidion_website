@@ -34,10 +34,9 @@ const config: Config = {
         "mobile-app-dev": "url('/hero-section/mobile-app-dev-bg.svg')",
       },
       animation: {
-        "rotate-border": "border-rotate 4s linear infinite",
         // for animating main logo and hero-heading
         gradient: "gradient 8s linear infinite",
-        "gradient-wave": "gradientWave 6s linear infinite",
+        "gradient-wave": "gradientWave 8s linear infinite",
 
         //for animating the blurry balls
         blob: "blob 5s ease-in-out infinite",
@@ -63,15 +62,10 @@ const config: Config = {
       keyframes: {
         gradientWave: {
           "0%": {
-            "background-position": "0% 50%",
+            "background-position": "200% center",
           },
           "100%": {
-            "background-position": "200% 50%",
-          },
-        },
-        gradient: {
-          to: {
-            "background-position": "200% center",
+            "background-position": "-200% center",
           },
         },
         blob: {
@@ -153,11 +147,6 @@ const config: Config = {
           "50%": {
             transform: "none",
             "animation-timing-function": "cubic-bezier(0,0,0.2,1)",
-          },
-        },
-        "border-rotate": {
-          to: {
-            "--border-angle": "360deg",
           },
         },
         slideDown: {
