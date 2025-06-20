@@ -79,11 +79,7 @@ import Image from "next/image";
 import Process from "./process";
 import BackButton from "@/components/share/back-button";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "3D Website Development",
-  description:
-    "Avidion builds immersive 3D and animated websites that elevate your digital presence. Experience modern, interactive, and visually stunning web solutions.",
-};
+
 export default function ThreeDWebsite() {
   return (
     <div className="relative overflow-hidden font-inter">
@@ -178,3 +174,8 @@ export default function ThreeDWebsite() {
     </div>
   );
 }
+export const metadata: Metadata = {
+  title: "3D Website Development",
+  description:
+    "Avidion builds immersive 3D and animated websites that elevate your digital presence. Experience modern, interactive, and visually stunning web solutions.",
+};

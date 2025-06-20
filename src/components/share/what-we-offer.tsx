@@ -20,6 +20,7 @@ export default function WhatWeOffer() {
         glow.style.opacity = "1";
       };
       const handleMouseMove = (e: MouseEvent) => {
+        console.log("triggerd mouse move");
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
@@ -30,6 +31,27 @@ export default function WhatWeOffer() {
         card.style.setProperty("--mouse-x", `${x}px`);
         card.style.setProperty("--mouse-y", `${y}px`);
       };
+
+      const handleTouchStart = (e: TouchEvent) => {
+        const touch = e.touches[0];
+        if (!touch || !card) return;
+        const rect = card.getBoundingClientRect();
+        const x = touch.clientX - rect.left;
+        const y = touch.clientY - rect.top;
+
+        glow.style.left = `${x - 50}px`;
+        glow.style.top = `${y - 50}px`;
+
+        glow.style.opacity = "1";
+
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+
+        // Fade out after 1 secs
+        setTimeout(() => {
+          glow.style.opacity = "0";
+        }, 1000);
+      };
       const handleMouseLeave = () => {
         glow.style.opacity = "0";
       };
@@ -37,6 +59,11 @@ export default function WhatWeOffer() {
       card.addEventListener("mouseenter", handleMouseEnter);
       card.addEventListener("mousemove", handleMouseMove);
       card.addEventListener("mouseleave", handleMouseLeave);
+      card.addEventListener("touchstart", handleTouchStart);
+
+      return () => {
+        card.removeEventListener("touchstart", handleTouchStart);
+      };
     });
   }, []);
   return (
