@@ -83,19 +83,14 @@ import type { Metadata } from "next";
 export default function ThreeDWebsite() {
   return (
     <div className="relative overflow-hidden font-inter">
-      <video
-        className="absolute inset-0 h-[100vh] w-full scale-[3.8] opacity-[0.2] sm:scale-[3.23] md:scale-[1.8] lg:scale-[1.42] xl:scale-[1] xl:object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-      >
-        <source
-          src="/services/sub-services/3d-website.webm"
-          type="video/webm"
+      <div className="absolute inset-0 aspect-[300/250] md:aspect-[300/220] h-[600px] lg:aspect-[320/131] lg:h-[786px]">
+        <Image
+          alt="ai-automation"
+          src={"/services/sub-services/3d-website.png"}
+          fill
+          className="object-cover opacity-[0.2] w-full"
         />
-      </video>
+      </div>
       <div className="container relative mx-auto flex max-w-full flex-col items-start gap-[50px] pb-[40px] pt-[140px] md:gap-[66px] md:pb-[100px] md:pt-[154px] xl:pb-[163px] xl:pt-[174px]">
         <BackButton label="Services" />
         <div className="flex flex-col gap-[26px] text-white md:gap-[30px] xl:gap-[25px]">

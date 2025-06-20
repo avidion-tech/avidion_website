@@ -95,7 +95,7 @@ export default function AppDevelopment() {
     <div className="relative overflow-hidden font-inter">
       <div className="absolute right-0 top-20 aspect-[588/700] h-[420px] xl:h-[550px] 2xl:h-[600px]">
         <Image
-          alt="ai-automation"
+          alt="mobile-app-development"
           src={"/services/sub-services/mobile-app-development.png"}
           fill
           className="object-cover opacity-[0.20]"
