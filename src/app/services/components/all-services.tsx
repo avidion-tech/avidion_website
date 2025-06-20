@@ -5,31 +5,31 @@ import Link from "next/link";
 export const services = [
   {
     id: 1,
-    imageUrl: "/services/service-1.png",
-    title: "Web App Development Services",
-    content:
-      "At Avidion Softwares, we specialize in delivering end-to-end web app development services tailored to your unique business needs. As a trusted web development partner, our expert team goes beyond the surface to understand your specific challenges and craft custom, scalable, and performance-driven solutions.",
-    link: "/services/website-development",
-  },
-  {
-    id: 2,
-    imageUrl: "/services/service-2.png",
-    title: "3D & Animated Websites",
-    content:
-      "Step into the future of digital experiences with cutting-edge 3D and animated website development by Avidion Softwares. We go beyond static designs to create immersive, visually stunning, and interactive websites that capture attention and elevate your brand presence.",
-    link: "/services/3d-websites",
-  },
-  {
-    id: 3,
-    imageUrl: "/services/service-3.png",
+    imageUrl: "/services/service-1.svg",
     title: "AI Integration ",
     content:
       "At Avidion Softwares, we integrate Artificial Intelligence (AI) into your digital ecosystem to help you make smarter decisions, automate processes, and deliver personalized experiences at scale. Whether it’s an intelligent chatbot, predictive analytics engine, or AI-driven automation, we help you harness the power of AI to gain a competitive edge and drive operational efficiency.",
     link: "/services/ai-integration",
   },
   {
+    id: 2,
+    imageUrl: "/services/service-2.svg",
+    title: "AI Automation ",
+    content:
+      "Avidion Softwares, we specialize in AI Automation to transform manual, repetitive tasks into intelligent, self-operating processes. From smart workflows to decision engines, our solutions free up your team, reduce operational friction, and boost productivity—so you can focus on what really matters.",
+    link: "/services/ai-automation",
+  },
+  {
+    id: 3,
+    imageUrl: "/services/service-3.svg",
+    title: "3D & Animated Websites",
+    content:
+      "Step into the future of digital experiences with cutting-edge 3D and animated website development by Avidion Softwares. We go beyond static designs to create immersive, visually stunning, and interactive websites that capture attention and elevate your brand presence.",
+    link: "/services/3d-websites",
+  },
+  {
     id: 4,
-    imageUrl: "/services/service-4.png",
+    imageUrl: "/services/service-4.svg",
     title: "Mobile App Development",
     content:
       "At Avidion Softwares, we craft high-performance mobile applications that help businesses thrive in a mobile-first world. From concept to deployment, we specialize in building intuitive, scalable, and feature- rich apps for Android, and cross-platform environments.",
@@ -37,19 +37,44 @@ export const services = [
   },
   {
     id: 5,
-    imageUrl: "/services/service-5.png",
+    imageUrl: "/services/service-5.svg",
+    title: "Custom Software Development",
+    content:
+      "At Avidion Softwares, we deliver custom software solutions tailored to your business goals. Whether you need a web app, mobile platform, or enterprise system, our scalable and secure solutions are built to enhance efficiency, solve complex challenges, and drive growth. From idea to execution, we ensure your software evolves with your business.",
+    link: "/services/custom-software-development",
+  },
+  {
+    id: 6,
+    imageUrl: "/services/service-6.svg",
+    title: "WMS",
+    content:
+      "We build custom WMS solutions that streamline inventory, automate warehouse operations, and boost efficiency. Designed to scale with your business, our systems help reduce errors and improve logistics from the ground up.",
+    link: "/services/wms",
+  },
+  {
+    id: 7,
+    imageUrl: "/services/service-7.svg",
+    title: "ERP",
+    content:
+      "We design tailored ERP solutions that unify your business processes—finance, HR, inventory, and more—into one powerful system. Our scalable platforms improve visibility, boost productivity, and support smarter decision-making across your organization.",
+    link: "/services/erp",
+  },
+
+  {
+    id: 8,
+    imageUrl: "/services/service-8.svg",
     title: "CRM ",
     content:
       "At Avidion Softwares, we build intelligent, scalable, and user-friendly CRM systems that empower businesses to streamline customer relationships, automate sales workflows, and drive lasting loyalty. Whether you need a lightweight CRM for a startup or a robust enterprise-grade solution, our custom CRM development is designed to help you manage leads, track interactions, and grow smarter.",
     link: "/services/crm",
   },
   {
-    id: 6,
-    imageUrl: "/services/service-6.png",
-    title: "ERP & WMS",
+    id: 9,
+    imageUrl: "/services/service-9.svg",
+    title: "Website Development",
     content:
-      "We deliver tailored services that connect customer relationship management with warehouse automation—streamlining workflows, enhancing visibility, and supporting scalable business growth from lead to delivery.",
-    link: "/services/erp",
+      "We create fast, responsive, and user-friendly websites that reflect your brand and drive results. From corporate sites to e-commerce platforms, our custom-built websites are designed to engage users, enhance visibility, and support business growth.",
+    link: "/services/website-development",
   },
 ];
 export default function AllServices() {

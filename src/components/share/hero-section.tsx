@@ -45,15 +45,13 @@ function HeroSection() {
             <source src="/hero-section/bg-hero-video.webm" type="video/webm" />
           </video>
           {/* overlay over the video */}
-          <div className="absolute inset-0 bg-[linear-gradient(358deg,_rgba(0,0,0,0.00)_90.33%,#000_98.88%)] md:bg-[linear-gradient(2deg,_rgba(0,0,0,0.00)_81.43%,#000_90.93%)]"></div>
-
+          <div className="absolute inset-0 bg-[linear-gradient(0deg,_rgba(0,0,0,0.00)_70%,#000000_80.78%,_#000000_136.18%)] md:bg-[linear-gradient(2deg,_rgba(0,0,0,0.00)_81.43%,#000_90.93%)]"></div>
           {/* Hidden background image - only visible on the hover */}
           {isHovering && (
             <div
               className="transition-all duration-200 ease-out xl:absolute xl:bottom-0 xl:left-[250px] xl:right-0 xl:top-0 2xl:bottom-0 2xl:left-20 2xl:right-0 2xl:top-0"
               style={{
                 maskImage: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 0.4) 12%, transparent 18%)`,
-                // WebkitMaskImage: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 0.4) 12%, transparent 18%)`,
               }}
             >
               <Image
@@ -95,7 +93,7 @@ function HeroSection() {
                 }}
                 className="animate-gradient-wave cursor-pointer rounded-[12px] bg-[linear-gradient(131deg,_rgba(255,87,219,0.70)_25.56%,_rgba(240,200,231,0.70)_42.13%,_rgba(204,134,242,0.70)_53.02%,_rgba(157,123,242,0.70)_75.71%)] bg-[length:300%_300%] bg-repeat p-[3px] transition-all duration-300 ease-in hover:shadow-[0_0_12px_0_rgba(255,255,255,0.60)]"
               >
-                <div className="bg-black rounded-[8.6px] px-[18px] py-2 text-[12px] font-medium leading-[14px] text-white md:text-[10px] md:leading-[22px] xl:rounded-[10px] xl:px-6 xl:py-2.5 xl:text-[15.033px] xl:leading-[31.067px]">
+                <div className="rounded-[8.6px] bg-black px-[18px] py-2 text-[12px] font-medium leading-[14px] text-white md:text-[10px] md:leading-[22px] xl:rounded-[10px] xl:px-6 xl:py-2.5 xl:text-[15.033px] xl:leading-[31.067px]">
                   Book A Free Consultation
                 </div>
               </div>

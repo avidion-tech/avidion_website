@@ -109,7 +109,7 @@ export default function AiAutomation() {
       <div className="absolute inset-0 aspect-[200/165] h-[670px] opacity-20 md:aspect-[503/228] md:h-[574px] xl:aspect-[643/258] xl:h-[774px]">
         <Image
           alt="ai-automation"
-          src={"/services/sub-services/ai-automation.png"}
+          src={"/services/sub-services/ai-automation.svg"}
           fill
           className="object-cover"
         />

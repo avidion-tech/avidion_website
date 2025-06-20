@@ -83,12 +83,12 @@ import type { Metadata } from "next";
 export default function ThreeDWebsite() {
   return (
     <div className="relative overflow-hidden font-inter">
-      <div className="absolute inset-0 aspect-[300/250] md:aspect-[300/220] h-[600px] lg:aspect-[320/131] lg:h-[786px]">
+      <div className="absolute inset-0 aspect-[300/250] h-[600px] md:aspect-[300/220] lg:aspect-[320/131] lg:h-[786px]">
         <Image
           alt="ai-automation"
-          src={"/services/sub-services/3d-website.png"}
+          src={"/services/sub-services/3d-website.svg"}
           fill
-          className="object-cover opacity-[0.2] w-full"
+          className="w-full object-cover opacity-[0.2]"
         />
       </div>
       <div className="container relative mx-auto flex max-w-full flex-col items-start gap-[50px] pb-[40px] pt-[140px] md:gap-[66px] md:pb-[100px] md:pt-[154px] xl:pb-[163px] xl:pt-[174px]">

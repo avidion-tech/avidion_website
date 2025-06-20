@@ -96,7 +96,7 @@ export default function CRM() {
       <div className="absolute inset-0 aspect-[278/395] h-[734px] md:aspect-[350/160] md:h-[520px] xl:aspect-[384/161] xl:h-[805px]">
         <Image
           alt="ai-automation"
-          src={"/services/sub-services/crm.png"}
+          src={"/services/sub-services/crm.svg"}
           fill
           className="object-cover opacity-[0.20]"
         />
