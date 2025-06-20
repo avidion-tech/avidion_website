@@ -11,7 +11,6 @@ import { useMediaQuery } from "@uidotdev/usehooks";
 import { RxCross2 } from "react-icons/rx";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
-import path from "path";
 
 export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);

@@ -89,7 +89,7 @@ const socialIcons = [
 const Footer = () => {
   return (
     <>
-      <div className="container flex max-w-full flex-col items-start justify-between gap-[48px] py-[89px] font-inter md:flex-row">
+      <div className="container mx-auto flex w-full flex-col items-start justify-between gap-[48px] py-[89px] font-inter md:flex-row">
         <div className="flex basis-full flex-col gap-8 md:basis-[40%] xl:basis-[30%]">
           <div className="flex flex-col gap-10">
             <div className="flex items-center gap-2 md:gap-2.5 xl:gap-[15px]">

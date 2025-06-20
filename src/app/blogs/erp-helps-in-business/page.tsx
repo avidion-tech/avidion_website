@@ -1,18 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa6";
+import BackButton from "@/components/share/back-button";
 export default function ErpHelpsInBusiness() {
   return (
     <>
       <div className="container flex max-w-full flex-col items-start gap-[33px] py-[142px] text-white md:gap-[50px] xl:gap-[66px]">
         <div className="flex flex-col items-start gap-6 md:gap-[50px]">
-          <Link
-            href="/blogs"
-            className="flex flex-row items-center gap-2 rounded-[4px] border border-[#535353] px-[11px] py-2 text-xs text-[#EDEDED] md:px-[25px] md:py-[9px] md:text-sm"
-          >
-            <FaArrowLeft size={18} color="#C0C0C0" strokeWidth={0.1} />
-            Back To Blogs
-          </Link>
+          <BackButton label="Blogs" />
+
           <div className="flex flex-col gap-[21px] md:gap-[34px]">
             <div className="text-xl font-medium md:text-[28px] md:leading-[46px] xl:text-4xl">
               How Does ERP Help to Manage Business Processes?

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: {
+    template: "%s | Services | Avidion ",
+    default: "Services",
+  },
   description:
     "Explore Avidion's full-service offering: AI development, mobile & web apps, CRM/ERP, SaaS, 3D experiences, cloud integration, and more.",
 };

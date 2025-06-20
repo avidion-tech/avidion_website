@@ -89,43 +89,66 @@ export const blogs = [
 export const whatWeOfferCards = [
   {
     id: 1,
-    title: "Custom Website Development",
-    content:
-      "Tailor-made, responsive, and lightning-fast websites built with the latest tech stack.",
+    title: "AI Integration & Chatbots",
+    content: "Stay connected with users through smart, 24/7 conversations.",
     icon: "/what-we-offer/icon-1.svg",
+    link: "/services/ai-integration",
   },
   {
     id: 2,
-    title: "AI Integration & Chatbots",
-    content: "Visual insights into your site’s performance.",
+    title: "AI Automation",
+    content: "Automate daily tasks so your team can focus on what matters.",
     icon: "/what-we-offer/icon-2.svg",
+    link: "/services/ai-automation",
   },
   {
     id: 3,
-    title: "Mobile App Development",
-    content: "Automatic suggestions and the best keywords to target.",
+    title: "3D and Animated Website",
+    content: "Bring your brand to life with rich 3D and motion effects.",
     icon: "/what-we-offer/icon-3.svg",
+    link: "/services/3d-websites",
   },
   {
     id: 4,
-    title: "CRM",
-    content:
-      "Salesforce, HubSpot, Zoho CRM tailored to enhance customer satisfaction, raising scores by 25%.",
+    title: "Mobile App Development",
+    content: "Build smooth, user-friendly apps your audience will love.",
     icon: "/what-we-offer/icon-4.svg",
+    link: "/services/mobile-app-development",
   },
   {
     id: 5,
-    title: "3D Websites",
-    content:
-      "3D websites capture attention and create memorable brand stories through immersive visuals and interaction.",
+    title: "Custom Software Development",
+    content: "Get software tailored to your exact business needs.",
     icon: "/what-we-offer/icon-5.svg",
+    link: "/services/custom-software-development",
   },
   {
     id: 6,
-    title: "WMS & ERP Systems",
-    content:
-      "Seamless warehouse management system integration reduces inventory costs by 15%.",
+    title: "WMS",
+    content: "Make inventory smarter with real-time tracking and control.",
     icon: "/what-we-offer/icon-6.svg",
+    link: "/services/wms",
+  },
+  {
+    id: 7,
+    title: "ERP",
+    content: "Run your business better with everything in one system.",
+    icon: "/what-we-offer/icon-7.svg",
+    link: "/services/erp",
+  },
+  {
+    id: 8,
+    title: "CRM",
+    content: "Track leads, grow relationships, and drive loyalty.",
+    icon: "/what-we-offer/icon-8.svg",
+    link: "/services/crm",
+  },
+  {
+    id: 9,
+    title: "Website Development",
+    content: "Craft beautiful, high-performing websites that get results.",
+    icon: "/what-we-offer/icon-9.svg",
+    link: "/services/website-development",
   },
 ];
 
@@ -355,6 +378,307 @@ export const currentOpenings = [
 export const websiteDevProcess = [
   {
     title: "Requirement Analysis",
+    description: "Identify business goals, content needs, and target audience.",
+    icon: IoSearch,
+  },
+  {
+    title: "Planning",
+    description: "Sitemap design, feature planning, and content wireframes.",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "Design",
+    description:
+      "UI/UX prototypes, theme selection, and visual identity design.",
+    icon: BiPaint,
+  },
+  {
+    title: "Development",
+    description:
+      "Build responsive frontend, integrate backend (if required), and connect CMS for content management.",
+    icon: LuCodeXml,
+  },
+  {
+    title: "Testing",
+    description:
+      "Cross-browser testing, SEO validation, mobile responsiveness.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Deployment",
+    description:
+      "Deploy to a secure, high-performance hosting platform with CDN, asset optimization, and SEO best practices.",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Maintenance",
+    description: "Regular updates, performance tuning, content edits.",
+    icon: FaChartLine,
+  },
+];
+
+export const aiAutomationProcess = [
+  {
+    title: "Process Mapping",
+    description:
+      "Identify repetitive, rule-based, and time-consuming workflows across departments.",
+    icon: IoSearch,
+  },
+  {
+    title: "Tool Selection & Planning",
+    description:
+      "Choose the right AI tools (e.g., NLP, ML models, RPA) and define goals for automation with clear ROI targets.",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "Workflow Design",
+    description:
+      " Design intelligent automation flows with logic gates, triggers, exception handling, and human-in-the-loop checkpoints.",
+    icon: BiPaint,
+  },
+  {
+    title: "Implementation & Integration",
+    description:
+      "Deploy automation scripts, connect APIs, and integrate with existing platforms (CRM, ERP, ticketing systems, etc).",
+    icon: LuCodeXml,
+  },
+  {
+    title: "Testing & Optimization",
+    description:
+      "Simulate workflows, monitor performance, optimize decision accuracy, and handle edge cases.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Deployment",
+    description:
+      "Go live with monitoring dashboards, load balancing, and fallback mechanisms.",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Continuous Improvement",
+    description:
+      "Continuously monitor task efficiency, retrain models, and scale automation to new business units.",
+    icon: FaChartLine,
+  },
+];
+
+export const aiIntegrationProcess = [
+  {
+    title: "Requirement Analysis",
+    description: "Define process challenges, data availability, and AI goals.",
+    icon: IoSearch,
+  },
+  {
+    title: "Planning",
+    description:
+      "Model selection, data preprocessing plans, integration roadmap.",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "Design",
+    description: "AI UX for predictions, dashboards, and control panels.",
+    icon: BiPaint,
+  },
+  {
+    title: "Development",
+    description:
+      "Model training, algorithm development, API setup, and frontend integration.",
+    icon: LuCodeXml,
+  },
+  {
+    title: "Testing",
+    description: "Model accuracy, precision/recall,integration/unit tests.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Deployment",
+    description: "Model deployment (cloud/on-prem), monitor via MLOps tools.",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Maintenanace",
+    description:
+      "Retraining models, performancetuning, retriggering pipelines.",
+    icon: FaChartLine,
+  },
+];
+
+export const appDevelopmentProcess = [
+  {
+    title: "Requirement Analysis",
+    description:
+      "Platform selection (iOS/Android), features, and target users.",
+    icon: IoSearch,
+  },
+  {
+    title: "Planning",
+    description:
+      "Define tech stack (Flutter, React Native, Swift), backend needs.",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "Design",
+    description: " UI/UX mockups with mobile responsiveness and gestures.",
+    icon: BiPaint,
+  },
+  {
+    title: "Development",
+    description:
+      "Frontend build, backend APIs, local storage, push notifications.",
+    icon: LuCodeXml,
+  },
+  {
+    title: "Testing",
+    description: "Unit, device, performance, and crash testing.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Deployment",
+    description: "Publish on App Store & Google Play with ASO.",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Maintenanace",
+    description: "Monitor usage, push updates, fix OS compatibility issues.",
+    icon: FaChartLine,
+  },
+];
+
+export const crmProcess = [
+  {
+    title: "Requirement Analysis",
+    description:
+      "Understand business needs, user roles, data flows, and current tools.",
+    icon: IoSearch,
+  },
+  {
+    title: "Planning",
+    description:
+      "Choose CRM platform (e.g., Salesforce, HubSpot), define modules, set integration points.",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "Design",
+    description:
+      "Design user-friendly workflows, custom dashboards, and automation flows.",
+    icon: BiPaint,
+  },
+  {
+    title: "Development",
+    description:
+      "Configure CRM, develop custom fields/modules, automate tasks, integrate third-party tools.",
+    icon: LuCodeXml,
+  },
+  {
+    title: "Testing",
+    description:
+      "Verify data accuracy, workflow logic, role-based access, and integration stability.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Deployment",
+    description:
+      "Go live with training, user onboarding, and data migration from existing systems.",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Maintenanace",
+    description:
+      "Ongoing support, feature updates, performance monitoring, and user feedback optimization.",
+    icon: FaChartLine,
+  },
+];
+
+export const erpProcess = [
+  {
+    title: "Requirement Analysis",
+    description: "Gather and document business needs and system requirements.",
+    icon: IoSearch,
+  },
+  {
+    title: "Planning",
+    description:
+      "Define project scope, resources, timelines, and risk management strategies.",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "Software Design",
+    description:
+      "Develop architectural and detailed design specifications for the ERP system.",
+    icon: BiPaint,
+  },
+  {
+    title: "Development",
+    description:
+      "Build and configure the ERP software according to design specifications.",
+    icon: LuCodeXml,
+  },
+  {
+    title: "Testing",
+    description:
+      "Conduct thorough testing to ensure the system meets requirements and is free of defects.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Deployment",
+    description:
+      "Roll out the ERP system to users, often in stages, and provide training and support",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Maintenanace",
+    description:
+      "Ongoing support, feature updates, performance monitoring, and user feedback optimization.",
+    icon: FaChartLine,
+  },
+];
+
+export const wmsProcess = [
+  {
+    title: "Requirement Analysis",
+    description: "Identify business needs, challenges, and goals. Define project scope, KPIs, timeline, and budget.",
+    icon: IoSearch,
+  },
+  {
+    title: "Vendor Selection & Planning",
+    description:"Choose a WMS based on features, deployment type, and industry fit. Create a roadmap with resources and timelines.",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "Design & Configuration",
+    description:
+      "Customize the WMS to match workflows, layout, storage logic, and integration needs.",
+    icon: BiPaint,
+  },
+  {
+    title: "Development & Integration",
+    description:
+      "Install and configure the WMS. Connect with ERP, TMS, and automation tools for seamless operations.",
+    icon: LuCodeXml,
+  },
+  {
+    title: "Testing",
+    description:
+      "Run functional, integration, and user acceptance testing to ensure stability and performance.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Training & Deployment",
+    description:
+      "Train users across teams and roll out the system. Monitor live performance and resolve initial issues.",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Continuous Improvement",
+    description:
+      "Gather feedback, review system performance, and implement regular updates and optimizations.",
+    icon: FaChartLine,
+  },
+];
+
+export const ThreedwebsiteProcess = [
+  {
+    title: "Requirement Analysis",
     description:
       "Understand client vision, 3D objectives, target audience, devices supported.",
     icon: IoSearch,
@@ -368,13 +692,13 @@ export const websiteDevProcess = [
   {
     title: "Design (UX + 3D Design)",
     description:
-      " Design UI/UX wireframes plus 3D scenes and assets (using Blender, Figma, etc.).",
+      "Design UI/UX wireframes plus 3D scenes and assets (using Blender, Figma, etc).",
     icon: BiPaint,
   },
   {
     title: "Development",
     description:
-      "Code WebGL/Three.js scenes, integrate GSAP for animation, link backend APIs.",
+      "Build frontend UI, integrate backend (if needed), and develop 3D scenes using Three.js/WebGL. Add animations with GSAP and connect APIs or CMS as required.",
     icon: LuCodeXml,
   },
   {
@@ -390,9 +714,52 @@ export const websiteDevProcess = [
     icon: HiOutlineRocketLaunch,
   },
   {
-    title: "Maintenance",
+    title: "Maintenanace",
     description:
       "Update 3D content, add new features, optimize performance over time.",
+    icon: FaChartLine,
+  },
+];
+
+export const csdProcess = [
+  {
+    title: "Requirement Analysis",
+    description: "Engage stakeholders to define goals, business needs, and detailed software requirements.",
+    icon: IoSearch,
+  },
+  {
+    title: "Feasibility Study",
+    description:"Assess technical, operational, and financial viability of the project.",
+    icon: MdAppRegistration,
+  },
+  {
+    title: "System Design",
+    description:
+      "Create architecture, wireframes, and plan system integration.",
+    icon: BiPaint,
+  },
+  {
+    title: "Development",
+    description:
+      "Write and integrate code in phases using best practices.",
+    icon: LuCodeXml,
+  },
+  {
+    title: " Testing & QA",
+    description:
+      "Run unit, integration, and user tests to ensure quality and reliability.",
+    icon: GoFileCode,
+  },
+  {
+    title: "Deployment",
+    description:
+      "Launch the software, configure systems, and train users.",
+    icon: HiOutlineRocketLaunch,
+  },
+  {
+    title: "Operations & Maintenance",
+    description:
+      "Provide support, updates, bug fixes, and enhancements based on feedback.",
     icon: FaChartLine,
   },
 ];

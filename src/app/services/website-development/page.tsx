@@ -122,15 +122,20 @@ const mainHighlights = [
   "Seamless integrations with third-party tools",
 ];
 import Image from "next/image";
-import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa6";
+import BackButton from "@/components/share/back-button";
 import Process from "./process";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Custom Website Development Services",
+  description:
+    "Avidion delivers fast, SEO-optimized, mobile-responsive websites tailored to your business goals. From custom UI to scalable architecture — we build to perform and convert.",
+};
 export default function WebsiteDevelopment() {
   return (
     <div className="relative overflow-hidden font-inter">
       <video
-        className="absolute inset-0 h-[100vh] w-full scale-[3.5] sm:scale-[3] opacity-30 md:scale-[1.8] lg:scale-[1.44] xl:scale-[1] xl:object-cover"
+        className="absolute inset-0 h-[100vh] w-full scale-[3.5] opacity-30 sm:scale-[3] md:scale-[1.8] lg:scale-[1.44] xl:scale-[1] xl:object-cover"
         autoPlay
         loop
         muted
@@ -142,19 +147,13 @@ export default function WebsiteDevelopment() {
           type="video/webm"
         />
       </video>
-      <div className="container relative mx-auto flex max-w-full flex-col items-start gap-[50px] pb-[40px] pt-[140px] md:pt-[154px] md:gap-[66px] md:pb-[100px] xl:pb-[163px] xl:pt-[174px]">
-        <Link
-          href="/services"
-          className="flex flex-row items-center gap-2 rounded-[4px] border border-[#535353] px-[11px] py-2 text-xs text-[#EDEDED] md:px-[25px] md:py-[9px] md:text-sm"
-        >
-          <FaArrowLeft size={18} color="#C0C0C0" strokeWidth={0.1} />
-          Back To Services
-        </Link>
+      <div className="container relative mx-auto flex max-w-full flex-col items-start gap-[50px] pb-[40px] pt-[140px] md:gap-[66px] md:pb-[100px] md:pt-[154px] xl:pb-[163px] xl:pt-[174px]">
+        <BackButton label="Services" />
         <div className="flex flex-col gap-[36px] md:gap-[56px] xl:gap-[66px]">
           <div className="flex flex-col gap-[26px] text-white md:gap-[30px] xl:gap-[25px]">
-            <div className="text-xl font-medium sm:text-2xl md:text-4xl lg:text-[42px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
+            <h1 className="text-xl font-medium sm:text-2xl md:text-4xl lg:text-[42px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
               Website Development
-            </div>
+            </h1>
             <p className="text-sm font-normal md:text-base xl:text-xl">
               We design and develop custom, high-performance websites tailored
               to your business objectives. Our websites are  visually stunning,
@@ -162,7 +161,7 @@ export default function WebsiteDevelopment() {
               search engines and conversions.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:gap-x-[109px] lg:content-between gap-y-10 md:grid-cols-2 md:gap-y-[54px] xl:gap-y-[34px]">
+          <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-[109px] md:gap-y-[54px] lg:content-between xl:gap-y-[34px]">
             {mainHighlights.map((item, index) => (
               <div
                 key={index}

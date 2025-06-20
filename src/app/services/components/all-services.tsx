@@ -17,7 +17,7 @@ export const services = [
     title: "3D & Animated Websites",
     content:
       "Step into the future of digital experiences with cutting-edge 3D and animated website development by Avidion Softwares. We go beyond static designs to create immersive, visually stunning, and interactive websites that capture attention and elevate your brand presence.",
-    link: "/services/3d-and-animated-website",
+    link: "/services/3d-websites",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ export const services = [
     title: "ERP & WMS",
     content:
       "We deliver tailored services that connect customer relationship management with warehouse automation—streamlining workflows, enhancing visibility, and supporting scalable business growth from lead to delivery.",
-    link: "/services/erp-and-wms",
+    link: "/services/erp",
   },
 ];
 export default function AllServices() {
