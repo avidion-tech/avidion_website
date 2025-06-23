@@ -1,15 +1,11 @@
-'use client'
+"use client";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-} from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent } from "@/components/ui/sheet";
 import { RxCross2 } from "react-icons/rx";
 import { Dialog, DialogClose, DialogContent } from "@/components/ui/dialog";
 import CareerForm from "@/components/forms/career-form";
@@ -69,7 +65,14 @@ function CurrentOpenings() {
                     </div>
                   </div>
 
-                  <AccordionTrigger></AccordionTrigger>
+                  <AccordionTrigger>
+                    <button className="whitespace-nowrap rounded-[8px] border border-[rgba(255,255,255,0.15)] bg-[linear-gradient(90deg,_rgba(157,46,135,0.40)_0%,_rgba(84,41,153,0.40)_100%)] px-[17px] py-[6px] text-xs font-medium text-[#F8F8FC] shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] group-data-[state=open]:hidden md:text-sm">
+                      View Details
+                    </button>
+                    <button className="whitespace-nowrap rounded-[8px] border border-[rgba(255,255,255,0.15)] bg-[rgba(61,61,61,0.40)] px-[17px] py-[6px] text-xs font-medium text-[#F8F8FC] shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] backdrop-blur-[7px] group-data-[state=closed]:hidden md:text-sm">
+                      Hide Details
+                    </button>
+                  </AccordionTrigger>
                 </div>
                 <AccordionContent className="bg-[#141315] px-[25px]">
                   <div className="border-t-opacity-60 flex flex-col items-end gap-[30px] border-t border-[#4A4A4A] py-8">
@@ -125,10 +128,7 @@ function CurrentOpenings() {
               <CareerForm />
 
               <SheetClose asChild onClick={() => setOpen(false)}>
-                <RxCross2
-              
-                  className="absolute right-4 top-4 size-4 text-white"
-                />
+                <RxCross2 className="absolute right-4 top-4 size-4 text-white" />
               </SheetClose>
             </SheetContent>
           </Sheet>

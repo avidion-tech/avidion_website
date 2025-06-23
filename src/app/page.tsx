@@ -4,16 +4,16 @@ import OurToolkit from "@/components/share/our-toolkit";
 import WhyChooseUs from "@/components/share/why-choose-us";
 import OurBlogs from "@/components/share/our-blogs";
 import HowWeWork from "@/components/share/how-we-work";
+import FAQ from "@/components/share/faq";
 export default function HomePage() {
   return (
     <>
       <HeroSection />
       <WhatWeOffer />
-      {/* <WhatWeOfferNew/> */}
       <WhyChooseUs />
       {/* <OurToolkit /> */}
       <HowWeWork />
-      {/* <ContactForm /> */}
+      <FAQ/>
       <OurBlogs />
     </>
   );

@@ -636,12 +636,14 @@ export const erpProcess = [
 export const wmsProcess = [
   {
     title: "Requirement Analysis",
-    description: "Identify business needs, challenges, and goals. Define project scope, KPIs, timeline, and budget.",
+    description:
+      "Identify business needs, challenges, and goals. Define project scope, KPIs, timeline, and budget.",
     icon: IoSearch,
   },
   {
     title: "Vendor Selection & Planning",
-    description:"Choose a WMS based on features, deployment type, and industry fit. Create a roadmap with resources and timelines.",
+    description:
+      "Choose a WMS based on features, deployment type, and industry fit. Create a roadmap with resources and timelines.",
     icon: MdAppRegistration,
   },
   {
@@ -724,12 +726,14 @@ export const ThreedwebsiteProcess = [
 export const csdProcess = [
   {
     title: "Requirement Analysis",
-    description: "Engage stakeholders to define goals, business needs, and detailed software requirements.",
+    description:
+      "Engage stakeholders to define goals, business needs, and detailed software requirements.",
     icon: IoSearch,
   },
   {
     title: "Feasibility Study",
-    description:"Assess technical, operational, and financial viability of the project.",
+    description:
+      "Assess technical, operational, and financial viability of the project.",
     icon: MdAppRegistration,
   },
   {
@@ -740,8 +744,7 @@ export const csdProcess = [
   },
   {
     title: "Development",
-    description:
-      "Write and integrate code in phases using best practices.",
+    description: "Write and integrate code in phases using best practices.",
     icon: LuCodeXml,
   },
   {
@@ -752,8 +755,7 @@ export const csdProcess = [
   },
   {
     title: "Deployment",
-    description:
-      "Launch the software, configure systems, and train users.",
+    description: "Launch the software, configure systems, and train users.",
     icon: HiOutlineRocketLaunch,
   },
   {
@@ -761,5 +763,49 @@ export const csdProcess = [
     description:
       "Provide support, updates, bug fixes, and enhancements based on feedback.",
     icon: FaChartLine,
+  },
+];
+
+export const faqs = [
+  {
+    question: "What industries do you specialize in?",
+    answer:
+      "We work across various industries including retail, logistics, finance, healthcare, education, and SaaS. Our adaptable team can tailor solutions to fit any business domain.",
+  },
+  {
+    question: "Can I customize a service to suit my business needs?",
+    answer:
+      "Absolutely. Every service we offer—from software to automation—is built to fit your unique goals, processes, and team workflows.",
+  },
+  {
+    question: "How do I know which service is right for me?",
+    answer:
+      "We offer a free consultation to understand your business challenges and guide you toward the right solution—whether that’s automation, app development, or a full ERP.",
+  },
+  {
+    question: "What is the typical timeline for a project?",
+    answer:
+      "Timelines vary by scope. Smaller projects like a website or chatbot can take 2–4 weeks, while larger systems like ERP or WMS may take 8–16 weeks. We’ll share a clear roadmap before we begin.",
+  },
+  {
+    question: "Do you offer post-launch support and maintenance?",
+    answer:
+      "Yes. We provide ongoing support, maintenance, and updates to ensure your system stays secure, up-to-date, and fully functional.",
+  },
+  {
+    question: "How does pricing work for these services?",
+    answer:
+      "Pricing depends on project scope, features, and integrations. We offer fixed-cost and milestone-based models after assessing your requirements.",
+  },
+  {
+    question:
+      "Is there a consultation or discovery phase before development starts?",
+    answer:
+      " Yes, every project starts with a discovery session where we align on goals, scope, timelines, and tech stack to ensure full transparency.",
+  },
+  {
+    question: " Do you work with startups as well as enterprises?",
+    answer:
+      "Definitely. Whether you're a startup with an idea or an enterprise looking to scale, we tailor our approach to match your stage and needs.",
   },
 ];
