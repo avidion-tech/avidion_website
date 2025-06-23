@@ -7,7 +7,6 @@ import { useEffect, useRef, useState } from "react";
 import { Dialog, DialogClose, DialogContent } from "../ui/dialog";
 import ContactForm from "../forms/contact-form";
 import { Sheet, SheetClose, SheetContent } from "@/components/ui/sheet";
-import { useMediaQuery } from "@uidotdev/usehooks";
 import { RxCross2 } from "react-icons/rx";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
@@ -17,7 +16,6 @@ export default function Navbar() {
   const hamburgerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
-  const isSmallDevice = useMediaQuery("only screen and (max-width : 767px)");
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
   const pathname = usePathname();
@@ -175,29 +173,28 @@ export default function Navbar() {
       </div>
 
       {/* contact us form dialog */}
-      {isSmallDevice ? (
-        <>
-          <Sheet
-            open={isOpen}
-            onOpenChange={(open) => {
-              if (!open) {
-                handleClose();
-              }
-            }}
+      <div className="flex md:hidden">
+        <Sheet
+          open={isOpen}
+          onOpenChange={(open) => {
+            if (!open) {
+              handleClose();
+            }
+          }}
+        >
+          <SheetContent
+            side="bottom"
+            className="h-[80vh] overflow-y-auto border border-none bg-[#141315] pb-[80px] transition-transform duration-500"
           >
-            <SheetContent
-              side="bottom"
-              className="h-[80vh] overflow-y-auto border border-none bg-[#141315] pb-[80px] transition-transform duration-500"
-            >
-              <ContactForm />
+            <ContactForm />
 
-              <SheetClose asChild onClick={() => handleClose()}>
-                <RxCross2 className="absolute right-4 top-4 size-4 text-white" />
-              </SheetClose>
-            </SheetContent>
-          </Sheet>
-        </>
-      ) : (
+            <SheetClose asChild onClick={() => handleClose()}>
+              <RxCross2 className="absolute right-4 top-4 size-4 text-white" />
+            </SheetClose>
+          </SheetContent>
+        </Sheet>
+      </div>
+      <div className="hidden md:flex">
         <Dialog
           open={isOpen}
           onOpenChange={(open) => {
@@ -211,7 +208,7 @@ export default function Navbar() {
             <DialogClose></DialogClose>
           </DialogContent>
         </Dialog>
-      )}
+      </div>
     </>
   );
 }

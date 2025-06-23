@@ -1,6 +1,6 @@
 import Footer from "@/components/share/footer";
 import Navbar from "@/components/share/navbar";
-import NavbarWrapper from "@/components/share/navbar-wrapper";
+import { Toaster } from "@/components/ui/sonner";
 import WhatsAppIcon from "@/components/whatsapp";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
@@ -27,7 +27,7 @@ export default function RootLayout({
         <main className="bg-[#020103]">
           {/* useSearchParams needs to be wrapped in suspense boundary */}
           <Suspense>
-            <NavbarWrapper />
+            <Navbar/>
             {children}
           </Suspense>
           <Footer />

@@ -107,6 +107,8 @@ export default function AIntegration() {
           alt="ai-automation"
           src={"/services/sub-services/ai-integration.svg"}
           fill
+          priority
+          loading="eager"
           className="object-cover opacity-[0.5]"
         />
       </div>

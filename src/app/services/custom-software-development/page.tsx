@@ -105,6 +105,8 @@ export default function CRM() {
           alt="ai-automation"
           src={"/services/sub-services/custom-software-dev.svg"}
           fill
+          priority
+          loading="eager"
           className="object-cover opacity-[0.20]"
         />
       </div>

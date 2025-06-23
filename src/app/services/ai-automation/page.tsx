@@ -111,6 +111,8 @@ export default function AiAutomation() {
           alt="ai-automation"
           src={"/services/sub-services/ai-automation.svg"}
           fill
+          priority
+          loading="eager"
           className="object-cover"
         />
       </div>

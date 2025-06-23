@@ -98,6 +98,8 @@ export default function AppDevelopment() {
           alt="mobile-app-development"
           src={"/services/sub-services/mobile-app-development.png"}
           fill
+          priority
+          loading="eager"
           className="object-cover opacity-[0.20]"
         />
       </div>

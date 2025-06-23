@@ -88,6 +88,8 @@ export default function ThreeDWebsite() {
           alt="ai-automation"
           src={"/services/sub-services/3d-website.svg"}
           fill
+          priority
+          loading="eager"
           className="w-full object-cover opacity-[0.2]"
         />
       </div>
@@ -95,7 +97,7 @@ export default function ThreeDWebsite() {
         <BackButton label="Services" />
         <div className="flex flex-col gap-[26px] text-white md:gap-[30px] xl:gap-[25px]">
           <h1 className="text-xl font-medium sm:text-2xl md:text-4xl lg:text-[42px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
-            3D Websites
+            3D & Animated Websites
           </h1>
           <p className="text-sm font-normal md:text-base xl:text-xl">
             Step into the future of digital experiences with cutting-edge 3D and

@@ -98,11 +98,13 @@ export default function CRM() {
           alt="ai-automation"
           src={"/services/sub-services/crm.svg"}
           fill
+          priority
+          loading="eager"
           className="object-cover opacity-[0.20]"
         />
       </div>
       <div className="container relative mx-auto flex w-full flex-col items-start gap-[50px] pb-[100px] pt-[140px] md:gap-[66px] md:pt-[154px] xl:pb-[200px] xl:pt-[174px] 2xl:pb-[233px]">
-        <BackButton label="Services"/>
+        <BackButton label="Services" />
 
         <div className="flex flex-col gap-[26px] text-white md:gap-[30px] xl:gap-[25px]">
           <h1 className="text-xl font-medium sm:text-2xl md:text-4xl lg:text-[42px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">

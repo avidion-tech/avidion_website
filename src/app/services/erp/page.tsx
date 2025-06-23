@@ -110,6 +110,8 @@ export default function ERP() {
           alt="ai-automation"
           src={"/services/sub-services/erp.svg"}
           fill
+          priority
+          loading="eager"
           className="object-cover opacity-[0.20]"
         />
       </div>

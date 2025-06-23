@@ -104,6 +104,8 @@ export default function WMS() {
           alt="ai-automation"
           src={"/services/sub-services/wms.svg"}
           fill
+          priority
+          loading="eager"
           className="object-cover opacity-[0.20]"
         />
       </div>
