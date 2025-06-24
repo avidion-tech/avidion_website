@@ -1,31 +1,19 @@
 "use client";
 import { navItems } from "@/data";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { Dialog, DialogClose, DialogContent } from "../ui/dialog";
-import ContactForm from "../forms/contact-form";
-import { Sheet, SheetClose, SheetContent } from "@/components/ui/sheet";
-import { RxCross2 } from "react-icons/rx";
-import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/navigation";
+import ContactUs from "./contact-us";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);
   const hamburgerRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const pathname = usePathname();
+  const router = useRouter();
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
-  const pathname = usePathname();
-
-  const isOpen = searchParams.get("open") === "true";
-
-  const handleClose = () => {
-    params.delete("open");
-    router.push(`/?${params.toString()}`, { scroll: false });
-  };
 
   const manageOutsideClick = (e: MouseEvent) => {
     const target = e.target as Node;
@@ -172,43 +160,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* contact us form dialog */}
-      <div className="flex md:hidden">
-        <Sheet
-          open={isOpen}
-          onOpenChange={(open) => {
-            if (!open) {
-              handleClose();
-            }
-          }}
-        >
-          <SheetContent
-            side="bottom"
-            className="h-[80vh] overflow-y-auto border border-none bg-[#141315] pb-[80px] transition-transform duration-500"
-          >
-            <ContactForm />
-
-            <SheetClose asChild onClick={() => handleClose()}>
-              <RxCross2 className="absolute right-4 top-4 size-4 text-white" />
-            </SheetClose>
-          </SheetContent>
-        </Sheet>
-      </div>
-      <div className="hidden md:flex">
-        <Dialog
-          open={isOpen}
-          onOpenChange={(open) => {
-            if (!open) {
-              handleClose();
-            }
-          }}
-        >
-          <DialogContent className="max-h-screen w-screen overflow-y-auto rounded-[4px] border border-none bg-[#141315] md:w-[95%] xl:w-[80%] 2xl:w-[60%]">
-            <ContactForm />
-            <DialogClose></DialogClose>
-          </DialogContent>
-        </Dialog>
-      </div>
+      <ContactUs />
     </>
   );
 }

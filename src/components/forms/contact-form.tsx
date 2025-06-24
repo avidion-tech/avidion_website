@@ -21,6 +21,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import createContact from "@/actions/contact-action";
 import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export const contactFormSchema = z.object({
   name: z.string().min(2, "Name should be min of 3 chars."),
@@ -31,6 +32,10 @@ export const contactFormSchema = z.object({
 
 const ContactForm = () => {
   const [loading, setLoading] = useState<boolean>(false);
+  const searchParams = useSearchParams();
+
+  const router = useRouter();
+  const params = new URLSearchParams(searchParams.toString());
 
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
@@ -60,8 +65,11 @@ const ContactForm = () => {
         data,
       );
       toast.success(contactFormResp.message);
+      params.delete("open");
+      router.push(`/?${params.toString()}`, { scroll: false });
     } catch (err) {
       console.log("error is", err);
+      toast.error("Error in submitting the form.");
     } finally {
       form.reset();
       setLoading(false);
@@ -195,20 +203,21 @@ const ContactForm = () => {
 
             <button
               type="submit"
-              className="mt-2.5 rounded-[12px] border border-[#EB88D6] bg-[rgba(0,0,0,0.16)] p-1.5 backdrop-blur-[94.64px]"
+              disabled={loading}
+              className={`${loading ? "cursor-not-allowed opacity-50" : "opacity-100"} mt-2.5 rounded-[12px] border border-[#EB88D6] bg-[rgba(0,0,0,0.16)] p-1.5 backdrop-blur-[94.64px]`}
             >
-              <div className="rounded-[8px] border-white/15 bg-[linear-gradient(90deg,_rgba(157,46,135,0.4)_0%,_rgba(84,41,153,0.4)_100%)] px-[15px] py-1 font-inter text-sm text-white shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] backdrop-blur-[7px] transition-all duration-700 ease-in-out hover:bg-[linear-gradient(90deg_,rgba(201,104,182,0.40)_0%,_rgba(121,81,186,0.40)_100%)]">
-                Submit
+              <div
+                className={`${loading ? "bg-transparent" : "hover:bg-[linear-gradient(90deg_,rgba(201,104,182,0.40)_0%,_rgba(121,81,186,0.40)_100%)]"} rounded-[8px] border-white/15 bg-[linear-gradient(90deg,_rgba(157,46,135,0.4)_0%,_rgba(84,41,153,0.4)_100%)] px-[15px] py-1 font-inter text-sm text-white shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] backdrop-blur-[7px] transition-all duration-700 ease-in-out`}
+              >
+                {loading ? "Submitting..." : "Submit"}
               </div>
             </button>
           </form>
         </Form>
 
-        <div className="absolute left-[10%] top-[10%] z-0 size-[200px] animate-blob rounded-full bg-[#622A9A] opacity-[0.26] blur-2xl md:-bottom-1/4 md:blur-[65.43px] xl:size-[332px]"></div>
-        <div className="absolute left-[4%] top-[20%] z-0 size-[280px] rotate-[3.425deg] animate-blob rounded-full bg-[#A5318A] opacity-[0.26] blur-3xl md:blur-[155.996px] xl:size-[482px]"></div>
+        <div className="animation-delay-1 absolute left-[10%] top-[10%] z-0 size-[200px] animate-blob rounded-full bg-[#622A9A] opacity-[0.26] blur-2xl md:-bottom-1/4 md:blur-[65.43px] xl:size-[332px]"></div>
+        <div className="animation-delay-2 absolute left-[4%] top-[20%] z-0 size-[280px] rotate-[3.425deg] animate-blob rounded-full bg-[#A5318A] opacity-[0.26] blur-3xl md:blur-[155.996px] xl:size-[482px]"></div>
       </div>
-      {/* md:blur-[65.43px]
-      md:blur-[155.996px] */}
     </>
   );
 };

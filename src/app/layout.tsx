@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Avidion is a cutting-edge software development company in India. We craft AI-powered websites, mobile apps, and custom CRM, ERP & SaaS solutions with 3D, animation, and cloud integration.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
-  keywords:[]
+  keywords: [],
 };
 
 export default function RootLayout({
@@ -27,12 +27,12 @@ export default function RootLayout({
         <main className="bg-[#020103]">
           {/* useSearchParams needs to be wrapped in suspense boundary */}
           <Suspense>
-            <Navbar/>
+            <Navbar />
             {children}
           </Suspense>
           <Footer />
         </main>
-        {/* <Toaster /> */}
+        <Toaster position="top-right"/>
         <WhatsAppIcon />
       </body>
     </html>

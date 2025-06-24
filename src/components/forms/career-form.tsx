@@ -26,7 +26,7 @@ import createCareerReq from "@/actions/career-action";
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
-import { Button } from "../ui/button";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export const careerFormSchema = z.object({
   name: z.string().min(2, "Name should be min of 3 chars."),
@@ -47,6 +47,10 @@ export const careerFormSchema = z.object({
 
 const CareerForm = () => {
   const [loading, setLoading] = useState<boolean>(false);
+  const searchParams = useSearchParams();
+
+  const router = useRouter();
+  const params = new URLSearchParams(searchParams.toString());
 
   const form = useForm<z.infer<typeof careerFormSchema>>({
     resolver: zodResolver(careerFormSchema),
@@ -96,8 +100,11 @@ const CareerForm = () => {
 
       const careerResp = await createCareerReq(values);
       toast.success(careerResp.message);
+      params.delete("open");
+      router.push(`/?${params.toString()}`, { scroll: false });
     } catch (err) {
       console.log("error is", err);
+      toast.error("Error in submitting the form.");
     } finally {
       form.reset();
       setLoading(false);
@@ -112,7 +119,7 @@ const CareerForm = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit, onerror)}
-          className="max-w-full space-y-[30px] px-6 xl:px-[50px] py-9 font-inter"
+          className="max-w-full space-y-[30px] px-6 py-9 font-inter xl:px-[50px]"
         >
           <div className="flex items-center justify-center">
             <div className="relative mx-auto inline-block">
@@ -360,11 +367,14 @@ const CareerForm = () => {
           {/* Submit Button */}
           <div className="flex flex-col items-end">
             <button
+              disabled={loading}
               type="submit"
-              className="rounded-[12px] border border-[#EB88D6] bg-[rgba(0,0,0,0.16)] p-1.5 backdrop-blur-[94.64px]"
+              className={`${loading ? "cursor-not-allowed opacity-50" : "opacity-100"} rounded-[12px] border border-[#EB88D6] bg-[rgba(0,0,0,0.16)] p-1.5 backdrop-blur-[94.64px]`}
             >
-              <div className="rounded-[8px] border-white/15 bg-[linear-gradient(90deg,_rgba(157,46,135,0.4)_0%,_rgba(84,41,153,0.4)_100%)] px-[15px] py-1 font-inter text-sm text-white shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] backdrop-blur-[7px] transition-all duration-700 ease-in-out hover:bg-[linear-gradient(90deg_,rgba(201,104,182,0.40)_0%,_rgba(121,81,186,0.40)_100%)]">
-                Submit
+              <div
+                className={`${loading ? "bg-transparent" : "bg-[linear-gradient(90deg_,rgba(201,104,182,0.40)_0%,_rgba(121,81,186,0.40)_100%)]"} rounded-[8px] border-white/15 bg-[linear-gradient(90deg,_rgba(157,46,135,0.4)_0%,_rgba(84,41,153,0.4)_100%)] px-[15px] py-1 font-inter text-sm text-white shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] backdrop-blur-[7px] transition-all duration-700 ease-in-out`}
+              >
+                {loading ? "Submitting..." : "Submit"}
               </div>
             </button>
           </div>
