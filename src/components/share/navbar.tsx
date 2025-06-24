@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import ContactUs from "./contact-us";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import ContactUsWrapper from "./contact-us-wrapper";
 
 export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);
@@ -160,7 +161,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <ContactUs />
+      <ContactUsWrapper/>
     </>
   );
 }

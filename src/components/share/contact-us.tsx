@@ -6,8 +6,15 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useMediaQuery } from "@uidotdev/usehooks";
 
 import { Sheet, SheetClose, SheetContent } from "@/components/ui/sheet";
+import { useEffect, useState } from "react";
 export default function ContactUs() {
+  const [mounted, setMounted] = useState(false);
+
   const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const searchParams = useSearchParams();
   const isOpen = searchParams.get("open") === "true";
@@ -19,6 +26,8 @@ export default function ContactUs() {
     params.delete("open");
     router.push(`/?${params.toString()}`, { scroll: false });
   };
+
+  if (!mounted) return null; // Prevents hydration mismatch
   return (
     <>
       {isSmallDevice ? (

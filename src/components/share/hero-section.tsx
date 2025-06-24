@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Lottie from "lottie-react";
-import animationData from "@/animations/animation.json";
+import animationData from "@/animations/home-animation.json";
 import { useEffect, useRef, useState } from "react";
 import InfiniteScrollTape from "../infinite-scroll-area";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -230,7 +230,6 @@ function HeroSection() {
             </div> */}
 
             <div className="absolute bottom-0 left-[6%] right-0 top-[17.8%]">
-              {/* <div className="absolute flex size-[360px] items-center justify-center overflow-hidden rounded-full bg-transparent"> */}
               <div className="relative size-[350px]">
                 <Lottie
                   animationData={animationData}
@@ -238,7 +237,6 @@ function HeroSection() {
                   autoplay={true}
                   style={{ width: "100%", height: "100%" }}
                 />
-                {/* </div> */}
               </div>
             </div>
           </div>

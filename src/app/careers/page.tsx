@@ -4,6 +4,9 @@ import dynamic from "next/dynamic";
 import { HeadingSection } from "@/components/share/heading-section";
 import Image from "next/image";
 import RecruitmentProcess from "./components/recruitment-process";
+import Lottie from "lottie-react";
+import animationData from "@/animations/career-animation.json";
+
 const Openings = dynamic(
   () => import("../careers/components/current-openings"),
   {
@@ -104,7 +107,7 @@ const Careers = () => {
     section?.addEventListener("mouseenter", handleMouseEnter);
     section?.addEventListener("mouseleave", handleMouseLeave);
   }, []);
-  
+
   return (
     <>
       {/* join team avidion */}
@@ -120,11 +123,11 @@ const Careers = () => {
           <source src="/careers/main-bg-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
-
         <div className="absolute inset-0 bg-opacity-50 bg-[radial-gradient(50.58%_26.36%_at_57.81%_48.24%,_rgba(42,4,48,0.00)_0%,_#000_100%)] md:bg-[radial-gradient(81.55%_42.77%_at_57.5%_59.34%,_rgba(42,4,48,0.00)_0%,_#000_100%)] xl:bg-[radial-gradient(27.26%_97.44%_at_50.03%_100%,_rgba(42,4,48,0.00)_0%,_#000_100%)]"></div>
         <div className="relative">
-          <div className="container flex max-w-full flex-col items-center gap-[60px] pt-[134px] sm:gap-[75px] md:gap-[86px] md:pt-[160px] xl:flex-row xl:justify-between xl:pt-[196px]">
-            <div className="flex flex-col items-center gap-2 text-white xl:items-start xl:gap-5">
+          {/* md:pt-[160px] pt-[134px] xl:pt-[196px] */}
+          <div className="flex w-full flex-col items-center pb-[40px] md:pb-[80px] xl:flex-row xl:justify-between xl:pb-0">
+            <div className="order-2 flex flex-col items-center gap-2 pl-[23px] text-white md:pl-[52px] xl:order-1 xl:items-start xl:gap-5 xl:pl-[170px] 2xl:pl-[400px]">
               <div className="text-2xl font-medium leading-[40px] -tracking-[0.84px] lg:text-[40px] xl:text-[56px] xl:leading-[65px]">
                 Join Team Avidion!
               </div>
@@ -133,13 +136,12 @@ const Careers = () => {
               </div>
             </div>
 
-            <div className="relative aspect-square h-[258px] w-[310px] sm:h-[323px] sm:w-[375px] md:h-[430px] md:w-[461px] xl:w-[402px]">
-              <Image
-                src={"/careers/main-image.png"}
-                alt="join avidion image"
-                className="object-contain"
-                fill
-                priority
+            <div className="relative order-1 h-[370px] w-[350px] sm:h-[410px] sm:w-[440px] md:h-[450px] md:w-[660px] xl:order-2 xl:h-[500px] xl:w-[800px] 2xl:h-[618px] 2xl:w-[918px]">
+              <Lottie
+                animationData={animationData}
+                autoPlay={true}
+                loop={true}
+                style={{ width: "100%", height: "100%" }}
               />
             </div>
           </div>
@@ -234,7 +236,7 @@ const Careers = () => {
       </div>
 
       <Openings />
-      <RecruitmentProcess/>
+      <RecruitmentProcess />
     </>
   );
 };
