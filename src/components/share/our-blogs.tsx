@@ -1,4 +1,6 @@
+"use client";
 import BlogCard from "@/app/blogs/components/blog-card";
+import Autoplay from "embla-carousel-autoplay";
 
 import {
   Carousel,
@@ -36,6 +38,12 @@ export default function OurBlogs() {
 
           {/* blog-cards */}
           <Carousel
+            plugins={[
+              // Autoplay({
+              //   delay: 1500,
+              //   stopOnInteraction:false
+              // }),
+            ]}
             className="mx-auto w-[80%] xl:w-full"
             opts={{ align: "start", loop: true }}
           >

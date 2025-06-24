@@ -84,6 +84,17 @@ export const blogs = [
     author: "Shreya Goyal",
     url: "/blogs/ai-chatbot-in-healthcare",
   },
+  {
+    id: 5,
+    image: "/blogs/blog-2.png",
+    mainTech: "CRM",
+    date: "April 26, 2025",
+    heading: "What Changes Does CRM Bring to a Business?",
+    content:
+      "In today’s competitive world, building strong customer relationships is key...",
+    author: "Shreya Goyal",
+    url: "/blogs/boost-business-crm-system",
+  },
 ];
 
 export const whatWeOfferCards = [
@@ -807,5 +818,29 @@ export const faqs = [
     question: " Do you work with startups as well as enterprises?",
     answer:
       "Definitely. Whether you're a startup with an idea or an enterprise looking to scale, we tailor our approach to match your stage and needs.",
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    desc: "Working with Avidion Softwares was a game-changer for our operations. They understood our vision, automated our workflows, and delivered a custom solution ahead of schedule. The team was responsive, proactive, and genuinely committed to our success. We couldn't have asked for a better tech partner.",
+    name: "Priya Mehta",
+    profile: "Operations Manager at Nexora Logistics",
+    url: "/testimonial/testimonial-user-1.svg",
+  },
+  {
+    id: 2,
+    desc: "Partnering with Avidion Softwares was one of the best decisions we made. Their team took the time to deeply understand our business model and delivered an intuitive platform that improved efficiency across departments. Their dedication, speed, and attention to detail exceeded expectations. Truly a reliable and skilled tech partner.",
+    name: "Rahul Verma",
+    profile: "Product Head at Finvia Capital",
+    url: "/testimonial/testimonial-user-2.svg",
+  },
+  {
+    id: 3,
+    desc: "Avidion Softwares delivered more than just code—they brought clarity, innovation, and genuine collaboration to the table. They streamlined our internal processes, reducing turnaround times significantly. The communication was seamless, and the results spoke for themselves. Highly recommend them for any digital transformation journey.",
+    name: "Karan Malhotra",
+    profile: "Digital Strategy Lead at UrbanNest Retail",
+    url: "/testimonial/testimonial-user-3.svg",
   },
 ];

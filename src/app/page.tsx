@@ -5,6 +5,7 @@ import WhyChooseUs from "@/components/share/why-choose-us";
 import OurBlogs from "@/components/share/our-blogs";
 import HowWeWork from "@/components/share/how-we-work";
 import FAQ from "@/components/share/faq";
+import Testimonials from "@/components/share/testimonials";
 export default function HomePage() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function HomePage() {
       {/* <OurToolkit /> */}
       <HowWeWork />
       <FAQ/>
+      <Testimonials/>
       <OurBlogs />
     </>
   );
