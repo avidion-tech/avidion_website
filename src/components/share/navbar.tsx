@@ -50,7 +50,7 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <div className="animate-gradient-wave bg-[radial-gradient(78.86%_61.3%_at_59.94%_54.33%,_#972BC7_0%,_#B33691_64.66%,_#8A30AC_97.65%)] bg-[length:200%_auto] bg-clip-text font-inter text-lg font-bold -tracking-[0.6px] text-transparent md:text-xl xl:text-2xl">
+              <div className="animate-gradient bg-[linear-gradient(83deg,_#6748CD,_#972BC7,_#B33691,_#8A30AC,_#B33691,_#972BC7,_#6748CD)] bg-[length:200%_auto] bg-clip-text font-inter text-lg font-bold -tracking-[0.6px] text-transparent md:text-xl xl:text-2xl">
                 Avidion
               </div>
             </Link>
@@ -161,7 +161,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <ContactUsWrapper/>
+      <ContactUsWrapper />
     </>
   );
 }

@@ -91,7 +91,7 @@ function HeroSection() {
                   params.set("open", "true");
                   router.push(`/?${params.toString()}`, { scroll: false });
                 }}
-                className="animate-gradient-wave cursor-pointer rounded-[12px] bg-[linear-gradient(131deg,_rgba(255,87,219,0.70)_25.56%,_rgba(240,200,231,0.70)_42.13%,_rgba(204,134,242,0.70)_53.02%,_rgba(157,123,242,0.70)_75.71%)] bg-[length:300%_300%] bg-repeat p-[3px] transition-all duration-300 ease-in hover:shadow-[0_0_12px_0_rgba(255,255,255,0.60)]"
+                className="animate-gradient cursor-pointer rounded-[12px] bg-[linear-gradient(131deg,_rgba(255,87,219,0.70)_25.56%,_rgba(240,200,231,0.70)_42.13%,_rgba(204,134,242,0.70)_53.02%,_rgba(157,123,242,0.70)_75.71%)] bg-[length:200%_auto] bg-repeat p-[3px] transition-all duration-300 ease-in hover:shadow-[0_0_12px_0_rgba(255,255,255,0.60)]"
               >
                 <div className="rounded-[8.6px] bg-black px-[18px] py-2 text-[12px] font-medium leading-[14px] text-white md:text-[10px] md:leading-[22px] xl:rounded-[10px] xl:px-6 xl:py-2.5 xl:text-[15.033px] xl:leading-[31.067px]">
                   Book A Free Consultation
@@ -118,7 +118,7 @@ function HeroSection() {
           {/* left-divs */}
           <div className="flex flex-col gap-[16px] md:justify-between">
             {/* future ready digital solutions card*/}
-            <div className="flex flex-col gap-[17px] rounded-[6px] bg-[linear-gradient(144deg,_#1B1521_3.52%,_rgba(28,22,34,0.00)_55.43%,_#756184_96.85%)] px-[21px] py-9 md:rounded-[8px]">
+            <div className="flex flex-col gap-[17px] rounded-[6px] bg-[linear-gradient(145deg,_#3F1068_6.07%,_rgba(28,22,34,0.00)_56.61%,_#5D264E_96.94%)] px-[21px] py-9 md:rounded-[8px]">
               <div className="relative aspect-square size-10 xl:size-[55px]">
                 <Image
                   src={"/hero-section/logo.svg"}
@@ -129,7 +129,7 @@ function HeroSection() {
               </div>
 
               <div className="flex flex-col gap-[25px]">
-                <div className="w-[209px] bg-[linear-gradient(57deg,_#C7B5FF_11.25%,_#D984FF_34.88%,_#E458BE_66.88%,_#A03EC4_95.25%)] bg-clip-text text-2xl font-medium -tracking-[1.214px] text-transparent">
+                <div className="w-[209px] animate-gradient bg-[linear-gradient(57deg,_#C7B5FF,_#D984FF,_#E458BE,_#A03EC4,_#E458BE,_#D984FF,_#C7B5FF)] bg-[length:200%_auto] bg-clip-text text-2xl font-medium text-transparent">
                   Future-Ready Digital Solutions
                 </div>
 
@@ -243,7 +243,7 @@ function HeroSection() {
           {/* right-divs */}
           <div className="flex flex-col justify-between gap-[6.9px]">
             {/* 3d animated website */}
-            <div className="relative overflow-hidden rounded-[8px] bg-[#1A171A]">
+            <div className="relative overflow-hidden rounded-[8px] bg-[linear-gradient(145deg,_#3F1068_6.07%,_rgba(28,22,34,0.00)_56.61%,_#5D264E_96.94%)]">
               <div className="py-[34px] pl-[22px] pr-[94px]">
                 <div className="w-[125px] text-lg font-normal text-white md:w-[119px] md:text-base">
                   3D & Animated Website{" "}
@@ -260,7 +260,7 @@ function HeroSection() {
               </div>
             </div>
             {/* 24/7 support */}
-            <div className="rounded-[8px] bg-[linear-gradient(275deg,_#000_2.75%,_#241C2C_194.32%)]">
+            <div className="rounded-[8px] bg-[linear-gradient(260deg,_rgba(175,80,155,0.20)_7.64%,_rgba(22,22,22,0.20)_99.47%)]">
               <div className="flex flex-col items-center justify-center gap-[9px] px-[46px] py-[23px]">
                 <div className="bg-[linear-gradient(57deg,_#6748CD_11.25%,_#972BC7_34.88%,_#B33691_66.88%,_#4D1263_95.25%)] bg-clip-text font-jersey text-[28px] leading-[40px] text-transparent md:text-[25px]">
                   24/7

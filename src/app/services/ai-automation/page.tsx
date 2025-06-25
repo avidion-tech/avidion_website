@@ -106,7 +106,7 @@ export const metadata: Metadata = {
 export default function AiAutomation() {
   return (
     <div className="relative overflow-hidden font-inter">
-      <div className="absolute inset-0 aspect-[200/165] h-[670px] opacity-20 md:aspect-[503/228] md:h-[574px] xl:aspect-[643/258] xl:h-[774px]">
+      <div className="absolute inset-0 aspect-[160/165] h-[500px] opacity-20 md:aspect-[403/228] md:h-[574px] lg:aspect-[503/228] xl:aspect-[643/258] xl:h-[774px]">
         <Image
           alt="ai-automation"
           src={"/services/sub-services/ai-automation.svg"}

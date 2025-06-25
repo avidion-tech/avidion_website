@@ -35,8 +35,7 @@ const config: Config = {
       },
       animation: {
         // for animating main logo and hero-heading
-        gradient: "gradient 8s linear infinite",
-        "gradient-wave": "gradientWave 8s linear infinite",
+        gradient: "gradient 2.8s linear infinite",
 
         //for animating the blurry balls
         blob: "blob 5s ease-in-out infinite",
@@ -56,16 +55,19 @@ const config: Config = {
         slideDown: "slideDown 400ms ease-out",
         slideUp: "slideUp 400ms ease-out",
 
+        //for the infinite scrolltape at the homepage hero-section
         "infinite-scroll": "infinite-scroll 20s linear infinite",
+
+        
       },
 
       keyframes: {
-        gradientWave: {
-          "0%": {
-            "background-position": "200% center",
+        gradient: {
+          "0%, 100%": {
+            "background-position": "0% center",
           },
-          "100%": {
-            "background-position": "-200% center",
+          "50%": {
+            "background-position": "100% center",
           },
         },
         blob: {

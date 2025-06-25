@@ -134,19 +134,16 @@ export const metadata: Metadata = {
 export default function WebsiteDevelopment() {
   return (
     <div className="relative overflow-hidden font-inter">
-      <video
-        className="absolute inset-0 h-[100vh] w-full scale-[3.5] opacity-30 sm:scale-[3] md:scale-[1.8] lg:scale-[1.44] xl:scale-[1] xl:object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-      >
-        <source
-          src="/services/sub-services/website-dev.webm"
-          type="video/webm"
+      <div className="absolute inset-0 aspect-[278/395] h-[734px] md:aspect-[350/160] md:h-[550px] xl:aspect-[384/161] xl:h-[805px]">
+        <Image
+          alt="website-development"
+          src={"/services/sub-services/website-dev.svg"}
+          fill
+          priority
+          loading="eager"
+          className="object-cover opacity-[0.40]"
         />
-      </video>
+      </div>
       <div className="container relative mx-auto flex max-w-full flex-col items-start gap-[50px] pb-[40px] pt-[140px] md:gap-[66px] md:pb-[100px] md:pt-[154px] xl:pb-[163px] xl:pt-[174px]">
         <BackButton label="Services" />
         <div className="flex flex-col gap-[36px] md:gap-[56px] xl:gap-[66px]">

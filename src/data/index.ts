@@ -781,43 +781,43 @@ export const faqs = [
   {
     question: "What industries do you specialize in?",
     answer:
-      "We work across various industries including retail, logistics, finance, healthcare, education, and SaaS. Our adaptable team can tailor solutions to fit any business domain.",
+      "We provide custom software and digital solutions across a wide range of industries, including retail, logistics, finance, healthcare, education, and SaaS. Our flexible development approach allows us to adapt to any business sector and deliver results tailored to your industry-specific needs.",
   },
   {
     question: "Can I customize a service to suit my business needs?",
     answer:
-      "Absolutely. Every service we offer—from software to automation—is built to fit your unique goals, processes, and team workflows.",
+      "Yes, all our services are fully customizable. Whether you need software development, business automation, or ERP solutions, we tailor each service to your unique business goals, processes, and team workflows to ensure maximum efficiency and ROI.",
   },
   {
     question: "How do I know which service is right for me?",
     answer:
-      "We offer a free consultation to understand your business challenges and guide you toward the right solution—whether that’s automation, app development, or a full ERP.",
+      " We offer a free business consultation to analyze your current challenges and goals. Based on your needs, we recommend the most suitable solution—whether it's mobile app development, process automation, or a custom ERP system.",
   },
   {
     question: "What is the typical timeline for a project?",
     answer:
-      "Timelines vary by scope. Smaller projects like a website or chatbot can take 2–4 weeks, while larger systems like ERP or WMS may take 8–16 weeks. We’ll share a clear roadmap before we begin.",
+      "Project timelines vary depending on complexity. A website, mobile app, or chatbot may take 2–4 weeks, while larger systems like ERP, WMS, or enterprise software may take 8–16 weeks. We provide a detailed project roadmap before development begins.",
   },
   {
     question: "Do you offer post-launch support and maintenance?",
     answer:
-      "Yes. We provide ongoing support, maintenance, and updates to ensure your system stays secure, up-to-date, and fully functional.",
+      " Absolutely. We provide ongoing support, regular maintenance, and security updates to keep your digital solution stable, up-to-date, and performing at its best post-launch.",
   },
   {
     question: "How does pricing work for these services?",
     answer:
-      "Pricing depends on project scope, features, and integrations. We offer fixed-cost and milestone-based models after assessing your requirements.",
+      "Our pricing is flexible and based on your project’s scope, features, and integrations. We offer fixed-cost or milestone-based pricing models after a detailed requirement analysis to ensure clarity and transparency.",
   },
   {
     question:
       "Is there a consultation or discovery phase before development starts?",
     answer:
-      " Yes, every project starts with a discovery session where we align on goals, scope, timelines, and tech stack to ensure full transparency.",
+      "Yes. Every project begins with a comprehensive discovery phase where we define the business objectives, scope, timeline, and tech stack. This ensures full alignment and reduces risks during development.",
   },
   {
     question: " Do you work with startups as well as enterprises?",
     answer:
-      "Definitely. Whether you're a startup with an idea or an enterprise looking to scale, we tailor our approach to match your stage and needs.",
+      " Yes, we work with startups, SMEs, and large enterprises alike. Whether you're launching a new idea or scaling an existing system, we adapt our development process to your business stage, team size, and growth goals.",
   },
 ];
 
