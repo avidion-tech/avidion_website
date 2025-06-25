@@ -340,48 +340,26 @@ export const whyChooseUs = [
 
 export const currentOpenings = [
   {
-    title: "3D Designer",
+    title: "Technical Sales Executive",
     content:
-      "We're seeking a talented UI/UX designer with strong 3D design expertise to craft immersive and visually compelling user experiences for next-gen web and mobile applications.",
-    department: "Design",
+      "Join Avidion Softwares – a growing IT company seeking dynamic individuals to drive our software and AI solution sales. This is a growth-stage opportunity to work on impactful projects with B2B clients.",
+    department: "IT & Software Development",
     workType: ["On-site", "Full-time"],
     requirements: [
-      "2+ years of professional experience in UI/UX design",
-      "Proficiency in 3D design tools like Blender, Figma, or Adobe XD",
-      "Strong understanding of user-centered design principles",
-      "Ability to create wireframes, mockups, and interactive prototypes",
-      "Experience designing for both web and mobile platforms",
-      "Understanding of animation, transitions, and micro-interactions in 3D environments",
+      "0-3 years of hands-on experience in technical sales executive",
+      "Engage with inbound/outbound leads and conduct discovery calls",
+      "Understand client needs and propose custom software/AI solutions",
+      "Draft detailed proposals, sales decks, and RFP responses",
+      "Negotiate pricing and close high-value B2B deals",
+      "Excellent communication, negotiation & proposal writing skills",
+      "Use AI tools, CRM systems, and analytics to automate and track sales efforts"
     ],
     benefits: [
-      "Creative freedom on cutting-edge projects",
-      "Opportunity to work with AI-driven & 3D experiences",
-      "Collaborative and innovation-driven environment",
+      "Work on AI-driven, innovative products",
+      "Projects across diverse industries",
       "Health insurance",
       "Competitive salary",
-    ],
-  },
-
-  {
-    title: "Mobile & Custom Software Developer",
-    content:
-      "We're looking for a passionate developer experienced in building high-performance mobile apps and custom software solutions using modern frameworks like React Native and Flutter.",
-    department: "Technology",
-    workType: ["On-site", "Full-time"],
-    requirements: [
-      "2+ years of hands-on experience in mobile app development",
-      "Proficiency in React Native and/or Flutter",
-      "Experience in building and deploying apps for both Android and iOS",
-      "Familiarity with RESTful APIs, Firebase, or GraphQL",
-      "Knowledge of app performance optimization and debugging",
-      "Experience developing custom software solutions for clients",
-    ],
-    benefits: [
-      "Opportunity to work on AI-driven and innovative products",
-      "Exposure to diverse client projects and domains",
-      "Health insurance",
-      "Competitive salary",
-      "Skill development and certification support",
+      "Skill development support",
     ],
   },
 ];
