@@ -111,21 +111,20 @@ const Careers = () => {
   return (
     <>
       {/* join team avidion */}
-      <div className="relative">
-        {/* <video
-          autoPlay
-          loop
-          muted
-          preload="auto"
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover"
-        >
-          <source src="/careers/main-bg-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
-        <div className="absolute inset-0 bg-opacity-50 bg-[radial-gradient(50.58%_26.36%_at_57.81%_48.24%,_rgba(42,4,48,0.00)_0%,_#000_100%)] md:bg-[radial-gradient(81.55%_42.77%_at_57.5%_59.34%,_rgba(42,4,48,0.00)_0%,_#000_100%)] xl:bg-[radial-gradient(27.26%_97.44%_at_50.03%_100%,_rgba(42,4,48,0.00)_0%,_#000_100%)]"></div>
+      <div className="relative overflow-hidden">
+        <div className="absolute aspect-[1938/460] h-[360px] sm:h-[400px] md:h-[440px] 2xl:h-[560px] ">
+          <Image
+            alt="careers-bg-image"
+            src={"/careers/main-bg.svg"}
+            fill
+            priority
+            loading="eager"
+            className="object-cover opacity-40"
+          />
+        </div>
+        <div className="absolute inset-0 bg-[linear-gradient(260deg,_rgba(0,0,0,0.00)_0.9%,_#000_80.26%)] md:bg-[linear-gradient(92deg,_rgba(0,0,0,0.00)_0.9%,_#000_80.26%)]"></div>
+
         <div className="relative">
-          {/* md:pt-[160px] pt-[134px] xl:pt-[196px] */}
           <div className="flex w-full flex-col items-center pb-[40px] md:pb-[80px] xl:flex-row xl:justify-between xl:pb-0">
             <div className="order-2 flex flex-col items-center gap-2 pl-[23px] text-white md:pl-[52px] xl:order-1 xl:items-start xl:gap-5 xl:pl-[170px] 2xl:pl-[400px]">
               <div className="text-2xl font-medium leading-[40px] -tracking-[0.84px] lg:text-[40px] xl:text-[56px] xl:leading-[65px]">
@@ -141,12 +140,13 @@ const Careers = () => {
                 animationData={animationData}
                 autoPlay={true}
                 loop={true}
+                
                 style={{ width: "100%", height: "100%" }}
               />
             </div>
           </div>
 
-          <div className="flex justify-center bg-[linear-gradient(2deg,_rgba(0,0,0,0.70)_57%,_rgba(0,0,0,0.36)_98.29%)] backdrop-blur-[2px]">
+          <div className="flex justify-center bg-[linear-gradient(3deg,_rgba(33,7,43,0.70)_2.48%,_rgba(0,0,0,0.36)_97.82%)] backdrop-blur-[2px]">
             <div className="container flex flex-col gap-[18px] md:px-[200px] xl:flex-row xl:gap-[64px] 2xl:px-[340px]">
               {features.map((item, index) => (
                 <>

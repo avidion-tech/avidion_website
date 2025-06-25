@@ -93,10 +93,10 @@ export const metadata: Metadata = {
 export default function AppDevelopment() {
   return (
     <div className="relative overflow-hidden font-inter">
-      <div className="absolute right-0 top-20 aspect-[588/700] h-[420px] xl:h-[550px] 2xl:h-[600px]">
+      <div className="absolute top-0 bottom-0 right-0 2xl:inset-0 aspect-[368/200] h-[600px] md:aspect-[350/160] md:h-[550px] xl:aspect-[384/161] xl:h-[805px]">
         <Image
           alt="mobile-app-development"
-          src={"/services/sub-services/mobile-app-development.png"}
+          src={"/services/sub-services/mobile.svg"}
           fill
           priority
           loading="eager"
