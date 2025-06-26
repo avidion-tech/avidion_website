@@ -52,14 +52,14 @@ export default function Testimonials() {
               />
             </div>
           </div>
-          <div className="text-center text-xl font-medium -tracking-[0.84px] text-white sm:text-2xl md:text-4xl lg:text-[40px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
+          <div className="z-10 text-center text-xl font-medium -tracking-[0.84px] text-white sm:text-2xl md:text-4xl lg:text-[40px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
             What Our Clients Are Saying
           </div>
 
           <Carousel
             opts={{ align: "start", loop: true }}
             setApi={setApi}
-            className="relative flex flex-row items-start"
+            className="relative z-10 flex flex-row items-start"
           >
             <div className="hidden md:block">
               <button
@@ -91,7 +91,7 @@ export default function Testimonials() {
             </div>
           </Carousel>
 
-          <div className="flex flex-col items-center justify-center gap-[15px] py-2">
+          <div className="z-10 flex flex-col items-center justify-center gap-[15px] py-2">
             <div className="flex flex-row items-center gap-[28px]">
               <div
                 onClick={() => api?.scrollTo(leftIndex)}
@@ -136,10 +136,10 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
-        <div className="absolute -left-28 -top-12 h-[250px] w-[250px] animate-circle-move rounded-full bg-[#971b76] opacity-70 blur-[80px]"></div>
+        <div className="pointer-events-none absolute -left-28 -top-12 z-0 h-[250px] w-[250px] animate-circle-move rounded-full bg-[#971b76] opacity-70 blur-[80px]"></div>
 
-        <div className="animation-delay-1 absolute -right-24 bottom-52 size-[309px] animate-circle-move rounded-full bg-[#971b76] opacity-70 mix-blend-screen blur-[100px]"></div>
-        <div className="animation-delay-2 absolute -right-12 bottom-8 size-[213px] animate-circle-move rounded-full bg-[#622A9A] opacity-70 mix-blend-screen blur-[100px]"></div>
+        <div className="animation-delay-1 pointer-events-none absolute -right-24 bottom-52 z-0 size-[309px] animate-circle-move rounded-full bg-[#971b76] opacity-70 mix-blend-screen blur-[100px]"></div>
+        <div className="animation-delay-2 pointer-events-none absolute -right-12 bottom-8 z-0 size-[213px] animate-circle-move rounded-full bg-[#622A9A] opacity-70 mix-blend-screen blur-[100px]"></div>
       </div>
     </>
   );

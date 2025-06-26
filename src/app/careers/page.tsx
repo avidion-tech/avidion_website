@@ -112,7 +112,7 @@ const Careers = () => {
     <>
       {/* join team avidion */}
       <div className="relative overflow-hidden">
-        <div className="absolute aspect-[1938/460] h-[360px] sm:h-[400px] md:h-[440px] 2xl:h-[560px] ">
+        <div className="absolute aspect-[1938/460] h-[360px] sm:h-[400px] md:h-[430px] 2xl:h-[560px]">
           <Image
             alt="careers-bg-image"
             src={"/careers/main-bg.svg"}
@@ -121,12 +121,11 @@ const Careers = () => {
             loading="eager"
             className="object-cover opacity-40"
           />
-        </div>
-        <div className="absolute inset-0 bg-[linear-gradient(260deg,_rgba(0,0,0,0.00)_0.9%,_#000_80.26%)] md:bg-[linear-gradient(92deg,_rgba(0,0,0,0.00)_0.9%,_#000_80.26%)]"></div>
-
+          <div className="absolute inset-0 bg-[linear-gradient(167deg,_rgba(0,0,0,0.00)_-24.3%,_#000_75.26%)] md:bg-[linear-gradient(167deg,_rgba(0,0,0,0.00)_-49.64%,_#000_79.02%)] xl:bg-[linear-gradient(92deg,_rgba(0,0,0,0.00)_0.9%,_#000_80.26%)]"></div>
+        </div>{" "}
         <div className="relative">
           <div className="flex w-full flex-col items-center pb-[40px] md:pb-[80px] xl:flex-row xl:justify-between xl:pb-0">
-            <div className="order-2 flex flex-col items-center gap-2 pl-[23px] text-white md:pl-[52px] xl:order-1 xl:items-start xl:gap-5 xl:pl-[170px] 2xl:pl-[400px]">
+            <div className="order-2 flex flex-col items-center gap-2 px-[23px] text-white md:px-[52px] xl:order-1 xl:items-start xl:gap-5 xl:pl-[170px] 2xl:pl-[400px]">
               <div className="text-2xl font-medium leading-[40px] -tracking-[0.84px] lg:text-[40px] xl:text-[56px] xl:leading-[65px]">
                 Join Team Avidion!
               </div>
@@ -140,7 +139,6 @@ const Careers = () => {
                 animationData={animationData}
                 autoPlay={true}
                 loop={true}
-                
                 style={{ width: "100%", height: "100%" }}
               />
             </div>

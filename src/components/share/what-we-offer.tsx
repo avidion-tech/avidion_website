@@ -80,14 +80,14 @@ export default function WhatWeOffer() {
             {whatWeOfferCards.map((card, index) => {
               return (
                 <>
-                  <div className="overflow-hidden">
+                  <div className="">
                     <div
                       key={card.id}
                       ref={(el) => {
                         cardRefs.current[index] = el;
                       }}
                       style={{ borderImage: "none" }}
-                      className="card-border-glow bg-[rgba(0,0,0,0.06 )] group relative rounded-[10px] border border-white/15 px-[27px] pb-5 pt-[30px] font-inter -tracking-[0.002px] text-white"
+                      className="overflow-hidden card-border-glow bg-[rgba(0,0,0,0.06 )] group relative rounded-[10px] border border-white/15 px-[27px] pb-5 pt-[30px] font-inter -tracking-[0.002px] text-white"
                     >
                       <div
                         ref={(el) => {

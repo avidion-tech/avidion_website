@@ -25,14 +25,14 @@ export function HeadingSection({
         <div
           className={cn(
             mainClassName,
-            "text-xl font-medium -tracking-[0.84px] sm:text-2xl md:text-4xl lg:text-[40px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]",
+            "z-10 text-xl font-medium -tracking-[0.84px] sm:text-2xl md:text-4xl lg:text-[40px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]",
           )}
         >
           {mainHeading}
         </div>
 
         {badgeContent && (
-          <div className="flex flex-row items-center gap-[5px] rounded-[26px] border border-[#535353] px-[32px] py-[9px] font-inter text-sm font-normal text-[rgba(255,255,255,0.61)]">
+          <div className="z-10 flex flex-row items-center gap-[5px] rounded-[26px] border border-[#535353] px-[32px] py-[9px] font-inter text-sm font-normal text-[rgba(255,255,255,0.61)]">
             {badgeContent}
             {badgeIcon}
           </div>
@@ -43,7 +43,7 @@ export function HeadingSection({
       <div
         className={cn(
           subClassName,
-          "text-sm font-normal md:text-base lg:text-lg xl:text-[20px] xl:leading-[31px]",
+          "z-10 text-sm font-normal md:text-base lg:text-lg xl:text-[20px] xl:leading-[31px]",
         )}
       >
         {subContent}
