@@ -83,29 +83,43 @@ import type { Metadata } from "next";
 export default function ThreeDWebsite() {
   return (
     <div className="relative overflow-hidden font-inter">
-      <div className="absolute inset-0 aspect-[300/250] h-[600px] md:aspect-[300/220] lg:aspect-[320/131] lg:h-[786px]">
+      <div className="absolute right-0 top-0 h-[771px] w-[584px]">
         <Image
-          alt="ai-automation"
-          src={"/services/sub-services/3d-website.svg"}
-          fill
+          src={"/services/sub-services/3d-website-bg.svg"}
+          alt="3d-website-bg"
+          className="object-contain"
           priority
           loading="eager"
-          className="w-full object-cover opacity-[0.2]"
+          fill
         />
+        <div className="absolute inset-0 bg-[linear-gradient(272deg,_rgba(0,0,0,0.53)_7.24%,_#020103_95.6%)]"></div>
       </div>
-      <div className="container relative mx-auto flex max-w-full flex-col items-start gap-[50px] pb-[40px] pt-[140px] md:gap-[66px] md:pb-[100px] md:pt-[154px] xl:pb-[163px] xl:pt-[174px]">
+      <div className="relative mx-auto flex w-full flex-col items-start gap-[34px] px-[23px] pb-[40px] pt-[140px] md:px-[52px] md:pb-[100px] md:pt-[154px] xl:pb-[163px] xl:pl-[182px] xl:pr-[174px] xl:pt-[174px] 2xl:pl-[416px]">
         <BackButton label="Services" />
-        <div className="flex flex-col gap-[26px] text-white md:gap-[30px] xl:gap-[25px]">
-          <h1 className="text-xl font-medium sm:text-2xl md:text-4xl lg:text-[42px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
-            3D & Animated Websites
-          </h1>
-          <p className="text-sm font-normal md:text-base xl:text-xl">
-            Step into the future of digital experiences with cutting-edge 3D and
-            animated website development by Avidion Software. We go beyond
-            static designs to create immersive, visually stunning, and
-            interactive websites that capture attention and elevate your brand
-            presence.
-          </p>
+        <div className="flex flex-col items-center gap-10 md:gap-[60px] lg:flex-row lg:gap-3 xl:gap-10">
+          <div className="flex flex-col gap-[26px] text-white md:gap-[30px] lg:w-[75%] xl:w-[50%] xl:gap-[25px] 2xl:w-[48%]">
+            <h1 className="text-xl font-medium sm:text-2xl md:text-4xl lg:text-[42px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
+              3D & Animated Websites
+            </h1>
+            <p className="text-sm font-normal md:text-base xl:text-xl">
+              Step into the future of digital experiences with cutting-edge 3D
+              and animated website development by Avidion Software. We go beyond
+              static designs to create immersive, visually stunning, and
+              interactive websites that capture attention and elevate your brand
+              presence.
+            </p>
+          </div>
+
+          <div className="relative aspect-[277/166] w-[277px] sm:aspect-[377/266] sm:w-[377px] md:aspect-[500/250] md:w-[500px] xl:aspect-[617/355] xl:w-[517px]">
+            <Image
+              src={"/services/sub-services/3d-website.gif"}
+              alt="3d-website-gif"
+              fill
+              className="object-contain"
+              priority
+              loading="eager"
+            />
+          </div>
         </div>
       </div>
       <div className="relative bg-[#140A1E]">

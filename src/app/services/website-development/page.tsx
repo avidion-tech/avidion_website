@@ -134,7 +134,7 @@ export const metadata: Metadata = {
 export default function WebsiteDevelopment() {
   return (
     <div className="relative overflow-hidden font-inter">
-      <div className="absolute inset-0 aspect-[278/395] h-[734px] md:aspect-[350/160] md:h-[550px] xl:aspect-[384/161] xl:h-[805px]">
+      <div className="absolute inset-0 aspect-[350/160] h-[720px] lg:h-[650px] xl:aspect-[384/161] xl:h-[805px]">
         <Image
           alt="website-development"
           src={"/services/sub-services/website-dev.svg"}
