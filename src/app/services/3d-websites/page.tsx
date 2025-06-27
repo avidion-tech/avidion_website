@@ -79,6 +79,7 @@ import Image from "next/image";
 import Process from "./process";
 import BackButton from "@/components/share/back-button";
 import type { Metadata } from "next";
+import ThreeTorus from "./components/three-torus";
 
 export default function ThreeDWebsite() {
   return (
@@ -94,31 +95,36 @@ export default function ThreeDWebsite() {
         />
         <div className="absolute inset-0 bg-[linear-gradient(272deg,_rgba(0,0,0,0.53)_7.24%,_#020103_95.6%)]"></div>
       </div>
-      <div className="relative mx-auto flex w-full flex-col items-start gap-[34px] px-[23px] pb-[40px] pt-[140px] md:px-[52px] md:pb-[100px] md:pt-[154px] xl:pb-[163px] xl:pl-[182px] xl:pr-[174px] xl:pt-[174px] 2xl:pl-[416px]">
-        <BackButton label="Services" />
-        <div className="flex flex-col items-center gap-10 md:gap-[60px] lg:flex-row lg:gap-3 xl:gap-10">
-          <div className="flex flex-col gap-[26px] text-white md:gap-[30px] lg:w-[75%] xl:w-[50%] xl:gap-[25px] 2xl:w-[48%]">
-            <h1 className="text-xl font-medium sm:text-2xl md:text-4xl lg:text-[42px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
-              3D & Animated Websites
-            </h1>
-            <p className="text-sm font-normal md:text-base xl:text-xl">
-              Step into the future of digital experiences with cutting-edge 3D
-              and animated website development by Avidion Software. We go beyond
-              static designs to create immersive, visually stunning, and
-              interactive websites that capture attention and elevate your brand
-              presence.
-            </p>
-          </div>
+      <div className="relative z-0">
+        <div className="absolute -left-[130%] bottom-0 -z-10 h-full w-full md:-left-[50%] top-[30%] lg:-left-[60%] lg:top-[8%] xl:-left-[38%] 2xl:-left-[20%]">
+          <ThreeTorus />
+        </div>
+        <div className="relative z-10 mx-auto flex w-full flex-col items-start gap-[34px] px-[23px] pb-[40px] pt-[140px] md:px-[52px] md:pb-[100px] md:pt-[154px] xl:pb-[163px] xl:pl-[182px] xl:pr-[174px] xl:pt-[174px] 2xl:pl-[416px]">
+          <BackButton label="Services" />
+          <div className="flex flex-col items-center gap-10 md:gap-[60px] lg:flex-row lg:gap-3 xl:gap-10">
+            <div className="flex flex-col gap-[26px] text-white md:gap-[30px] lg:w-[75%] xl:w-[50%] xl:gap-[25px] 2xl:w-[48%]">
+              <h1 className="text-xl font-medium sm:text-2xl md:text-4xl lg:text-[42px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
+                3D & Animated Websites
+              </h1>
+              <p className="text-sm font-normal md:text-base xl:text-xl">
+                Step into the future of digital experiences with cutting-edge 3D
+                and animated website development by Avidion Software. We go
+                beyond static designs to create immersive, visually stunning,
+                and interactive websites that capture attention and elevate your
+                brand presence.
+              </p>
+            </div>
 
-          <div className="relative aspect-[277/166] w-[277px] sm:aspect-[377/266] sm:w-[377px] md:aspect-[500/250] md:w-[500px] xl:aspect-[617/355] xl:w-[517px]">
-            <Image
-              src={"/services/sub-services/3d-website.gif"}
-              alt="3d-website-gif"
-              fill
-              className="object-contain"
-              priority
-              loading="eager"
-            />
+            <div className="relative aspect-[277/166] w-[277px] sm:aspect-[377/266] sm:w-[377px] md:aspect-[500/250] md:w-[500px] xl:aspect-[617/355] xl:w-[517px]">
+              <Image
+                src={"/services/sub-services/3d-website.gif"}
+                alt="3d-website-gif"
+                fill
+                className="object-contain"
+                priority
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
       </div>
