@@ -44,7 +44,7 @@ export const blogs = [
     id: 1,
     image: "/blogs/blog-1.png",
     mainTech: "Chatbots",
-    date: "May 24, 2025",
+    date: "May 10, 2025",
     heading: "How Chatbots Are Improving Patient Engagement in Clinics",
     content:
       "In today’s fast-paced, tech-driven world, healthcare providers are under...",
@@ -55,7 +55,7 @@ export const blogs = [
     id: 2,
     image: "/blogs/blog-2.png",
     mainTech: "CRM",
-    date: "April 26, 2025",
+    date: "May 12, 2025",
     heading: "What Changes Does CRM Bring to a Business?",
     content:
       "In today’s competitive world, building strong customer relationships is key...",
@@ -66,7 +66,7 @@ export const blogs = [
     id: 3,
     image: "/blogs/blog-3.png",
     mainTech: "ERP",
-    date: "April 28, 2025",
+    date: "May 16, 2025",
     heading: "How Does ERP Help to Manage Business Processes?",
     content:
       "Running a business means handling many moving parts—sales, finance...",
@@ -75,25 +75,14 @@ export const blogs = [
   },
   {
     id: 4,
-    image: "/blogs/blog-1.png",
-    mainTech: "Chatbots",
-    date: "May 24, 2025",
-    heading: "How Chatbots Are Improving Patient Engagement in Clinics",
+    image: "/blogs/blog-4.png",
+    mainTech: "Business",
+    date: "May 20, 2025",
+    heading: "How AI Chatbot Helps business to Grow?",
     content:
-      "In today’s fast-paced, tech-driven world, healthcare providers are under...",
+      "In today’s digital world, customers want quick answers, fast service, and...",
     author: "Shreya Goyal",
-    url: "/blogs/ai-chatbot-in-healthcare",
-  },
-  {
-    id: 5,
-    image: "/blogs/blog-2.png",
-    mainTech: "CRM",
-    date: "April 26, 2025",
-    heading: "What Changes Does CRM Bring to a Business?",
-    content:
-      "In today’s competitive world, building strong customer relationships is key...",
-    author: "Shreya Goyal",
-    url: "/blogs/boost-business-crm-system",
+    url: "/blogs/ai-chatbot-helps-to-grow-business",
   },
 ];
 
@@ -352,7 +341,7 @@ export const currentOpenings = [
       "Draft detailed proposals, sales decks, and RFP responses",
       "Negotiate pricing and close high-value B2B deals",
       "Excellent communication, negotiation & proposal writing skills",
-      "Use AI tools, CRM systems, and analytics to automate and track sales efforts"
+      "Use AI tools, CRM systems, and analytics to automate and track sales efforts",
     ],
     benefits: [
       "Work on AI-driven, innovative products",
