@@ -41,6 +41,7 @@ function MainSection() {
                 fill
                 priority
                 quality={100}
+                loading="eager"
               />
             </div>
           </div>

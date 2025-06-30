@@ -37,6 +37,7 @@ function HeroSection() {
                 alt="hero-section-background-image"
                 fill
                 priority
+                loading="eager"
               />
             </div>
           </div>
