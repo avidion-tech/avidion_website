@@ -29,11 +29,11 @@ export default function RootLayout({
           <Suspense>
             <Navbar />
             {children}
+            <Toaster richColors position="top-center" />
+            <WhatsAppIcon />
           </Suspense>
           <Footer />
         </main>
-        <Toaster position="top-right"/>
-        <WhatsAppIcon />
       </body>
     </html>
   );

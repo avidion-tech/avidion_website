@@ -46,7 +46,7 @@ const config: Config = {
         bounce: "bounce 3s infinite",
 
         // for gardient in services page
-        "gradient-radial": "gradient-radial 12s linear infinite",
+        "gradient-radial": "gradient-radial 11s linear infinite",
 
         // for animating all-services icons in services page little slow then bounce
         "service-bounce": "service-bounce 3s infinite",
@@ -57,8 +57,6 @@ const config: Config = {
 
         //for the infinite scrolltape at the homepage hero-section
         "infinite-scroll": "infinite-scroll 20s linear infinite",
-
-        
       },
 
       keyframes: {
@@ -124,23 +122,76 @@ const config: Config = {
           },
         },
         "gradient-radial": {
-          "0%, 100%": {
+          "0%": {
             background:
-              "radial-gradient(56.13% 56.07% at 50.86% 3.47%, rgba(0,0,0,0) 0%, #000 100%)",
+              "radial-gradient(50% 50% at 50% 0%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "6.25%": {
+            background:
+              "radial-gradient(50% 50% at 69.13% 3.82%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "12.5%": {
+            background:
+              "radial-gradient(50% 50% at 85.36% 14.64%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "18.75%": {
+            background:
+              "radial-gradient(50% 50% at 96.18% 30.87%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "25%": {
             background:
-              "radial-gradient(70.29% 22.24% at 72.24% 59.53%, rgba(0,0,0,0) 0%, #000 100%)",
+              "radial-gradient(50% 50% at 100% 50%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "31.25%": {
+            background:
+              "radial-gradient(50% 50% at 96.18% 69.13%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "37.5%": {
+            background:
+              "radial-gradient(50% 50% at 85.36% 85.36%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "43.75%": {
+            background:
+              "radial-gradient(50% 50% at 69.13% 96.18%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "50%": {
             background:
-              "radial-gradient(32.59% 32.59% at 50% 92.13%, rgba(0,0,0,0) 0%, #000 100%)",
+              "radial-gradient(50% 50% at 50% 100%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "56.25%": {
+            background:
+              "radial-gradient(50% 50% at 30.87% 96.18%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "62.5%": {
+            background:
+              "radial-gradient(50% 50% at 14.64% 85.36%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "68.75%": {
+            background:
+              "radial-gradient(50% 50% at 3.82% 69.13%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "75%": {
             background:
-              "radial-gradient(68.81% 21.77% at 28.23% 59.53%, rgba(0,0,0,0) 0%, #000 100%)",
+              "radial-gradient(50% 50% at 0% 50%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "81.25%": {
+            background:
+              "radial-gradient(50% 50% at 3.82% 30.87%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "87.5%": {
+            background:
+              "radial-gradient(50% 50% at 14.64% 14.64%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "93.75%": {
+            background:
+              "radial-gradient(50% 50% at 30.87% 3.82%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "100%": {
+            background:
+              "radial-gradient(50% 50% at 50% 0%, rgba(0,0,0,0) 0%, #000 100%)",
           },
         },
+
         "service-bounce": {
           "0%, 100%": {
             transform: "translateY(-4%)",
