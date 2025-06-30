@@ -126,65 +126,129 @@ const config: Config = {
             background:
               "radial-gradient(50% 50% at 50% 0%, rgba(0,0,0,0) 0%, #000 100%)",
           },
+          "3.125%": {
+            background:
+              "radial-gradient(50% 50% at 59.57% 1.91%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
           "6.25%": {
             background:
               "radial-gradient(50% 50% at 69.13% 3.82%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "9.375%": {
+            background:
+              "radial-gradient(50% 50% at 78.67% 5.73%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "12.5%": {
             background:
               "radial-gradient(50% 50% at 85.36% 14.64%, rgba(0,0,0,0) 0%, #000 100%)",
           },
+          "15.625%": {
+            background:
+              "radial-gradient(50% 50% at 92.05% 21.33%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
           "18.75%": {
             background:
               "radial-gradient(50% 50% at 96.18% 30.87%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "21.875%": {
+            background:
+              "radial-gradient(50% 50% at 98.09% 40.43%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "25%": {
             background:
               "radial-gradient(50% 50% at 100% 50%, rgba(0,0,0,0) 0%, #000 100%)",
           },
+          "28.125%": {
+            background:
+              "radial-gradient(50% 50% at 98.09% 59.57%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
           "31.25%": {
             background:
               "radial-gradient(50% 50% at 96.18% 69.13%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "34.375%": {
+            background:
+              "radial-gradient(50% 50% at 92.05% 78.67%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "37.5%": {
             background:
               "radial-gradient(50% 50% at 85.36% 85.36%, rgba(0,0,0,0) 0%, #000 100%)",
           },
+          "40.625%": {
+            background:
+              "radial-gradient(50% 50% at 78.67% 92.05%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
           "43.75%": {
             background:
               "radial-gradient(50% 50% at 69.13% 96.18%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "46.875%": {
+            background:
+              "radial-gradient(50% 50% at 59.57% 98.09%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "50%": {
             background:
               "radial-gradient(50% 50% at 50% 100%, rgba(0,0,0,0) 0%, #000 100%)",
           },
+          "53.125%": {
+            background:
+              "radial-gradient(50% 50% at 40.43% 98.09%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
           "56.25%": {
             background:
               "radial-gradient(50% 50% at 30.87% 96.18%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "59.375%": {
+            background:
+              "radial-gradient(50% 50% at 21.33% 92.05%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "62.5%": {
             background:
               "radial-gradient(50% 50% at 14.64% 85.36%, rgba(0,0,0,0) 0%, #000 100%)",
           },
+          "65.625%": {
+            background:
+              "radial-gradient(50% 50% at 7.95% 78.67%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
           "68.75%": {
             background:
               "radial-gradient(50% 50% at 3.82% 69.13%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "71.875%": {
+            background:
+              "radial-gradient(50% 50% at 1.91% 59.57%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "75%": {
             background:
               "radial-gradient(50% 50% at 0% 50%, rgba(0,0,0,0) 0%, #000 100%)",
           },
+          "78.125%": {
+            background:
+              "radial-gradient(50% 50% at 1.91% 40.43%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
           "81.25%": {
             background:
               "radial-gradient(50% 50% at 3.82% 30.87%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "84.375%": {
+            background:
+              "radial-gradient(50% 50% at 7.95% 21.33%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "87.5%": {
             background:
               "radial-gradient(50% 50% at 14.64% 14.64%, rgba(0,0,0,0) 0%, #000 100%)",
           },
+          "90.625%": {
+            background:
+              "radial-gradient(50% 50% at 21.33% 7.95%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
           "93.75%": {
             background:
               "radial-gradient(50% 50% at 30.87% 3.82%, rgba(0,0,0,0) 0%, #000 100%)",
+          },
+          "96.875%": {
+            background:
+              "radial-gradient(50% 50% at 40.43% 1.91%, rgba(0,0,0,0) 0%, #000 100%)",
           },
           "100%": {
             background:
