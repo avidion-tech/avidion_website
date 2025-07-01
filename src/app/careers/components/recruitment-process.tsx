@@ -52,7 +52,7 @@ function RecruitmentProcess() {
                 {data.map((item, index) => (
                   <div
                     key={index}
-                    className="flex md:hidden flex-col items-center gap-[14px]"
+                    className="flex flex-col items-center gap-[14px] md:hidden"
                   >
                     <div className="flex h-[64px] w-[64px] items-center justify-center rounded-full border border-[#656565] bg-transparent bg-[linear-gradient(90deg,_rgba(64,15,54,0.40)_0%,_rgba(37,25,71,0.40)_100%)] shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.40)] backdrop-blur-[7px]">
                       <div className="rounded-full border border-[rgba(255,255,255,0.15)] bg-[linear-gradient(90deg,_rgba(157,46,135,0.40)_0%,_rgba(84,41,153,0.41)_100%)] p-2 shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] backdrop-blur-[7px]">
@@ -73,14 +73,14 @@ function RecruitmentProcess() {
                 ))}
               </>
 
-              <div className="hidden md:flex items-center justify-center">
+              <div className="hidden items-center justify-center md:flex">
                 <div className="relative">
                   <div className="relative h-[342px] w-[379px] xl:h-[630px] xl:w-[800px]">
                     <Image
                       src={"/careers/circle.png"}
                       alt="recruitment-process"
                       fill
-                      className="object-cover"
+                      className="z-10 object-cover"
                       quality={100}
                       priority
                     />
@@ -112,6 +112,8 @@ function RecruitmentProcess() {
                         />
                       </div>
                     </div>
+
+                    <div className="animate-wave absolute inset-0 z-0 rounded-full border-[4px] border-[#AFAFAF]"></div>
                   </div>
                   <div className="absolute -left-28 bottom-16 flex w-[118px] flex-col items-end justify-end gap-1.5 xl:bottom-24 xl:w-[170px]">
                     <div className="text-sm font-bold text-[#FEFEFE] xl:text-xl">

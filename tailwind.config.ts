@@ -54,12 +54,18 @@ const config: Config = {
         //for animating the current-openings in career page
         slideDown: "slideDown 400ms ease-out",
         slideUp: "slideUp 400ms ease-out",
+        wave: "wave 1.5s cubic-bezier(0, 0, 0.2, 1) infinite",
 
         //for the infinite scrolltape at the homepage hero-section
         "infinite-scroll": "infinite-scroll 20s linear infinite",
       },
-
       keyframes: {
+        wave: {
+          "75%, 100%": {
+            transform: "scale(1.5)",
+            opacity: "0",
+          },
+        },
         gradient: {
           "0%, 100%": {
             "background-position": "0% center",

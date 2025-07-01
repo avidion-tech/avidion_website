@@ -1,6 +1,9 @@
+"use client";
 import { TbTargetArrow } from "react-icons/tb";
 import Image from "next/image";
 import Main from "./main";
+import Lottie from "lottie-react";
+import animationData from "@/animations/comprehensive-digital-solutions.json";
 const facilities = [
   {
     url: "/icons/vision.svg",
@@ -248,11 +251,17 @@ const AboutUs = () => {
             </div>
 
             <div className="relative aspect-square h-[297px] w-[340px] sm:h-[362px] sm:w-[406px] lg:h-[521px] lg:w-[584px] xl:h-[463px] xl:w-[519px]">
-              <Image
+              {/* <Image
                 alt="digital-solutions"
                 src={"/about-us/digital-solutions.svg"}
                 className="object-cover"
                 fill
+              /> */}
+              <Lottie
+                animationData={animationData}
+                loop={true}
+                autoplay={true}
+                style={{ width: "100%", height: "100%" }}
               />
             </div>
           </div>

@@ -89,7 +89,7 @@ const socialIcons = [
 const Footer = () => {
   return (
     <>
-      <div className="container mx-auto flex w-full flex-col items-start justify-between gap-[48px] py-[89px] font-inter md:flex-row">
+      <div className="container relative bottom-0 mx-auto flex w-full flex-col items-start justify-between gap-[48px] py-[89px] font-inter md:flex-row">
         <div className="flex basis-full flex-col gap-8 md:basis-[40%] xl:basis-[30%]">
           <div className="flex flex-col gap-10">
             <div className="flex items-center gap-2 md:gap-2.5 xl:gap-[15px]">
@@ -136,7 +136,7 @@ const Footer = () => {
                 </div>
                 <a
                   href="https://www.google.com/maps/dir/28.5631265,77.1160615/676,+Sector+42+Main+Rd,+Sector+42,+Gurugram,+Haryana+122011/@28.4631195,77.0192445,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x82ee875e4d6f150d:0xcb5e22ed11de5002!2m2!1d77.1016459!2d28.4631443?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
-                  className="text-xs font-normal text-white/80 md:text-[rgba(255,255,255,0.50)] transition-all duration-300 ease-in-out hover:font-medium hover:text-white"
+                  className="text-xs font-normal text-white/80 transition-all duration-300 ease-in-out hover:font-medium hover:text-white md:text-[rgba(255,255,255,0.50)]"
                 >
                   676, Sector-42, Gurugram, Haryana, India
                 </a>
@@ -149,7 +149,7 @@ const Footer = () => {
               <Link
                 href={icon.redirectUrl}
                 key={icon.id}
-                className="rounded-md bg-white/80 md:bg-white/50 hover:bg-white p-[6px] transition-all duration-300 ease-in-out"
+                className="rounded-md bg-white/80 p-[6px] transition-all duration-300 ease-in-out hover:bg-white md:bg-white/50"
               >
                 <div className="flex size-[19.5px] items-center justify-center text-black">
                   {icon.icon}
@@ -167,7 +167,7 @@ const Footer = () => {
               <>
                 <Link
                   href={link.redirectUrl}
-                  className="flex flex-col gap-4 font-normal text-white/80 md:text-[rgba(255,255,255,0.50)] transition-all duration-300 ease-in-out hover:font-medium hover:text-white"
+                  className="flex flex-col gap-4 font-normal text-white/80 transition-all duration-300 ease-in-out hover:font-medium hover:text-white md:text-[rgba(255,255,255,0.50)]"
                   key={link.id}
                 >
                   {link.name}
@@ -182,7 +182,7 @@ const Footer = () => {
             {servicesLinks.map((link) => (
               <>
                 <div
-                  className="flex flex-col gap-4 font-normal text-white/80 md:text-[rgba(255,255,255,0.50)] transition-all duration-300 ease-in-out hover:font-medium hover:text-white"
+                  className="flex flex-col gap-4 font-normal text-white/80 transition-all duration-300 ease-in-out hover:font-medium hover:text-white md:text-[rgba(255,255,255,0.50)]"
                   key={link.id}
                 >
                   {link.name}
@@ -197,7 +197,7 @@ const Footer = () => {
               <Link
                 href={icon.redirectUrl}
                 key={icon.id}
-                className="rounded-md p-[6px] transition-all duration-300 ease-in-out bg-white/80 md:bg-white/50 hover:bg-white"
+                className="rounded-md bg-white/80 p-[6px] transition-all duration-300 ease-in-out hover:bg-white md:bg-white/50"
               >
                 <div className="flex size-[19.5px] items-center justify-center text-black">
                   {icon.icon}

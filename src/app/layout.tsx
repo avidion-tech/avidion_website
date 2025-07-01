@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="bg-[#020103]">
+        <main className="min-h-screen bg-[#020103]">
           {/* useSearchParams needs to be wrapped in suspense boundary */}
           <Suspense>
             <Navbar />

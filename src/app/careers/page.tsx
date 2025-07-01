@@ -121,7 +121,7 @@ const Careers = () => {
             loading="eager"
             className="object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(167deg,_rgba(0,0,0,0.00)_-24.3%,_#000_75.26%)] md:bg-[linear-gradient(167deg,_rgba(0,0,0,0.00)_-49.64%,_#000_79.02%)] xl:bg-[linear-gradient(92deg,_rgba(0,0,0,0.00)_0.9%,_#000_80.26%)]"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(167deg,_rgba(0,0,0,0.00)_-24.3%,_#000_75.26%)] md:bg-[linear-gradient(167deg,_rgba(0,0,0,0.00)_-49.64%,_#000_79.02%)] xl:bg-[linear-gradient(91deg,_rgba(0,0,0,0.00)_0.51%,_#000_95.79%)]"></div>
         </div>{" "}
         <div className="relative">
           <div className="flex w-full flex-col items-center pb-[40px] md:pb-[80px] xl:flex-row xl:justify-between xl:pb-0">
