@@ -3,7 +3,7 @@ import { TbTargetArrow } from "react-icons/tb";
 import Image from "next/image";
 import Main from "./main";
 import Lottie from "lottie-react";
-import animationData from "@/animations/comprehensive-digital-solutions.json";
+import animationData from "@/animations/comprehensive-digital-solution.json";
 const facilities = [
   {
     url: "/icons/vision.svg",
@@ -200,12 +200,12 @@ const AboutUs = () => {
 
       {/* comprehensive digital solutions */}
       <div className="bg-[#13081C]">
-        <div className="container relative flex max-w-full flex-col gap-[50px] overflow-hidden py-[80px] xl:py-[168px]">
+        <div className="container relative flex max-w-full flex-col gap-[50px] overflow-hidden pt-[80px] xl:gap-0 xl:pt-[168px]">
           <div className="px-[50px] text-center text-xl font-medium -tracking-[0.84px] text-white md:text-[42px] md:leading-[65px] xl:text-[56px]">
             Comprehensive Digital Solutions
           </div>
 
-          <div className="flex flex-col items-center justify-between gap-10 md:gap-[70px] xl:flex-row">
+          <div className="flex flex-col items-center justify-between gap-0 xl:flex-row xl:gap-[70px]">
             <div className="flex flex-col items-center justify-between gap-10 md:flex-row xl:basis-[49%] xl:flex-col xl:gap-[50px]">
               <div className="flex flex-col items-center gap-[14px] md:items-start">
                 <div className="relative aspect-square w-[47px]">
@@ -250,7 +250,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className="relative aspect-square h-[297px] w-[340px] sm:h-[362px] sm:w-[406px] lg:h-[521px] lg:w-[584px] xl:h-[463px] xl:w-[519px]">
+            <div className="relative aspect-square h-[297px] w-[340px] sm:h-[362px] sm:w-[406px] lg:h-[541px] lg:w-[684px] xl:h-[543px] xl:w-[599px]">
               {/* <Image
                 alt="digital-solutions"
                 src={"/about-us/digital-solutions.svg"}
