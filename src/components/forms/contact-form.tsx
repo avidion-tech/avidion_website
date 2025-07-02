@@ -77,7 +77,7 @@ const ContactForm = () => {
   }
   return (
     <>
-      <div className="relative flex w-full flex-col items-center justify-between gap-[46px] overflow-x-hidden px-[23px] py-[47px] md:flex-row md:px-[40px] xl:py-[77px] xl:pl-[157px] xl:pr-[104px]">
+      <div className="relative flex w-full flex-col items-center justify-between gap-[46px] overflow-x-hidden px-[23px] py-[47px] md:flex-row md:px-[40px] xl:py-[60px] xl:pl-[157px] xl:pr-[104px]">
         <div className="z-10 flex w-full flex-col items-start gap-[46px] md:w-[200px] xl:w-[246px]">
           <div className="relative inline-block">
             <h2 className="text-xl font-bold text-[#FEFEFE]">Contact Us</h2>
@@ -125,11 +125,25 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
+
+        <div className="hidden flex-col items-center justify-center md:flex">
+          <div className="h-[196px] w-px bg-[#5A555A]" />
+
+          <div className="font-inter text-sm font-medium tracking-[0.5px] text-[#696969]">
+            OR
+          </div>
+
+          <div className="h-[196px] w-px bg-[#5A555A]" />
+        </div>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="z-10 flex w-full flex-col gap-[17px] border border-[rgba(255,255,255,0.15)] bg-[linear-gradient(90deg,_rgba(157,46,135,0.10)_0%,_rgba(84,41,153,0.10)_100%)] px-[27px] py-[40px] shadow-[inset_0_0_2px_0_rgba(255,255,255,0.25)] md:w-[55%] md:px-[30px] xl:px-[51px]"
+            className="z-10 flex w-full flex-col gap-[15px] rounded-[4px] border border-[rgba(255,255,255,0.15)] bg-[linear-gradient(90deg,_rgba(157,46,135,0.10)_0%,_rgba(84,41,153,0.10)_100%)] px-[27px] py-[34px] shadow-[inset_0_0_2px_0_rgba(255,255,255,0.25)] md:w-[55%] md:px-[30px] xl:px-[47px]"
           >
+            <h2 className="text-center text-lg font-bold text-[#FEFEFE]">
+              Get In Touch With US
+            </h2>
+
             <FormField
               control={form.control}
               name="name"
@@ -187,10 +201,10 @@ const ContactForm = () => {
               name="query"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Your Message</FormLabel>
+                  <FormLabel>Message</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Write your query here..."
+                      placeholder="Let us know your requirements or concerns"
                       {...field}
                       rows={4}
                       className="w-full resize-none rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"

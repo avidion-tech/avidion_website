@@ -42,7 +42,7 @@ export default function ContactUs() {
           >
             <SheetContent
               side="bottom"
-              className="h-[80vh] overflow-y-auto border border-none bg-[#141315] pb-[80px] transition-transform duration-500"
+              className="h-[94vh] overflow-y-auto border border-none bg-[#141315] transition-transform duration-500"
             >
               <ContactForm />
 

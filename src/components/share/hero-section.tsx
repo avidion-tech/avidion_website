@@ -1,21 +1,33 @@
 "use client";
 import Image from "next/image";
 import Lottie from "lottie-react";
+import gsap from "gsap";
+
 import animationData from "@/animations/home-animation.json";
 import { useEffect, useRef, useState } from "react";
 import InfiniteScrollTape from "../infinite-scroll-area";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import React from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { fadeInUp } from "@/utils/animate";
+gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLDivElement>(null);
+  const subHeadingRef = useRef<HTMLDivElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+  const badgeRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
   const [isHovering, setIsHovering] = useState<boolean>(false);
 
   useEffect(() => {
     const section = containerRef.current;
+
     section?.addEventListener("mousemove", (e) => {
       const rect = section.getBoundingClientRect();
       const x = ((e.clientX - rect.left) / rect.width) * 100;
@@ -23,6 +35,52 @@ function HeroSection() {
 
       setMousePosition({ x, y });
     });
+
+    // const tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: badgeRef.current,
+    //     start: "top 50%", // start when heading is 80% from top
+    //     toggleActions: "play none none reverse",
+    //   },
+    // });
+
+    // tl.fromTo(
+    //   badgeRef.current,
+    //   { x: -30, opacity: 0 },
+    //   { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" },
+    // )
+    //   .fromTo(
+    //     headingRef.current,
+    //     { x: -30, opacity: 0 },
+    //     { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" },
+    //   )
+    //   .fromTo(
+    //     subHeadingRef.current,
+    //     { x: -30, opacity: 0 },
+    //     { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" },
+    //   )
+    //   .fromTo(
+    //     ctaRef.current,
+    //     { x: -20, opacity: 0 },
+    //     { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" },
+    //     "-=0.3",
+    //   );
+
+    // gsap.fromTo(
+    //   videoRef.current,
+    //   { opacity: 0, y: 50 },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 1,
+    //     ease: "power3.out",
+    //     scrollTrigger: {
+    //       trigger: videoRef.current,
+    //       start: "top 50%",
+    //       once: true,
+    //     },
+    //   },
+    // );
   }, []);
 
   return (
@@ -35,6 +93,7 @@ function HeroSection() {
           className="relative h-[630px] overflow-hidden font-inter md:h-[980px] xl:h-[1234px]"
         >
           <video
+            ref={videoRef}
             className="absolute left-[40px] top-[28px] h-full w-full scale-[1.7] sm:top-[45px] sm:scale-[1.7] md:left-[81px] md:top-0 md:scale-[1.7] lg:scale-[1.7] xl:scale-[1.4] 2xl:scale-[1.21]"
             autoPlay
             muted
@@ -73,20 +132,30 @@ function HeroSection() {
           <div className="max-auto container relative w-full py-[100px] sm:py-[112px] md:py-[162px]">
             <div className="flex flex-col items-start justify-center gap-[22px] font-inter md:gap-[34px] xl:gap-[39px]">
               <div className="flex flex-col items-start gap-2">
-                <div className="rounded-[50px] border border-white/15 bg-black px-[7.78px] py-1 text-[10px] font-normal leading-[14.45px] -tracking-[0.001px] text-[#9855FF] md:px-2.5 md:py-1.5 md:text-[11px] md:leading-[18px] xl:px-[14px] xl:py-2">
+                <div
+                  ref={badgeRef}
+                  className="rounded-[50px] border border-white/15 bg-black px-[7.78px] py-1 text-[10px] font-normal leading-[14.45px] -tracking-[0.001px] text-[#9855FF] md:px-2.5 md:py-1.5 md:text-[11px] md:leading-[18px] xl:px-[14px] xl:py-2"
+                >
                   We are here to redefine the digital future
                 </div>
                 <div className="flex flex-col gap-2.5 xl:gap-3">
-                  <div className="w-[255px] text-[28px] font-medium leading-[38px] -tracking-[1.417px] text-transparent text-white md:w-[500px] md:text-[59px] md:leading-[60px] md:-tracking-[4.158px] xl:w-[700px] xl:text-[82.178px] xl:leading-[90.182px]">
+                  <div
+                    ref={headingRef}
+                    className="w-[255px] text-[28px] font-medium leading-[38px] -tracking-[1.417px] text-transparent text-white md:w-[500px] md:text-[59px] md:leading-[60px] md:-tracking-[4.158px] xl:w-[700px] xl:text-[82.178px] xl:leading-[90.182px]"
+                  >
                     Transforming Ideas into Reality
                   </div>
-                  <div className="w-[250px] text-sm font-normal text-white md:w-[392px] xl:w-[550px] xl:text-xl">
+                  <div
+                    ref={subHeadingRef}
+                    className="w-[250px] text-sm font-normal text-white md:w-[392px] xl:w-[550px] xl:text-xl"
+                  >
                     We create smart, AI-driven products that help businesses
                     innovate, grow, and lead in a digital-first world.
                   </div>
                 </div>
               </div>
               <div
+                ref={ctaRef}
                 onClick={() => {
                   params.set("open", "true");
                   router.push(`/?${params.toString()}`, { scroll: false });
