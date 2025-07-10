@@ -2,7 +2,7 @@
 import { RxCross2 } from "react-icons/rx";
 import { Dialog, DialogClose, DialogContent } from "../ui/dialog";
 import ContactForm from "../forms/contact-form";
-import { useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMediaQuery } from "@uidotdev/usehooks";
 
 import { Sheet, SheetClose, SheetContent } from "@/components/ui/sheet";
@@ -17,6 +17,7 @@ export default function ContactUs() {
   }, []);
 
   const searchParams = useSearchParams();
+  const pathname = usePathname();
   const isOpen = searchParams.get("open") === "true";
 
   const router = useRouter();
@@ -24,7 +25,7 @@ export default function ContactUs() {
 
   const handleClose = () => {
     params.delete("open");
-    router.push(`/?${params.toString()}`, { scroll: false });
+    router.push(`${pathname}/?${params.toString()}`, { scroll: false });
   };
 
   if (!mounted) return null; // Prevents hydration mismatch

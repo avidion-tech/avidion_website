@@ -125,7 +125,7 @@ function CurrentOpenings() {
               side="bottom"
               className="h-[80vh] overflow-y-auto border border-none bg-[#141315] pb-[80px] transition-transform duration-500"
             >
-              <CareerForm />
+              <CareerForm handleClose={()=>setOpen(false)}/>
 
               <SheetClose asChild onClick={() => setOpen(false)}>
                 <RxCross2 className="absolute right-4 top-4 size-4 text-white" />
@@ -137,7 +137,7 @@ function CurrentOpenings() {
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogContent className="flex w-screen items-center justify-center border border-none bg-black/80 md:px-[46px]">
             <div className="max-h-screen w-screen overflow-y-auto rounded-md bg-[#141315] md:w-[90%] lg:w-[85%] xl:w-[60%] 2xl:w-[47%]">
-              <CareerForm />
+              <CareerForm handleClose={()=>setOpen(false)}/>
             </div>
             <DialogClose></DialogClose>
           </DialogContent>

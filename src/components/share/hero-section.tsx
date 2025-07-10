@@ -9,7 +9,6 @@ import InfiniteScrollTape from "../infinite-scroll-area";
 import { useRouter, useSearchParams } from "next/navigation";
 import React from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { fadeInUp } from "@/utils/animate";
 gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
   const searchParams = useSearchParams();
@@ -39,7 +38,7 @@ function HeroSection() {
     // const tl = gsap.timeline({
     //   scrollTrigger: {
     //     trigger: badgeRef.current,
-    //     start: "top 50%", // start when heading is 80% from top
+    //     start: "top 50%",
     //     toggleActions: "play none none reverse",
     //   },
     // });
@@ -132,30 +131,20 @@ function HeroSection() {
           <div className="max-auto container relative w-full py-[100px] sm:py-[112px] md:py-[162px]">
             <div className="flex flex-col items-start justify-center gap-[22px] font-inter md:gap-[34px] xl:gap-[39px]">
               <div className="flex flex-col items-start gap-2">
-                <div
-                  ref={badgeRef}
-                  className="rounded-[50px] border border-white/15 bg-black px-[7.78px] py-1 text-[10px] font-normal leading-[14.45px] -tracking-[0.001px] text-[#9855FF] md:px-2.5 md:py-1.5 md:text-[11px] md:leading-[18px] xl:px-[14px] xl:py-2"
-                >
+                <div className="rounded-[50px] border border-white/15 bg-black px-[7.78px] py-1 text-[10px] font-normal leading-[14.45px] -tracking-[0.001px] text-[#9855FF] md:px-2.5 md:py-1.5 md:text-[11px] md:leading-[18px] xl:px-[14px] xl:py-2">
                   We are here to redefine the digital future
                 </div>
                 <div className="flex flex-col gap-2.5 xl:gap-3">
-                  <div
-                    ref={headingRef}
-                    className="w-[255px] text-[28px] font-medium leading-[38px] -tracking-[1.417px] text-transparent text-white md:w-[500px] md:text-[59px] md:leading-[60px] md:-tracking-[4.158px] xl:w-[700px] xl:text-[82.178px] xl:leading-[90.182px]"
-                  >
+                  <div className="w-[255px] text-[28px] font-medium leading-[38px] -tracking-[1.417px] text-transparent text-white md:w-[500px] md:text-[59px] md:leading-[60px] md:-tracking-[4.158px] xl:w-[700px] xl:text-[82.178px] xl:leading-[90.182px]">
                     Transforming Ideas into Reality
                   </div>
-                  <div
-                    ref={subHeadingRef}
-                    className="w-[250px] text-sm font-normal text-white md:w-[392px] xl:w-[550px] xl:text-xl"
-                  >
+                  <div className="w-[250px] text-sm font-normal text-white md:w-[392px] xl:w-[550px] xl:text-xl">
                     We create smart, AI-driven products that help businesses
                     innovate, grow, and lead in a digital-first world.
                   </div>
                 </div>
               </div>
               <div
-                ref={ctaRef}
                 onClick={() => {
                   params.set("open", "true");
                   router.push(`/?${params.toString()}`, { scroll: false });
@@ -228,8 +217,8 @@ function HeroSection() {
             {/* ai automation */}
 
             <div className="rounded-[8px] bg-[linear-gradient(260deg,_rgba(175,80,155,0.20)_7.64%,_rgba(22,22,22,0.20)_99.47%)] px-[38px] py-[33px] md:py-[40px]">
-              <div className="flex items-center justify-center rounded-[8px] bg-[linear-gradient(57deg,_#C0ADFF_11.25%,_#BF5CEA_34.88%,_#DD68BD_66.68%,_#9E3DC2_95.25%)] p-[2.5px] backdrop-blur-[75.13px]">
-                <div className="box-border flex flex-row items-center gap-2.5 rounded-[7px] bg-black px-4 py-2 md:px-6">
+              <div className="flex items-center justify-center rounded-[7px] bg-[linear-gradient(57deg,_#C0ADFF_11.25%,_#BF5CEA_34.88%,_#DD68BD_66.68%,_#9E3DC2_95.25%)] p-[2.2px] backdrop-blur-[75.13px]">
+                <div className="box-border flex flex-row items-center gap-2.5 rounded-[5.2px] bg-black px-4 py-2 md:px-6">
                   <div className="relative aspect-square size-7 md:size-6">
                     <Image
                       src={"/hero-section/ai-automation.svg"}

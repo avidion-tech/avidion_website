@@ -26,7 +26,7 @@ const data = [
   },
   {
     title: "Final Interview",
-    description: "Discussion with team leads or leadership.",
+    description: "Discussion with HR or Higher Authorities.",
     icon: "/careers/recruitment-icons/final-interview.svg",
   },
   {
@@ -113,7 +113,7 @@ function RecruitmentProcess() {
                       </div>
                     </div>
 
-                    <div className="animate-wave absolute inset-0 z-0 rounded-full border-[4px] border-[#AFAFAF]"></div>
+                    <div className="absolute inset-0 z-0 animate-wave rounded-full border-[4px] border-[#AFAFAF]"></div>
                   </div>
                   <div className="absolute -left-28 bottom-16 flex w-[118px] flex-col items-end justify-end gap-1.5 xl:bottom-24 xl:w-[170px]">
                     <div className="text-sm font-bold text-[#FEFEFE] xl:text-xl">
@@ -157,7 +157,7 @@ function RecruitmentProcess() {
                       Final Interview
                     </div>
                     <div className="text-xs font-normal text-[#989898] xl:text-base">
-                      Discussion with team leads or leadership.
+                      Discussion with HR or Higher Authorities.
                     </div>
                   </div>
 

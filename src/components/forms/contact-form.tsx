@@ -21,7 +21,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import createContact from "@/actions/contact-action";
 import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export const contactFormSchema = z.object({
   name: z.string().min(2, "Name should be min of 3 chars."),
@@ -35,6 +35,7 @@ const ContactForm = () => {
   const searchParams = useSearchParams();
 
   const router = useRouter();
+  const pathname = usePathname();
   const params = new URLSearchParams(searchParams.toString());
 
   const form = useForm<z.infer<typeof contactFormSchema>>({
@@ -57,21 +58,23 @@ const ContactForm = () => {
       Query: values.query,
     };
 
-    //setting the data in the database also and google sheet
+    console.log("form data in the object form is", data);
+
     try {
-      const contactFormResp = await createContact(values);
-      await axios.post(
-        "https://api.sheetbest.com/sheets/724fbfa8-c8df-4058-9f30-aef1fe7b40d5",
-        data,
-      );
-      toast.success(contactFormResp.message);
-      params.delete("open");
-      router.push(`/?${params.toString()}`, { scroll: false });
+      const res = await createContact(values);
+      if (res.success) {
+        toast.success(res.success);
+        params.delete("open");
+        router.push(`${pathname}/?${params.toString()}`, { scroll: false });
+        form.reset();
+      }
+      if (res.error) {
+        toast.error(res.error);
+      }
     } catch (err) {
       console.log("error is", err);
       toast.error("Error in submitting the form.");
     } finally {
-      form.reset();
       setLoading(false);
     }
   }

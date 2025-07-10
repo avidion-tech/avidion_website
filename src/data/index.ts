@@ -156,60 +156,78 @@ export const portfolio = [
   {
     id: 1,
     videoUrl: "/portfolio/portfolio-1.mp4",
-    title: "Avidion Softwares – Futuristic AI & Cloud Transformation Website",
+    badge: "Web Design",
+    color: "text-[#8B5ADA]",
+    title: "Avidion Softwares – A Futuristic Website for AI ",
     description:
-      "Avidion Software's official website is a visually captivating, interactive platform designed to position the company as a leader in AI integration, cloud solutions...",
-    // redirectUrl:"#"
+      "A visually rich, interactive website built to position Avidion Softwares as a leader in AI integration, cloud tech, and digital transformation services.",
+    redirectUrl: "https://avidion-software-website.vercel.app/",
   },
   {
     id: 2,
     videoUrl: "/portfolio/portfolio-2.mp4",
-    title:
-      "Avidion: Crafting Future-Ready Digital Experiences with AI at the Core",
+    badge: "Web Design",
+    color: "text-[#8B5ADA]",
+    title: "Avidion Softwares - Premium Software Website with AI at the Core",
     description:
-      "Avidion is a premium software development company dedicated to transforming ideas into reality for startups and enterprises worldwide. With a futur...",
-    // redirectUrl:"#"
+      "Avidion’s landing page blends modern aesthetics with product-led storytelling. Crafted for startups and founders, it positions Avidion as a premium partner for AI-first software development.",
+    redirectUrl: "https://avidionwebsite.vercel.app/",
   },
   {
     id: 3,
-    videoUrl: "/portfolio/portfolio-3.mp4",
+    videoUrl: "/portfolio/portfolio-solar.mp4",
+    badge: "Energy",
+    color: "text-[#F97316]",
     title:
-      "ElevateCare – Suggesting an uplift in healthcare standards and patient experience.",
+      "Solar Power India - A Modern Website Concept for Clean Energy Innovation",
     description:
-      "This website was developed for HealthCare Center, a forward-thinking medical facility dedicated to providing advanced healthcare for a better...",
-    // redirectUrl:"#"
+      "A sleek, responsive website designed to showcase Sorlar’s clean energy mission. Perfect for solar brands and sustainability startups.",
+    redirectUrl: "https://solar-power-hazel.vercel.app/",
   },
+  // {
+  //   id: 4,
+  //   videoUrl: "/portfolio/portfolio-4.mp4",
+  //   title: "Logistics sector",
+  //   description:
+  //     "A warehouse worker wearing a headset and holding a RFID embedded device, navigating through aisles filled with sports merchandise. The worker... ",
+  //   // redirectUrl:"#"
+  // },
+  // {
+  //   id: 5,
+  //   videoUrl: "/portfolio/portfolio-5.mp4",
+  //   title: "Healthcare Sector",
+  //   description:
+  //     "A radiologist reviews a CT scan on a computer screen, where AI-generated annotations highlight areas of concern, such as potential intracranial...",
+  //   // redirectUrl:"#"
+  // },
+  // {
+  //   id: 6,
+  //   videoUrl: "/portfolio/portfolio-6.mp4",
+  //   title: "Real Estate",
+  //   description:
+  //     "A real estate agent uses a computer displaying AI-generated property descriptions alongside high-resolution images of properties...",
+  //   // redirectUrl:"#"
+  // },
+  // {
+  //   id: 7,
+  //   videoUrl: "/portfolio/portfolio-7.mp4",
+  //   title: "E-commerce",
+  //   description:
+  //     "A digital interface showcasing AI-generated fashion designs based on textual descriptions. The screen displays multiple apparel images created...",
+  //   // redirectUrl:"#"
+  // },
+];
+
+export const caseStudies = [
   {
-    id: 4,
-    videoUrl: "/portfolio/portfolio-4.mp4",
-    title: "Logistics sector",
+    id: 1,
+    videoUrl: "/portfolio/portfolio-kimli.mp4",
+    badge: "Fintech / Automation",
+    color: "text-[#4CBB17]",
+    title: "Kimbly – A Modern Web Design for Digital Identity Solutions",
     description:
-      "A warehouse worker wearing a headset and holding a RFID embedded device, navigating through aisles filled with sports merchandise. The worker... ",
-    // redirectUrl:"#"
-  },
-  {
-    id: 5,
-    videoUrl: "/portfolio/portfolio-5.mp4",
-    title: "Healthcare Sector",
-    description:
-      "A radiologist reviews a CT scan on a computer screen, where AI-generated annotations highlight areas of concern, such as potential intracranial...",
-    // redirectUrl:"#"
-  },
-  {
-    id: 6,
-    videoUrl: "/portfolio/portfolio-6.mp4",
-    title: "Real Estate",
-    description:
-      "A real estate agent uses a computer displaying AI-generated property descriptions alongside high-resolution images of properties...",
-    // redirectUrl:"#"
-  },
-  {
-    id: 7,
-    videoUrl: "/portfolio/portfolio-7.mp4",
-    title: "E-commerce",
-    description:
-      "A digital interface showcasing AI-generated fashion designs based on textual descriptions. The screen displays multiple apparel images created...",
-    // redirectUrl:"#"
+      "Advanced algorithmic trading solutions tailored for modern traders and institutions. This project delivers robust tools including strategy backtesting systems, real-time market scanners, and fully automated trading bots. Designed to enhance decision-making, optimize trade execution, and provide consultancy for custom strategy implementation.",
+    redirectUrl: "https://wonderful-sunflower-d6bdca.netlify.app/",
   },
 ];
 

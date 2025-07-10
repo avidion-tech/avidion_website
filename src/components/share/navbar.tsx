@@ -15,6 +15,7 @@ export default function Navbar() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
+  console.log("pathname is",pathname)
 
   const manageOutsideClick = (e: MouseEvent) => {
     const target = e.target as Node;
@@ -84,8 +85,10 @@ export default function Navbar() {
                 {/* Contact Button */}
                 <div
                   onClick={() => {
-                    params.set("open", "true");
-                    router.push(`/?${params.toString()}`, { scroll: false });
+                    params.append("open", "true");
+                    router.push(`${pathname}/?${params.toString()}`, {
+                      scroll: false,
+                    });
                   }}
                   className="cursor-pointer rounded-[8px] border border-[#EB88D6] bg-[rgba(0,0,0,0.16)] p-1 backdrop-blur-[94.64px] md:rounded-[12px] md:p-1.5"
                 >

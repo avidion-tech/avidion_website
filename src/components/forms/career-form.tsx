@@ -27,6 +27,7 @@ import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
 import { useRouter, useSearchParams } from "next/navigation";
+import createCareer from "@/actions/career-action";
 
 export const careerFormSchema = z.object({
   name: z.string().min(2, "Name should be min of 3 chars."),
@@ -45,7 +46,7 @@ export const careerFormSchema = z.object({
   resumeLink: z.string().url().min(1, "Enter valid url."),
 });
 
-const CareerForm = () => {
+const CareerForm = ({ handleClose }: { handleClose: () => void }) => {
   const [loading, setLoading] = useState<boolean>(false);
   const searchParams = useSearchParams();
 
@@ -91,23 +92,25 @@ const CareerForm = () => {
       ResumeLink: values.resumeLink,
       Comments: values.comments,
     };
-    try {
-      const response = await axios.post(
-        "https://api.sheetbest.com/sheets/013c66fb-dd87-4de7-95fe-4b8a2a36f443",
-        data,
-      );
-      console.log("response is", response);
 
-      const careerResp = await createCareerReq(values);
-      toast.success(careerResp.message);
-      params.delete("open");
-      router.push(`/?${params.toString()}`, { scroll: false });
+    console.log("form data in the object form is", data);
+
+    try {
+      const res = await createCareer(values);
+      console.log("result is", res);
+      if (res.success) {
+        toast.success(res.success);
+        handleClose();
+      }
+      if (res.error) {
+        toast.error(res.error);
+      }
     } catch (err) {
       console.log("error is", err);
       toast.error("Error in submitting the form.");
     } finally {
-      form.reset();
       setLoading(false);
+      form.reset();
     }
   }
 

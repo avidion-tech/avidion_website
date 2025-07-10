@@ -83,7 +83,7 @@ const Careers = () => {
     if (!div || !section) return;
 
     const handleMouseEnter = () => {
-      div.style.opacity = "0.85";
+      div.style.opacity = "0";
     };
 
     const handleMouseLeave = () => {
@@ -91,6 +91,7 @@ const Careers = () => {
     };
 
     const handleMouseMove = () => {
+      div.style.opacity = "0.85";
       section?.addEventListener("mousemove", (e) => {
         const rect = section.getBoundingClientRect();
 
