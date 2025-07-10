@@ -154,7 +154,7 @@ export const whatWeOfferCards = [
 
 export const portfolio = [
   {
-    id: 3,
+    id: 1,
     videoUrl: "/portfolio/portfolio-solar.mp4",
     badge: "Energy",
     color: "text-[#F97316]",
@@ -162,10 +162,21 @@ export const portfolio = [
       "Solar Power India - A Modern Website Concept for Clean Energy Innovation",
     description:
       "A sleek, responsive website designed to showcase Sorlar’s clean energy mission. Perfect for solar brands and sustainability startups.",
-    redirectUrl: "https://solar-power-hazel.vercel.app/",
+    redirectUrl: "https://solar-power-avidion-softwares-projects.vercel.app/",
   },
   {
     id: 2,
+    videoUrl: "/portfolio/portfolio-luxe.mp4",
+    badge: "Fashion",
+    color: "text-[#E91E63]",
+    title: "Luxury Fashion Store - A New Era of E-commerce",
+    description:
+      "Experience the future of luxury fashion online — a beautifully designed platform where every detail is curated for speed, elegance, and an uncompromising commitment to style.",
+    redirectUrl: "https://luxe-avidion-softwares-projects.vercel.app/",
+  },
+
+  {
+    id: 3,
     videoUrl: "/portfolio/portfolio-2.mp4",
     badge: "Web Design",
     color: "text-[#8B5ADA]",
@@ -175,7 +186,7 @@ export const portfolio = [
     redirectUrl: "https://avidionwebsite.vercel.app/",
   },
   {
-    id: 1,
+    id: 4,
     videoUrl: "/portfolio/portfolio-1.mp4",
     badge: "Web Design",
     color: "text-[#8B5ADA]",
