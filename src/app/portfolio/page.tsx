@@ -24,7 +24,7 @@ export default function Portfolio() {
               value="app-showcase"
               className="rounded-bl-[8.6px] rounded-tl-[8.6px] px-[30px] py-3 data-[state=active]:bg-[linear-gradient(90deg,_rgba(157,46,135,0.60)_0%,_rgba(84,41,153,0.60)_100%)] md:px-[40px] md:py-[14px] lg:px-[62px]"
             >
-              App Showcase
+              Projects Showcase
             </TabsTrigger>
             <TabsTrigger
               value="case-studies"

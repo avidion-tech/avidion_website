@@ -154,14 +154,15 @@ export const whatWeOfferCards = [
 
 export const portfolio = [
   {
-    id: 1,
-    videoUrl: "/portfolio/portfolio-1.mp4",
-    badge: "Web Design",
-    color: "text-[#8B5ADA]",
-    title: "Avidion Softwares – A Futuristic Website for AI ",
+    id: 3,
+    videoUrl: "/portfolio/portfolio-solar.mp4",
+    badge: "Energy",
+    color: "text-[#F97316]",
+    title:
+      "Solar Power India - A Modern Website Concept for Clean Energy Innovation",
     description:
-      "A visually rich, interactive website built to position Avidion Softwares as a leader in AI integration, cloud tech, and digital transformation services.",
-    redirectUrl: "https://avidion-software-website.vercel.app/",
+      "A sleek, responsive website designed to showcase Sorlar’s clean energy mission. Perfect for solar brands and sustainability startups.",
+    redirectUrl: "https://solar-power-hazel.vercel.app/",
   },
   {
     id: 2,
@@ -174,15 +175,14 @@ export const portfolio = [
     redirectUrl: "https://avidionwebsite.vercel.app/",
   },
   {
-    id: 3,
-    videoUrl: "/portfolio/portfolio-solar.mp4",
-    badge: "Energy",
-    color: "text-[#F97316]",
-    title:
-      "Solar Power India - A Modern Website Concept for Clean Energy Innovation",
+    id: 1,
+    videoUrl: "/portfolio/portfolio-1.mp4",
+    badge: "Web Design",
+    color: "text-[#8B5ADA]",
+    title: "Avidion Softwares – A Futuristic Website for AI ",
     description:
-      "A sleek, responsive website designed to showcase Sorlar’s clean energy mission. Perfect for solar brands and sustainability startups.",
-    redirectUrl: "https://solar-power-hazel.vercel.app/",
+      "A visually rich, interactive website built to position Avidion Softwares as a leader in AI integration, cloud tech, and digital transformation services.",
+    redirectUrl: "https://avidion-software-website.vercel.app/",
   },
   // {
   //   id: 4,
