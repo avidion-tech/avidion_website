@@ -233,7 +233,7 @@ export const caseStudies = [
   {
     id: 1,
     videoUrl: "/portfolio/portfolio-kimli.mp4",
-    badge: "Fintech / Automation",
+    badge: "Fintech",
     color: "text-[#4CBB17]",
     title: "Kimbly – A Modern Web Design for Digital Identity Solutions",
     description:
