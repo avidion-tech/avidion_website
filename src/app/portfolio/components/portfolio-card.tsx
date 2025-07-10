@@ -22,7 +22,7 @@ export default function PortfolioCard({
       <div className="flex flex-col overflow-hidden rounded-[14.75px] border border-[rgba(255,255,255,0.15)] bg-[rgba(21,21,21,0.29)] font-inter backdrop-blur-[34.146px]">
         <video
           src={details.videoUrl}
-          className="h-full w-full scale-[1.14] object-cover"
+          className="h-full w-full scale-[1.18] object-cover"
           autoPlay
           loop
           muted
