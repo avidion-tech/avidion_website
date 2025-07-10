@@ -226,7 +226,7 @@ export const caseStudies = [
     color: "text-[#4CBB17]",
     title: "Kimbly – A Modern Web Design for Digital Identity Solutions",
     description:
-      "Advanced algorithmic trading solutions tailored for modern traders and institutions. This project delivers robust tools including strategy backtesting systems, real-time market scanners, and fully automated trading bots. Designed to enhance decision-making, optimize trade execution, and provide consultancy for custom strategy implementation.",
+      "Advanced algorithmic trading solutions tailored for modern traders and institutions. This project delivers robust tools including strategy backtesting systems, real-time market scanners, and fully automated trading bots. ",
     redirectUrl: "https://wonderful-sunflower-d6bdca.netlify.app/",
   },
 ];
