@@ -38,18 +38,22 @@ const servicesLinks = [
   {
     id: 1,
     name: "Website Development",
+    redirectUrl: "/services/website-development",
   },
   {
     id: 2,
     name: "Mobile Apps",
+    redirectUrl: "/services/mobile-app-development",
   },
   {
     id: 3,
     name: "Custom Software",
+    redirectUrl: "/services/custom-software-development",
   },
   {
     id: 4,
     name: "AI Integration",
+    redirectUrl: "/services/ai-integration",
   },
 ];
 
@@ -181,12 +185,13 @@ const Footer = () => {
             <div className="font-medium text-white">Services</div>
             {servicesLinks.map((link) => (
               <>
-                <div
+                <Link
+                  href={link.redirectUrl}
                   className="flex flex-col gap-4 font-normal text-white/80 transition-all duration-300 ease-in-out hover:font-medium hover:text-white md:text-[rgba(255,255,255,0.50)]"
                   key={link.id}
                 >
                   {link.name}
-                </div>
+                </Link>
               </>
             ))}
           </div>
