@@ -155,7 +155,27 @@ export const whatWeOfferCards = [
 export const portfolio = [
   {
     id: 1,
-    videoUrl: "/portfolio/portfolio-solar.mp4",
+    videoUrl: "/portfolio/portfolio-aurel-1.mp4",
+    badge: "Fashion Website",
+    color: "text-[#6AC79F]",
+    title: "Aurel Fashion – A Clean & Modern Shopping Experience",
+    description:
+      "A visually appealing, responsive fashion e-commerce website designed to deliver a seamless shopping journey — showcasing curated collections, new arrivals, and modern seasonal campaigns.",
+    redirectUrl: "https://fashion-store-avidion-softwares-projects.vercel.app/",
+  },
+  {
+    id: 2,
+    videoUrl: "/portfolio/portfolio-luxe-1.mp4",
+    badge: "Fashion",
+    color: "text-[#E91E63]",
+    title: "Luxury Fashion Store - A New Era of E-commerce",
+    description:
+      "Experience the future of luxury fashion online — a beautifully designed platform where every detail is curated for speed, elegance, and an uncompromising commitment to style.",
+    redirectUrl: "https://luxe-avidion-softwares-projects.vercel.app/",
+  },
+  {
+    id: 3,
+    videoUrl: "/portfolio/portfolio-solar-1.webm",
     badge: "Energy",
     color: "text-[#F97316]",
     title:
@@ -164,19 +184,9 @@ export const portfolio = [
       "A sleek, responsive website designed to showcase Sorlar’s clean energy mission. Perfect for solar brands and sustainability startups.",
     redirectUrl: "https://solar-power-avidion-softwares-projects.vercel.app/",
   },
-  {
-    id: 2,
-    videoUrl: "/portfolio/portfolio-luxe.mp4",
-    badge: "Fashion",
-    color: "text-[#E91E63]",
-    title: "Luxury Fashion Store - A New Era of E-commerce",
-    description:
-      "Experience the future of luxury fashion online — a beautifully designed platform where every detail is curated for speed, elegance, and an uncompromising commitment to style.",
-    redirectUrl: "https://luxe-avidion-softwares-projects.vercel.app/",
-  },
 
   {
-    id: 3,
+    id: 4,
     videoUrl: "/portfolio/portfolio-2.mp4",
     badge: "Web Design",
     color: "text-[#8B5ADA]",
@@ -186,7 +196,7 @@ export const portfolio = [
     redirectUrl: "https://avidionwebsite.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     videoUrl: "/portfolio/portfolio-1.mp4",
     badge: "Web Design",
     color: "text-[#8B5ADA]",
@@ -232,7 +242,7 @@ export const portfolio = [
 export const caseStudies = [
   {
     id: 1,
-    videoUrl: "/portfolio/portfolio-kimli.mp4",
+    videoUrl: "/portfolio/portfolio-kimli-1.mp4",
     badge: "Fintech",
     color: "text-[#4CBB17]",
     title: "Kimbly – A Modern Web Design for Digital Identity Solutions",

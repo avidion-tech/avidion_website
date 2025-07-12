@@ -22,14 +22,13 @@ export default function PortfolioCard({
       <div className="flex flex-col overflow-hidden rounded-[14.75px] border border-[rgba(255,255,255,0.15)] bg-[rgba(21,21,21,0.29)] font-inter backdrop-blur-[34.146px]">
         <video
           src={details.videoUrl}
-          className="h-full w-full scale-[1.18] object-cover"
+          className="h-full w-full scale-[1.15] object-contain"
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
         />
-        {/* )} */}
         <div className="flex flex-col gap-1.5 px-[17px] py-[20px] md:py-[25px] xl:gap-4 xl:px-[25px] xl:py-10">
           {/* Badge */}
           <div
