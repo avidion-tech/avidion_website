@@ -155,7 +155,7 @@ export const whatWeOfferCards = [
 export const portfolio = [
   {
     id: 1,
-    videoUrl: "/portfolio/portfolio-aurel-1.mp4",
+    videoUrl: "/portfolio-compressed/portfolio-aurel-1.webm",
     badge: "Fashion Website",
     color: "text-[#6AC79F]",
     title: "Aurel Fashion – A Clean & Modern Shopping Experience",
@@ -165,7 +165,7 @@ export const portfolio = [
   },
   {
     id: 2,
-    videoUrl: "/portfolio/portfolio-luxe-1.mp4",
+    videoUrl: "/portfolio-compressed/portfolio-luxe-1.webm",
     badge: "Fashion",
     color: "text-[#E91E63]",
     title: "Luxury Fashion Store - A New Era of E-commerce",
@@ -175,7 +175,7 @@ export const portfolio = [
   },
   {
     id: 3,
-    videoUrl: "/portfolio/portfolio-solar-1.webm",
+    videoUrl: "/portfolio-compressed/portfolio-solar-1.webm",
     badge: "Energy",
     color: "text-[#F97316]",
     title:
@@ -187,7 +187,7 @@ export const portfolio = [
 
   {
     id: 4,
-    videoUrl: "/portfolio/portfolio-2.mp4",
+    videoUrl: "/portfolio-compressed/portfolio-website-demo.webm",
     badge: "Web Design",
     color: "text-[#8B5ADA]",
     title: "Avidion Softwares - Premium Software Website with AI at the Core",
@@ -195,54 +195,22 @@ export const portfolio = [
       "Avidion’s landing page blends modern aesthetics with product-led storytelling. Crafted for startups and founders, it positions Avidion as a premium partner for AI-first software development.",
     redirectUrl: "https://avidionwebsite.vercel.app/",
   },
-  {
-    id: 5,
-    videoUrl: "/portfolio/portfolio-1.mp4",
-    badge: "Web Design",
-    color: "text-[#8B5ADA]",
-    title: "Avidion Softwares – A Futuristic Website for AI ",
-    description:
-      "A visually rich, interactive website built to position Avidion Softwares as a leader in AI integration, cloud tech, and digital transformation services.",
-    redirectUrl: "https://avidion-software-website.vercel.app/",
-  },
-  // {
-  //   id: 4,
-  //   videoUrl: "/portfolio/portfolio-4.mp4",
-  //   title: "Logistics sector",
-  //   description:
-  //     "A warehouse worker wearing a headset and holding a RFID embedded device, navigating through aisles filled with sports merchandise. The worker... ",
-  //   // redirectUrl:"#"
-  // },
   // {
   //   id: 5,
-  //   videoUrl: "/portfolio/portfolio-5.mp4",
-  //   title: "Healthcare Sector",
+  //   videoUrl: "/portfolio/portfolio-1.mp4",
+  //   badge: "Web Design",
+  //   color: "text-[#8B5ADA]",
+  //   title: "Avidion Softwares – A Futuristic Website for AI ",
   //   description:
-  //     "A radiologist reviews a CT scan on a computer screen, where AI-generated annotations highlight areas of concern, such as potential intracranial...",
-  //   // redirectUrl:"#"
-  // },
-  // {
-  //   id: 6,
-  //   videoUrl: "/portfolio/portfolio-6.mp4",
-  //   title: "Real Estate",
-  //   description:
-  //     "A real estate agent uses a computer displaying AI-generated property descriptions alongside high-resolution images of properties...",
-  //   // redirectUrl:"#"
-  // },
-  // {
-  //   id: 7,
-  //   videoUrl: "/portfolio/portfolio-7.mp4",
-  //   title: "E-commerce",
-  //   description:
-  //     "A digital interface showcasing AI-generated fashion designs based on textual descriptions. The screen displays multiple apparel images created...",
-  //   // redirectUrl:"#"
-  // },
+  //     "A visually rich, interactive website built to position Avidion Softwares as a leader in AI integration, cloud tech, and digital transformation services.",
+  //   redirectUrl: "https://avidion-software-website.vercel.app/",
+  // }
 ];
 
 export const caseStudies = [
   {
     id: 1,
-    videoUrl: "/portfolio/portfolio-kimli-1.mp4",
+    videoUrl: "/portfolio-compressed/portfolio-kimli-1.webm",
     badge: "Fintech",
     color: "text-[#4CBB17]",
     title: "Kimbly – A Modern Web Design for Digital Identity Solutions",
