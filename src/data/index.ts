@@ -342,7 +342,7 @@ export const currentOpenings = [
     department: "IT & Software Development",
     workType: ["On-site", "Full-time"],
     requirements: [
-      "2 - 4 years of hands-on experience as Senior Developer",
+      "2 - 4 years of hands-on experience",
       "Collaborate with the tech team to plan & deliver project demos",
       "Coordinate with UI/UX designers and developers for timely delivery",
       "Continuously learn and evaluate the latest development methods, tools, and technologies.",
