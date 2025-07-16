@@ -336,13 +336,13 @@ export const whyChooseUs = [
 
 export const currentOpenings = [
   {
-    title: "Technical Coordinator",
+    title: "Technical Coordinator / Senior Developer",
     content:
       "Join Avidion Softwares – a growing IT company seeking dynamic individuals to drive our software and AI solution sales. This is a growth-stage opportunity to work on impactful projects with B2B clients.",
     department: "IT & Software Development",
     workType: ["On-site", "Full-time"],
     requirements: [
-      "2 - 4 years of hands-on experience in technical coordinator",
+      "2 - 4 years of hands-on experience as Senior Developer",
       "Collaborate with the tech team to plan & deliver project demos",
       "Coordinate with UI/UX designers and developers for timely delivery",
       "Continuously learn and evaluate the latest development methods, tools, and technologies.",
