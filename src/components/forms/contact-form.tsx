@@ -94,9 +94,12 @@ const ContactForm = () => {
               <div className="text-[12px] font-medium text-[#9D46C3]">
                 Email
               </div>
-              <div className="text-sm font-normal text-white">
+              <a
+                href="mailto:info@avidion.ai"
+                className="text-sm font-normal text-white"
+              >
                 info@avidion.ai
-              </div>
+              </a>
             </div>
           </div>
 
@@ -108,9 +111,12 @@ const ContactForm = () => {
               <div className="text-[12px] font-medium text-[#9D46C3]">
                 WhatsApp{" "}
               </div>
-              <div className="text-sm font-normal text-white">
+              <a
+                href="tel:+919896584099"
+                className="text-sm font-normal text-white"
+              >
                 +91 9896584099
-              </div>
+              </a>
             </div>
           </div>
 
@@ -122,9 +128,12 @@ const ContactForm = () => {
               <div className="text-[12px] font-medium text-[#9D46C3]">
                 Address
               </div>
-              <div className="text-sm font-normal text-white">
+              <a
+                href="https://www.google.com/maps/dir/28.5631265,77.1160615/676,+Sector+42+Main+Rd,+Sector+42,+Gurugram,+Haryana+122011/@28.4631195,77.0192445,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x82ee875e4d6f150d:0xcb5e22ed11de5002!2m2!1d77.1016459!2d28.4631443?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+                className="text-sm font-normal text-white"
+              >
                 676, Sector-42, Gurugram, Haryana, India
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -144,7 +153,7 @@ const ContactForm = () => {
             className="z-10 flex w-full flex-col gap-[15px] rounded-[4px] border border-[rgba(255,255,255,0.15)] bg-[linear-gradient(90deg,_rgba(157,46,135,0.10)_0%,_rgba(84,41,153,0.10)_100%)] px-[27px] py-[34px] shadow-[inset_0_0_2px_0_rgba(255,255,255,0.25)] md:w-[55%] md:px-[30px] xl:px-[47px]"
           >
             <h2 className="text-center text-lg font-bold text-[#FEFEFE]">
-              Get In Touch With US
+              Get In Touch With Us
             </h2>
 
             <FormField

@@ -336,24 +336,24 @@ export const whyChooseUs = [
 
 export const currentOpenings = [
   {
-    title: "Technical Sales Executive",
+    title: "Technical Coordinator",
     content:
       "Join Avidion Softwares – a growing IT company seeking dynamic individuals to drive our software and AI solution sales. This is a growth-stage opportunity to work on impactful projects with B2B clients.",
     department: "IT & Software Development",
     workType: ["On-site", "Full-time"],
     requirements: [
-      "0-3 years of hands-on experience in technical sales executive",
-      "Engage with inbound/outbound leads and conduct discovery calls",
-      "Understand client needs and propose custom software/AI solutions",
-      "Draft detailed proposals, sales decks, and RFP responses",
-      "Negotiate pricing and close high-value B2B deals",
-      "Excellent communication, negotiation & proposal writing skills",
-      "Use AI tools, CRM systems, and analytics to automate and track sales efforts",
+      "2 - 4 years of hands-on experience in technical coordinator",
+      "Collaborate with the tech team to plan & deliver project demos",
+      "Coordinate with UI/UX designers and developers for timely delivery",
+      "Continuously learn and evaluate the latest development methods, tools, and technologies.",
+      "Manage multiple projects in a fast-paced environment.",
+      "Support the sales team by acting as a key technical expert",
+      "Provide guidance and support to team members on agile best practices",
     ],
     benefits: [
       "Work on AI-driven, innovative products",
       "Projects across diverse industries",
-      "Health insurance",
+      "Collaborative and inclusive work culture",
       "Competitive salary",
       "Skill development support",
     ],

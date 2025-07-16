@@ -76,7 +76,7 @@ function CurrentOpenings() {
                 </div>
                 <AccordionContent className="bg-[#141315] px-[25px]">
                   <div className="border-t-opacity-60 flex flex-col items-end gap-[30px] border-t border-[#4A4A4A] py-8">
-                    <div className="flex w-full flex-col items-start gap-[34px] md:flex-row md:gap-[93px] xl:gap-[157px]">
+                    <div className="flex w-full flex-col items-start gap-[34px] md:flex-row md:gap-[73px] xl:gap-[157px]">
                       <div className="flex flex-col gap-1 text-lg text-[#E2E2E2]">
                         Requirements
                         <ul className="flex list-disc flex-col gap-1 pl-5">
@@ -125,7 +125,7 @@ function CurrentOpenings() {
               side="bottom"
               className="h-[80vh] overflow-y-auto border border-none bg-[#141315] pb-[80px] transition-transform duration-500"
             >
-              <CareerForm handleClose={()=>setOpen(false)}/>
+              <CareerForm handleClose={() => setOpen(false)} />
 
               <SheetClose asChild onClick={() => setOpen(false)}>
                 <RxCross2 className="absolute right-4 top-4 size-4 text-white" />
@@ -137,7 +137,7 @@ function CurrentOpenings() {
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogContent className="flex w-screen items-center justify-center border border-none bg-black/80 md:px-[46px]">
             <div className="max-h-screen w-screen overflow-y-auto rounded-md bg-[#141315] md:w-[90%] lg:w-[85%] xl:w-[60%] 2xl:w-[47%]">
-              <CareerForm handleClose={()=>setOpen(false)}/>
+              <CareerForm handleClose={() => setOpen(false)} />
             </div>
             <DialogClose></DialogClose>
           </DialogContent>

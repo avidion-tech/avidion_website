@@ -5,8 +5,14 @@ import ContactForm from "../forms/contact-form";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMediaQuery } from "@uidotdev/usehooks";
 
-import { Sheet, SheetClose, SheetContent } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetFooter,
+} from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
+import { XIcon } from "lucide-react";
 export default function ContactUs() {
   const [mounted, setMounted] = useState(false);
 
@@ -43,13 +49,23 @@ export default function ContactUs() {
           >
             <SheetContent
               side="bottom"
-              className="h-[94vh] overflow-y-auto border border-none bg-[#141315] transition-transform duration-500"
+              className="max-h-screen overflow-y-auto border border-none bg-[#141315] transition-transform duration-500"
             >
               <ContactForm />
-
-              <SheetClose asChild onClick={() => handleClose()}>
-                <RxCross2 className="absolute right-4 top-4 size-4 text-white" />
-              </SheetClose>
+              <SheetFooter>
+                <SheetClose
+                  asChild
+                  onClick={() => handleClose()}
+                  className="bg-transparent text-white hover:bg-white/70"
+                >
+                  {/* <RxCross2 className="absolute right-4 top-4 size-4 text-white" /> */}
+                  <XIcon
+                    className="absolute right-4 top-4 z-10 size-4"
+                    color="white"
+                    strokeWidth={2}
+                  />
+                </SheetClose>
+              </SheetFooter>
             </SheetContent>
           </Sheet>
         </>
