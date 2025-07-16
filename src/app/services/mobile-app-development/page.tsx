@@ -11,7 +11,7 @@ const keyFeatures = [
     description: "Build for both platforms or go native for peak performance.",
   },
   {
-    icon: "/services/icons/aoi.svg",
+    icon: "/services/icons/api.svg",
     title: "API Integrations",
     description: "Connect with payments, CRMs, ERPs, or custom backends.",
   },

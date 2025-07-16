@@ -4,7 +4,7 @@ export default function Process() {
   return (
     <>
       <div className="relative">
-        {/* <video
+        <video
           className="absolute inset-0 h-full w-full object-cover"
           autoPlay
           muted
@@ -14,10 +14,10 @@ export default function Process() {
         >
           <source src="/how-we-work-bg-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
         {/* overlay over the video */}
         <div className="absolute inset-0 bg-[rgba(0,0,0,0.60)]"></div>
-        <div className="container mx-auto w-full ">
+        <div className="container mx-auto w-full">
           <div className="relative flex flex-col gap-10 py-[63px] font-inter md:py-[80px] xl:gap-[55px] xl:px-[156.5px] xl:py-[80px] 2xl:px-[144px]">
             <div className="text-center text-xl font-medium -tracking-[0.84px] text-white sm:text-2xl md:text-4xl lg:text-[40px] xl:text-5xl 2xl:text-[56px] 2xl:leading-[65px]">
               Process
@@ -34,7 +34,7 @@ export default function Process() {
               {appDevelopmentProcess.map((item, index) => (
                 <div key={index} className="relative mb-14 flex w-full">
                   <>
-                    <div className="flex flex-col items-center w-full  gap-[14px] md:hidden">
+                    <div className="flex w-full flex-col items-center gap-[14px] md:hidden">
                       <div className="flex h-[64px] w-[64px] items-center justify-center rounded-full border border-[#656565] bg-transparent bg-[linear-gradient(90deg,_rgba(64,15,54,0.40)_0%,_rgba(37,25,71,0.40)_100%)] shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.40)] backdrop-blur-[7px]">
                         <span className="rounded-full border border-[rgba(255,255,255,0.15)] bg-[linear-gradient(90deg,_rgba(157,46,135,0.40)_0%,_rgba(84,41,153,0.41)_100%)] p-2 shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] backdrop-blur-[7px]">
                           <item.icon className="size-6" color="white" />
