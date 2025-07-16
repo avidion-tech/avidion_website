@@ -49,23 +49,21 @@ export default function ContactUs() {
           >
             <SheetContent
               side="bottom"
-              className="max-h-screen overflow-y-auto border border-none bg-[#141315] transition-transform duration-500"
+              className="max-h-[88vh] overflow-y-auto border border-none bg-[#141315] transition-transform duration-500"
             >
               <ContactForm />
-              <SheetFooter>
-                <SheetClose
-                  asChild
-                  onClick={() => handleClose()}
-                  className="bg-transparent text-white hover:bg-white/70"
-                >
-                  {/* <RxCross2 className="absolute right-4 top-4 size-4 text-white" /> */}
-                  <XIcon
-                    className="absolute right-4 top-4 z-10 size-4"
-                    color="white"
-                    strokeWidth={2}
-                  />
-                </SheetClose>
-              </SheetFooter>
+              <SheetClose
+                asChild
+                onClick={() => handleClose()}
+                className="bg-transparent text-white hover:bg-white/70"
+              >
+                {/* <RxCross2 className="absolute right-4 top-4 size-4 text-white" /> */}
+                <XIcon
+                  className="absolute right-4 top-3 z-10 size-4"
+                  color="white"
+                  strokeWidth={2}
+                />
+              </SheetClose>
             </SheetContent>
           </Sheet>
         </>
