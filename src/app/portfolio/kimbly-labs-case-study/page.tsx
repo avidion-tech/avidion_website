@@ -131,7 +131,7 @@ export default function KimblyLabsCaseStudy() {
             Need Something Similar?
           </div>
           <div className="text-center text-sm font-normal text-white/70 md:text-xl">
-            Looking to build an LMS or a custom web platform? Let’s talk.
+            Looking to build a custom web platform? Let’s talk.
           </div>
         </div>
         <ContactButton buttonClassName="px-[25px]" />
