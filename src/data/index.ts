@@ -156,7 +156,8 @@ export const portfolio = [
   {
     id: 1,
     videoUrl: "/portfolio-compressed/portfolio-aurel-1.webm",
-    badge: "Fashion Website",
+    category: "project-showcase",
+    badge: "Fashion",
     color: "text-[#6AC79F]",
     title: "Aurel Fashion – A Clean & Modern Shopping Experience",
     description:
@@ -166,6 +167,7 @@ export const portfolio = [
   {
     id: 2,
     videoUrl: "/portfolio-compressed/portfolio-luxe-1.webm",
+    category: "project-showcase",
     badge: "Fashion",
     color: "text-[#E91E63]",
     title: "Luxury Fashion Store - A New Era of E-commerce",
@@ -176,10 +178,10 @@ export const portfolio = [
   {
     id: 3,
     videoUrl: "/portfolio-compressed/portfolio-solar-1.webm",
+    category: "project-showcase",
     badge: "Energy",
     color: "text-[#F97316]",
-    title:
-      "Solar Power India - A Modern Website Concept for Clean Energy Innovation",
+    title: "Solar Power India - A Modern Website Concept for Clean Energy",
     description:
       "A sleek, responsive website designed to showcase Sorlar’s clean energy mission. Perfect for solar brands and sustainability startups.",
     redirectUrl: "https://solar-power-avidion-softwares-projects.vercel.app/",
@@ -188,6 +190,7 @@ export const portfolio = [
   {
     id: 4,
     videoUrl: "/portfolio-compressed/portfolio-website-demo.webm",
+    category: "project-showcase",
     badge: "Web Design",
     color: "text-[#8B5ADA]",
     title: "Avidion Softwares - Premium Software Website with AI at the Core",
@@ -211,12 +214,24 @@ export const caseStudies = [
   {
     id: 1,
     videoUrl: "/portfolio-compressed/portfolio-kimli-1.webm",
+    category: "case-study",
     badge: "Fintech",
-    color: "text-[#4CBB17]",
+    color: "text-[#F97316]",
     title: "Kimbly – A Modern Web Design for Digital Identity Solutions",
     description:
       "Advanced algorithmic trading solutions tailored for modern traders and institutions. This project delivers robust tools including strategy backtesting systems, real-time market scanners, and fully automated trading bots. ",
-    redirectUrl: "https://wonderful-sunflower-d6bdca.netlify.app/",
+    redirectUrl: "/portfolio/kimbly-labs-case-study",
+  },
+  {
+    id: 2,
+    videoUrl: "/portfolio/portfolio-eduhub.mp4",
+    category: "case-study",
+    badge: "EdTech / Higher Education",
+    color: "text-[#00FF63]",
+    title: "EduHub LMS Portal — Scalable Learning Management System ",
+    description:
+      "We built a full-featured Learning Management System (LMS) for colleges and universities, aimed at solving challenges around digital learning.",
+    redirectUrl: "/portfolio/edu-hub-case-study",
   },
 ];
 

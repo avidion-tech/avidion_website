@@ -28,7 +28,9 @@ export default function RootLayout({
           {/* useSearchParams needs to be wrapped in suspense boundary */}
           <Suspense>
             <Navbar />
+            <div className="min-h-screen">
             {children}
+            </div>
             <Toaster richColors position="top-center" />
             <WhatsAppIcon />
           </Suspense>

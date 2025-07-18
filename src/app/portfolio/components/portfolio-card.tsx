@@ -11,6 +11,7 @@ type IPortfolioCardProps = {
   color: string;
   redirectUrl: string;
   imageUrl?: string;
+  category: string;
 };
 export default function PortfolioCard({
   details,
@@ -42,19 +43,34 @@ export default function PortfolioCard({
           <div className="text-sm font-normal text-[#B3B3B3] xl:text-base">
             {details.description}
           </div>
-          <Link
-            target="_blank"
-            href={details.redirectUrl}
-            className="duration-600 group flex flex-row items-end justify-end gap-3 text-sm font-normal transition-colors"
-          >
-            <div className="text-white/70 group-hover:text-white">
-              View Demo
-            </div>
-            <ArrowRight
-              strokeWidth={2}
-              className="size-[20px] text-white/70 group-hover:text-white"
-            />
-          </Link>
+          {details.category === "project-showcase" ? (
+            <Link
+              target="_blank"
+              href={details.redirectUrl}
+              className="duration-600 group flex flex-row items-end justify-end gap-3 text-sm font-normal transition-colors"
+            >
+              <div className="text-white/70 group-hover:text-white">
+                View Demo
+              </div>
+              <ArrowRight
+                strokeWidth={2}
+                className="size-[20px] text-white/70 group-hover:text-white"
+              />
+            </Link>
+          ) : (
+            <Link
+              href={details.redirectUrl}
+              className="duration-600 group flex flex-row items-end justify-end gap-3 text-sm font-normal transition-colors"
+            >
+              <div className="text-white/70 group-hover:text-white">
+                View Case Study
+              </div>
+              <ArrowRight
+                strokeWidth={2}
+                className="size-[20px] text-white/70 group-hover:text-white"
+              />
+            </Link>
+          )}
         </div>
       </div>
     </>

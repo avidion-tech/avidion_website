@@ -3,19 +3,15 @@ import { navItems } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import ContactUs from "./contact-us";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import ContactUsWrapper from "./contact-us-wrapper";
+import ContactButton from "./contact-button";
 
 export default function Navbar() {
   const navbarRef = useRef<HTMLDivElement>(null);
   const hamburgerRef = useRef<HTMLDivElement>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const params = new URLSearchParams(searchParams.toString());
-  console.log("pathname is",pathname)
 
   const manageOutsideClick = (e: MouseEvent) => {
     const target = e.target as Node;
@@ -83,19 +79,7 @@ export default function Navbar() {
 
               <div className="flex flex-row items-center gap-4 md:gap-8">
                 {/* Contact Button */}
-                <div
-                  onClick={() => {
-                    params.append("open", "true");
-                    router.push(`${pathname}/?${params.toString()}`, {
-                      scroll: false,
-                    });
-                  }}
-                  className="cursor-pointer rounded-[8px] border border-[#EB88D6] bg-[rgba(0,0,0,0.16)] p-1 backdrop-blur-[94.64px] md:rounded-[12px] md:p-1.5"
-                >
-                  <div className="rounded-[5.51px] border-white/15 bg-[linear-gradient(90deg,_rgba(157,46,135,0.4)_0%,_rgba(84,41,153,0.4)_100%)] px-[15px] py-0.5 font-inter text-[10px] text-white shadow-[inset_0_0_6px_3px_rgba(255,255,255,0.25)] backdrop-blur-[7px] transition-all duration-700 ease-in hover:bg-[linear-gradient(90deg_,rgba(201,104,182,0.40)_0%,_rgba(121,81,186,0.40)_100%)] md:rounded-[8px] md:py-1 md:text-sm">
-                    Contact Us
-                  </div>
-                </div>
+               <ContactButton/>
 
                 <div
                   ref={hamburgerRef}
