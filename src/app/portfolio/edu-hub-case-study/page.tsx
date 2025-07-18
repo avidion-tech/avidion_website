@@ -83,6 +83,39 @@ export default function EduHubCaseStudy() {
           communication — all in one place. The UI was kept clean, modern, and
           responsive to ensure accessibility across devices.
         </div>
+        <div className="flex max-w-full flex-col gap-5 xl:flex-row">
+          {/* design approach */}
+          <div className="border border-[rgba(255,255,255,0.15)] px-[15px] py-5 text-sm font-normal md:py-[28px] md:text-base lg:py-[38px]">
+            <div className="font-bold">Design Approach</div>
+            <br />
+            <ul className="list-disc pl-5 font-normal">
+              <li>Clean, minimal interface</li>
+              <li>Focused on usability across roles</li>
+              <li>Mobile-responsive layout</li>
+              <li>
+                Built in Figma with a component-based system for consistency
+              </li>
+            </ul>
+          </div>
+          {/* development approach */}
+          <div className="border border-[rgba(255,255,255,0.15)] px-[15px] py-5 text-sm font-normal md:py-[28px] md:text-base lg:py-[38px]">
+            <div className="font-bold">Development Highlights</div>
+            <br />
+
+            <ul className="list-disc pl-5 font-normal">
+              <li>Frontend: React.js + Tailwind CSS for fast, responsive UI</li>
+              <li>
+                Backend: Node.js, Express, MongoDB for robust data handling
+              </li>
+              <li>
+                Auth & Storage: Firebase (role-based login + file uploads)
+              </li>
+              <li>
+                Fully functional API layer for all user actions and course flows
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       {/* impact */}
