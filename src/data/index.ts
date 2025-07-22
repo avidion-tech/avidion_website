@@ -224,7 +224,7 @@ export const caseStudies = [
   },
   {
     id: 2,
-    videoUrl: "/portfolio/portfolio-eduhub.mp4",
+    videoUrl: "/portfolio-compressed/portfolio-eduhub.webm",
     category: "case-study",
     badge: "EdTech / Higher Education",
     color: "text-[#00FF63]",
