@@ -233,6 +233,17 @@ export const caseStudies = [
       "We built a full-featured Learning Management System (LMS) for colleges and universities, aimed at solving challenges around digital learning.",
     redirectUrl: "/portfolio/edu-hub-case-study",
   },
+  {
+    id: 3,
+    imageUrl: "/portfolio-compressed/portfolio-form-automation.png",
+    category: "case-study",
+    badge: "AI Automation / Business Productivity",
+    color: "text-[#F02688]",
+    title: "AI Workflow Automation — AI Powered Form Automation Using n8n",
+    description:
+      "Avidion Softwares was approached by a client who needed to streamline the way their website handles inquiries. The goal was to automate their contact form so that whenever...",
+    redirectUrl: "/portfolio/form-automation-case-study",
+  },
 ];
 
 export const howWeWork = [
